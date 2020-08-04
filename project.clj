@@ -23,22 +23,21 @@
                          ; libpythonclj fixes
                          [net.java.dev.jna/jna "5.6.0"]
                          [org.ow2.asm/asm "8.0.1"]
-                         [nrepl "0.8.0-alpha1"]]
+                         [nrepl "0.8.0"]]
 
-  :dependencies [[org.pinkgorilla/goldly "0.2.7"]
-                 [org.pinkgorilla/gorilla-ui "0.2.28"
-                  :exclusions [org.clojure/clojurescript]]
-                 [org.pinkgorilla/gorilla-plot "1.2.2"
-                  :exclusions [org.clojure/clojurescript]]
+  :dependencies [[org.pinkgorilla/goldly "0.2.8"]
+                 ; user dependencies
+                 [org.pinkgorilla/gorilla-ui "0.2.28" :exclusions [org.clojure/clojurescript]]
+                 [org.pinkgorilla/gorilla-plot "1.2.4" :exclusions [org.clojure/clojurescript]]
                  [org.pinkgorilla/nrepl-middleware "0.3.11"]
                  [org.pinkgorilla/notebook-ui "0.0.70"]]
 
   :source-paths ["src"]
-
+  :resource-paths ["target/webly"] ; js bundle
   :target-path  "target/jar"
 
   :profiles {:dev {:source-paths ["test"]
-                   :dependencies [[clj-kondo "2020.06.21"]]
+                   :dependencies [[clj-kondo "2020.07.29"]]
                    :plugins      [[lein-cljfmt "0.6.6"]
                                   [lein-cloverage "1.1.2"]
                                   [lein-codox "0.10.7"]
@@ -80,5 +79,5 @@
             ["with-profile" "+dev" "run" "-m" "webly.build-cli" "release" "+dev" "goldly.app/handler" "demo.app"]
 
             "goldly"  ^{:doc "runs compiled bundle on shadow dev server"}
-            ["with-profile" "+dev" "run" "-m" "goldly.app"  "profiles/demo/src/systems/"]})
+            ["with-profile" "+dev" "run" "-m" "goldly.app"  "src/systems/"]})
 

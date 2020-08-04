@@ -5,11 +5,12 @@
    [goldly.app]
    ;[goldly.web.routes :refer [goldly-routes-backend]]
 
-   [pinkie.default-setup] ; side-effecs pinkie
-   [picasso.default-config] ; side-efects picasso
-   [pinkgorilla.ui.default-renderer] ; side-effects gorilla-ui 
+   ; user dependencies
+   [pinkie.default-setup] ; side-effecs
+   [pinkgorilla.ui.default-renderer] ; side-effects 
+   [pinkgorilla.gorilla-plot.pinkie] ; side-effects
+   [picasso.default-config] ; side-effects 
    [pinkgorilla.notebook-ui.default-config] ; side-effects
-    ;[pinkgorilla.ui.gorilla-plot.pinkie] ; side-effects gorilla-plot TODO: update to pinkie v2
    ))
 
 (defn ^:export start []
