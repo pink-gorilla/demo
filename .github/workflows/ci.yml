@@ -38,6 +38,7 @@ jobs:
       run: lein cljfmt check
     - name: Build cljs bundle
       run: |
+    #      npm install
            lein build-prod
     - name: Run tests
       run: |
