@@ -10,4 +10,4 @@ lein build-prod
 lein goldly
 ```
 
-Then open webBrowser on port 9000.
+Then open web-browser on port 9000.
