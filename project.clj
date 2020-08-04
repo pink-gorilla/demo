@@ -25,7 +25,7 @@
                          [org.ow2.asm/asm "8.0.1"]
                          [nrepl "0.8.0"]]
 
-  :dependencies [[org.pinkgorilla/goldly "0.2.8"]
+  :dependencies [[org.pinkgorilla/goldly "0.2.11"]
                  ; user dependencies
                  [org.pinkgorilla/gorilla-ui "0.2.28" :exclusions [org.clojure/clojurescript]]
                  [org.pinkgorilla/gorilla-plot "1.2.4" :exclusions [org.clojure/clojurescript]]

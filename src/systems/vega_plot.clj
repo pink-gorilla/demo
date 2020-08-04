@@ -21,8 +21,7 @@
 
 (system-start!
  (goldly/system
-  {:name "vega plot"
-   :route "/vega-charts"
+  {:id :vega-plot-dsl
    :state {}
    :html [:<>
           [:h1 "Vega charts"]
