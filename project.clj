@@ -8,6 +8,10 @@
   :min-lein-version "2.9.3"
   :min-java-version "1.11"
 
+  :prep-tasks ["compile"  ; aot compilation, creates .class files
+               ]
+
+  
   :release-tasks [["vcs" "assert-committed"]
                   ["bump-version" "release"]
                   ["vcs" "commit" "Release %s"]
@@ -17,6 +21,14 @@
                   ["vcs" "commit" "Begin %s"]
                   ["vcs" "push"]]
 
+  :source-paths ["src"]
+  :resource-paths ["target/webly"] ; js bundle
+  :target-path  "target/jar"
+  :main  goldly.app ;^:skip-aot 
+  :aot [goldly.app]
+  ;; :jar-exclusions   [#"(?:^|\/)foo\/" #"(?:^|\/)demo\/" #"(?:^|\/)compiled.*\/" #"html$"]
+  
+  
   :managed-dependencies [[org.clojure/core.async "1.3.610"]
                          [org.clojure/tools.logging "1.1.0"]
                          [org.clojure/core.memoize "1.0.236"]
@@ -32,9 +44,6 @@
                  [org.pinkgorilla/nrepl-middleware "0.3.11"]
                  [org.pinkgorilla/notebook-ui "0.0.70"]]
 
-  :source-paths ["src"]
-  :resource-paths ["target/webly"] ; js bundle
-  :target-path  "target/jar"
 
   :profiles {:dev {:source-paths ["test"]
                    :dependencies [[clj-kondo "2020.07.29"]]
@@ -44,7 +53,6 @@
                                   [lein-shell "0.5.0"]
                                   [lein-ancient "0.6.15"]
                                   [min-java-version "0.1.0"]
-                                  [lein-resource "17.06.1"]
                                   ;[lein-environ "1.1.0"] ;; TODO Will likely be axed soon
                                   ]
                    :aliases      {"lint" ^{:doc "Runs code linter"}
@@ -53,7 +61,7 @@
                                   "bump-version"
                                   ["change" "version" "leiningen.release/bump-version"]}
 
-                   :aot []
+                   ;:aot []
                    :cloverage    {:codecov? true
                                   ;; In case we want to exclude stuff
                                   ;; :ns-exclude-regex [#".*util.instrument"]
