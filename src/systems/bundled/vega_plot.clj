@@ -1,4 +1,4 @@
-(ns systems.vega-plot
+(ns systems.bundled.vega-plot
   (:require
    [goldly.runner :refer [system-start!]]
    [goldly.system :as goldly :refer [def-ui]]))

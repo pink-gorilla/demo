@@ -1,4 +1,4 @@
-(ns systems.vega-charts
+(ns systems.bundled.vega-charts
   (:require
    [goldly.runner :refer [system-start!]]
    [goldly.system :as goldly :refer [def-ui]]))

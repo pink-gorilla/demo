@@ -1,4 +1,4 @@
-(ns systems.controls
+(ns systems.bundled.controls
   (:require
    [goldly.runner :refer [system-start!]]
    [goldly.system :as goldly]))
@@ -18,18 +18,6 @@
             [:p/tooltip {:color "green"
                          :title  "tree"
                          :content "How many trees are in a forest?"}]]
-
-           [:h2 "tabs"]
-           [:p/tabs
-            [:p/tab {:title "a"
-                     :isActive false
-                     :color "red"
-                     :tabIndex 1}
-             [:h4 "We love the A-team !"]]
-            [:p/tab {:title "b"
-                     :isActive true
-                     :color "green"
-                     :tabIndex 0}
-             [:h4 "Bananas are a great potassium source!"]]]]
+            ]
    :fns {:incr (fn [_ s] (inc s))}}
   {:fns {}}))

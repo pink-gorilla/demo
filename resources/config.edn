@@ -1,0 +1,38 @@
+{:webly {:title "Goldly Server"
+         :icon "/r/webly/pink-gorilla-32.png"
+         :lein-cljs-profile "" ; +demo"
+         :ns-cljs-app [goldly-server.app-bundled]
+         :bundle-entry  "goldly_server.app_bundled.start ();"
+         :start-user-app [:goldly-server-bundled/init]
+         :user-routes-app "goldly-server.routes/routes-app"
+         :user-routes-api "goldly-server.routes/routes-api"}
+
+ :google-analytics {:enabled true} ; set to false to disable google-analytics tracking.
+
+
+ :timbre-loglevel [[#{"org.eclipse.jetty.*"} :info]
+                   [#{"webly.ws.*"} :info]
+                   [#{"webly.user.*"} :info]
+                   [#{"goldly.*"} :info]
+                   [#{"systems.time"} :warn]
+                   [#{"*"} :debug]]
+
+; :keybindings "pinkgorilla.notebook-ui.keybindings/keybindings-default"
+
+ :settings {; settings can be changed by user (via dialog)
+            ; :use-localstorage is true: load settings from localstorage, and only use
+            ; config-settings to initialize the app when localstorage is empty
+            :use-localstorage  false}
+
+ :goldly {:systems-ns [systems.click-counter
+                       systems.greeter
+                       systems.fortune
+                       systems.time
+                       systems.error
+                       systems.bundled.vega-charts
+                       systems.bundled.vega-plot
+                       systems.bundled.holiday-destinations
+                       systems.bundled.controls
+                       ]
+          :systems-dir nil ; "./src/systems/"
+          }}

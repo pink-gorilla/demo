@@ -1,15 +1,20 @@
-(ns systems.holiday-destinations
+(ns systems.bundled.holiday-destinations
   (:require
    [goldly.runner :refer [system-start!]]
    [goldly.system :as goldly]))
 
 (def places
-  {:london [{:type :view :center [51.49, -0.08] :zoom 12 :height 600 :width 700}
-            {:type :rectangle :bounds [[51.49, -0.08]
-                                       [51.5, -0.06]]}]
-   :panama [{:type :view :center [9.1880621 -82.0075993] :zoom 12 :height 600 :width 700}
-            #_{:type :rectangle :bounds [[51.49, -0.08]
-                                         [51.5, -0.06]]}]})
+  {:london [{:type :view
+             :center [51.49, -0.08]
+             :zoom 12
+             :height 600 :width 700}
+            {:type :rectangle
+             :bounds [[51.49, -0.08]
+                      [51.5, -0.06]]}]
+   :panama [{:type :view
+             :center [9.1880621 -82.0075993]
+             :zoom 12
+             :height 600 :width 700}]})
 
 (system-start!
  (goldly/system

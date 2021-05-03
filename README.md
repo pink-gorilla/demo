@@ -1,13 +1,21 @@
-# goldly-demo
+# goldly-server
 
-- Goldly is a compact library to create client-server web apps using only clojure.
-- goldly-demo uses fat libraries to create user apps.
+- Goldly-server is used to bundle goldly
+- gorilla-ui and gorilla-plot are included
+- the clojars dependency ships the compiled js bundle
+
 
 # Run Demo
 
 ```
-lein build-prod
-lein goldly
+lein demo
 ```
 
-Then open web-browser on port 9000.
+Then open web-browser on port 8000.
+
+# dev notes
+
+- this project exists to ship the compiled js bundle
+- it cannot be included in goldly itself, because goldly is a library
+  thatis consumed in notebook (whic buids its own bundle)
+  
