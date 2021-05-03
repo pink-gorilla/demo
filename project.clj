@@ -1,4 +1,4 @@
-(defproject org.pinkgorilla/goldly-server "0.0.1-SNAPSHOT"
+(defproject org.pinkgorilla/goldly-server "0.0.1"
   :description "goldly server"
   :license {:name "MIT"}
   :deploy-repositories [["releases" {:url "https://clojars.org/repo"
