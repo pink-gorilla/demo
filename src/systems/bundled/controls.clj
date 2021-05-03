@@ -17,7 +17,6 @@
                         :button-text "trees-r"}
             [:p/tooltip {:color "green"
                          :title  "tree"
-                         :content "How many trees are in a forest?"}]]
-            ]
+                         :content "How many trees are in a forest?"}]]]
    :fns {:incr (fn [_ s] (inc s))}}
   {:fns {}}))
