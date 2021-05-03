@@ -42,7 +42,10 @@
                    :aliases      {"bump-version"
                                   ["change" "version" "leiningen.release/bump-version"]}}}
 
-  :aliases {"build-release"
+  :aliases {"npm-install"
+            ["run" "-m" "goldly-server.app" "npm-install"]
+            
+            "build-release"
             ["run" "-m" "goldly-server.app" "release"]
 
             "demo"
