@@ -1,4 +1,4 @@
-(defproject org.pinkgorilla/demo-goldly "0.2.26-SNAPSHot" ; goldly-server needs approval
+(defproject org.pinkgorilla/goldly-server "0.2.26-SNAPSHOT"
   :description "goldly server"
   :license {:name "MIT"}
   :url "https://github.com/pink-gorilla/goldly-server"
@@ -32,7 +32,7 @@
                    #"nrepl.*"
                    ]
 
-  :dependencies [[org.pinkgorilla/goldly "0.2.24"]
+  :dependencies [[org.pinkgorilla/goldly "0.2.25"]
                  ; bundled dependencies
                  [org.pinkgorilla/gorilla-ui "0.3.18" :exclusions [org.clojure/clojurescript]]
                  [org.pinkgorilla/gorilla-plot "1.2.6" :exclusions [org.clojure/clojurescript]]]
