@@ -1,4 +1,4 @@
-(defproject org.pinkgorilla/demo-goldly "0.2.26-SNAPSHot" ; goldly-server needs approval
+(defproject org.pinkgorilla/demo-goldly "0.2.26" ; goldly-server needs approval
   :description "goldly server"
   :license {:name "MIT"}
   :url "https://github.com/pink-gorilla/goldly-server"
