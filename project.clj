@@ -1,4 +1,4 @@
-(defproject org.pinkgorilla/goldly-server "0.0.2"
+(defproject org.pinkgorilla/goldly-server "0.2.24-SNAPSHOT"
   :description "goldly server"
   :license {:name "MIT"}
   :deploy-repositories [["releases" {:url "https://clojars.org/repo"
@@ -28,12 +28,10 @@
   :aot [goldly-server.app]
   ;; :jar-exclusions   [#"(?:^|\/)foo\/" #"(?:^|\/)demo\/" #"(?:^|\/)compiled.*\/" #"html$"]
 
-
-  :dependencies [[org.pinkgorilla/goldly "0.2.23"]
+  :dependencies [[org.pinkgorilla/goldly "0.2.24"]
                  ; bundled dependencies
                  [org.pinkgorilla/gorilla-ui "0.3.18" :exclusions [org.clojure/clojurescript]]
                  [org.pinkgorilla/gorilla-plot "1.2.6" :exclusions [org.clojure/clojurescript]]]
-
 
   :profiles {:dev {:plugins      [[lein-cljfmt "0.6.6"]
                                   [lein-shell "0.5.0"]
