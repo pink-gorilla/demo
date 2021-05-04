@@ -1,6 +1,7 @@
-(defproject org.pinkgorilla/goldly-server "0.2.25"
+(defproject org.pinkgorilla/demo-goldly "0.2.25" ; goldly-server needs approval
   :description "goldly server"
   :license {:name "MIT"}
+  :url "https://github.com/pink-gorilla/goldly-server"
   :deploy-repositories [["releases" {:url "https://clojars.org/repo"
                                      :username :env/release_username
                                      :password :env/release_password
@@ -28,6 +29,7 @@
   :aot [goldly-server.app]
   :jar-exclusions [#"clojure.*" ; clojure is too version specific
                    #"shadow.*" ; shadow cljs is only a build tool.
+                   #"nrepl.*"
                    ]
 
   :dependencies [[org.pinkgorilla/goldly "0.2.24"]
