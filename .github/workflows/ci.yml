@@ -38,7 +38,7 @@ jobs:
       run: lein cljfmt check
     - name: Build cljs bundle
       run: |
-           lein build-release
+        lein build-release
     - name: Release
       if: success()
       env:
@@ -48,7 +48,3 @@ jobs:
         git config --global user.email "ci@pinkgorilla.org"
         git config --global user.name "CI/CD"
         lein release
-    #- name: CodeCoverage
-    #  run: |
-    #    lein cloverage
-    #    bash <(curl -s https://codecov.io/bash) -f target/coverage/codecov.json

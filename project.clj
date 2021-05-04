@@ -1,4 +1,4 @@
-(defproject org.pinkgorilla/goldly-server "0.2.24"
+(defproject org.pinkgorilla/goldly-server "0.2.25-SNAPSHOT"
   :description "goldly server"
   :license {:name "MIT"}
   :deploy-repositories [["releases" {:url "https://clojars.org/repo"
@@ -26,7 +26,9 @@
   :target-path  "target/jar"
   :main  goldly-server.app ;^:skip-aot 
   :aot [goldly-server.app]
-  ;; :jar-exclusions   [#"(?:^|\/)foo\/" #"(?:^|\/)demo\/" #"(?:^|\/)compiled.*\/" #"html$"]
+  :jar-exclusions [#"clojure.*" ; clojure is too version specific
+                   #"shadow.*" ; shadow cljs is only a build tool.
+                   ]
 
   :dependencies [[org.pinkgorilla/goldly "0.2.24"]
                  ; bundled dependencies
