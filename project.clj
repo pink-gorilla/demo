@@ -26,12 +26,11 @@
                    "target/webly"] ; js bundle
   :target-path  "target/jar"
   :main  goldly-server.app ;^:skip-aot 
-  :aot [goldly-server.app]
-  :jar-exclusions [#"clojure.*" ; clojure is too version specific
-                   #"shadow.*" ; shadow cljs is only a build tool.
-                   #"nrepl.*"
-                   #"taoensso.*"
-                   ]
+  ;:aot [goldly-server.app]
+  ;:jar-exclusions [#"clojure.*" ; clojure is too version specific
+  ;                 #"shadow.*" ; shadow cljs is only a build tool.
+  ;                 #"nrepl.*"
+  ;                 #"taoensso.*"]
 
   :dependencies [[org.pinkgorilla/goldly "0.2.25"]
                  ; bundled dependencies
