@@ -9,8 +9,8 @@
   :min-lein-version "2.9.3"
   :min-java-version "1.11"
 
-  :prep-tasks ["compile"  ; aot compilation, creates .class files
-               ]
+  ;:prep-tasks ["compile"  ; aot compilation, creates .class files
+  ;             ]
 
   :release-tasks [["vcs" "assert-committed"]
                   ["bump-version" "release"]
