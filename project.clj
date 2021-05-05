@@ -1,4 +1,4 @@
-(defproject org.pinkgorilla/goldly-server "0.2.29"
+(defproject org.pinkgorilla/goldly-server "0.2.30-SNAPSHOT"
   :description "goldly server"
   :license {:name "MIT"}
   :url "https://github.com/pink-gorilla/goldly-server"
