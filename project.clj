@@ -32,7 +32,7 @@
   ;                 #"nrepl.*"
   ;                 #"taoensso.*"]
 
-  :dependencies [[org.pinkgorilla/goldly "0.2.27"]
+  :dependencies [[org.pinkgorilla/goldly "0.2.29"]
                  ; bundled dependencies
                  [org.pinkgorilla/gorilla-ui "0.3.18" :exclusions [org.clojure/clojurescript]]
                  [org.pinkgorilla/gorilla-plot "1.2.6" :exclusions [org.clojure/clojurescript]]]
