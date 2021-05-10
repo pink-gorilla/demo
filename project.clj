@@ -1,7 +1,7 @@
-(defproject org.pinkgorilla/goldly-server "0.2.33-SNAPSHOT"
-  :description "goldly server"
+(defproject org.pinkgorilla/goldly-bundel "0.2.33-SNAPSHOT"
+  :description "goldly bundel"
   :license {:name "MIT"}
-  :url "https://github.com/pink-gorilla/goldly-server"
+  :url "https://github.com/pink-gorilla/goldly-bundel"
   :deploy-repositories [["releases" {:url "https://clojars.org/repo"
                                      :username :env/release_username
                                      :password :env/release_password
