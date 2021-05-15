@@ -9,9 +9,6 @@
   :min-lein-version "2.9.3"
   :min-java-version "1.11"
 
-  ;:prep-tasks ["compile"  ; aot compilation, creates .class files
-  ;             ]
-
   :release-tasks [["vcs" "assert-committed"]
                   ["bump-version" "release"]
                   ["vcs" "commit" "Release %s"]
@@ -32,10 +29,10 @@
   ;                 #"nrepl.*"
   ;                 #"taoensso.*"]
 
-  :dependencies [[org.pinkgorilla/goldly "0.2.31"]
+  :dependencies [[org.pinkgorilla/goldly "0.2.35"]
                  ; bundled dependencies
                  [org.pinkgorilla/gorilla-ui "0.3.18" :exclusions [org.clojure/clojurescript]]
-                 [org.pinkgorilla/gorilla-plot "1.2.6" :exclusions [org.clojure/clojurescript]]]
+                 [org.pinkgorilla/gorilla-plot "1.2.7" :exclusions [org.clojure/clojurescript]]]
 
   :profiles {:dev {:plugins      [[lein-cljfmt "0.6.6"]
                                   [lein-shell "0.5.0"]
@@ -45,11 +42,16 @@
                                   ["change" "version" "leiningen.release/bump-version"]}}}
 
   :aliases {"npm-install"
-            ["run" "-m" "goldly-server.bundled" "npm-install"]
+            ["run" "-m" 
+             "goldly-server-bundel.app" 
+             "npm-install"]
 
             "build-release"
-            ["run" "-m" "goldly-server.bundled/goldly-server-build!"]
+            ["run" "-m" 
+             "goldly-server-bundel.app"
+             "release"]
 
             "demo"
-            ["run" "-m" "goldly-server.bundled"]})
+            ["run" "-m" 
+             "goldly-server-bundel.app"]})
 

@@ -1,4 +1,4 @@
-(ns goldly-server.app-bundled
+(ns goldly-server-bundel.app
   (:require
    [taoensso.timbre :as timbre :refer [info]]
    [re-frame.core :as rf]
@@ -15,7 +15,7 @@
   (goldly-server.app/start))
 
 (rf/reg-event-db
- :goldly-server-bundled/init
+ :goldly-server-bundel/init
  (fn [db [_ dispatch-init-done]]
    (let [db (or db {})
          {:keys [nrepl-endpoint]} (:config db)]
@@ -24,5 +24,7 @@
      ; from gorilla-ui
      (rf/dispatch [:css/add-components css/components css/config])
 
-     (rf/dispatch [:ga/event {:category "goldly-server" :action "started" :label 77 :value 13}])
+     ; goldly
+     (rf/dispatch [:goldly/init])
+
      (rf/dispatch [:webly/status :running]))))

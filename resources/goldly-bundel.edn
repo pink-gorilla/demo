@@ -1,0 +1,23 @@
+{:webly {:title "Goldly Bundel"
+         :lein-cljs-profile "" ; +demo"
+         :ns-cljs-app [goldly-server-bundel.app]
+         :bundle-entry  "goldly_server_bundel.app.start ();"
+         :start-user-app [:goldly-server-bundel/init]
+         :user-routes-app "goldly-server.routes/routes-app"
+         :user-routes-api "goldly-server.routes/routes-api"}
+
+ :goldly {:enabled true
+          :systems-ns [;systems.click-counter
+                       ;systems.greeter
+                       ;systems.greeter-details
+                       ;systems.fortune
+                       ;systems.time
+                       ;systems.error
+
+                       ;systems.bundled.vega-charts
+                       ;systems.bundled.vega-plot
+                       ;systems.bundled.holiday-destinations
+                       ;systems.bundled.controls
+                       systems.snippet-registry
+                       ]
+          }}
