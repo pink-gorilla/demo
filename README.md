@@ -10,7 +10,7 @@ The bundel contains:
 # Run Demo
 
 ```
-lein demo watch
+lein demo
 ```
 
 Then open web-browser on port 8000.

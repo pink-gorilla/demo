@@ -19,8 +19,7 @@
                   ["vcs" "push"]]
 
   :source-paths ["src"]
-  :resource-paths ["resources"  ; included data
-                   "target/webly"] ; js bundle
+  :resource-paths ["target/webly"] ; js bundle
   :target-path  "target/jar"
   :main  goldly-server.app ;^:skip-aot 
   ;:aot [goldly-server.app]
@@ -29,10 +28,13 @@
   ;                 #"nrepl.*"
   ;                 #"taoensso.*"]
 
-  :dependencies [[org.pinkgorilla/goldly "0.2.35"]
+  :dependencies [;[org.pinkgorilla/webly "0.2.38"] ; not having this crashes
+                 [org.pinkgorilla/goldly "0.2.48"]
                  ; bundled dependencies
-                 [org.pinkgorilla/gorilla-ui "0.3.18" :exclusions [org.clojure/clojurescript]]
-                 [org.pinkgorilla/gorilla-plot "1.2.7" :exclusions [org.clojure/clojurescript]]]
+                 [org.pinkgorilla/gorilla-ui "0.3.22" :exclusions [org.clojure/clojurescript]]
+                 [org.pinkgorilla/gorilla-plot "1.2.8" :exclusions [org.clojure/clojurescript]]
+                 [org.pinkgorilla/ui-binaryclock "0.0.4"]
+                 [org.pinkgorilla/ui-quil "0.1.5"]]
 
   :profiles {:dev {:plugins      [[lein-cljfmt "0.6.6"]
                                   [lein-shell "0.5.0"]
@@ -42,16 +44,11 @@
                                   ["change" "version" "leiningen.release/bump-version"]}}}
 
   :aliases {"npm-install"
-            ["run" "-m" 
-             "goldly-server-bundel.app" 
-             "npm-install"]
+            ["run" "-m" "goldly-server.app" "npm-install" "goldly-bundel.edn"]
 
             "build-release"
-            ["run" "-m" 
-             "goldly-server-bundel.app"
-             "release"]
+            ["run" "-m" "goldly-server.app" "release" "goldly-bundel.edn"]
 
             "demo"
-            ["run" "-m" 
-             "goldly-server-bundel.app"]})
+            ["run" "-m" "goldly-server.app" "watch" "goldly-bundel.edn"]})
 
