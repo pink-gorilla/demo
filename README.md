@@ -1,13 +1,8 @@
-# goldly bundel
+# demo - goldly custom bundel
 
-Goldly bundel clojars dependency ships the compiled js bundle 
-The bundel contains:
-- goldly
-- gorilla-ui
-- gorilla-plot
+This is a demo tha hows how to build a custom goldly bundle with leiningen.
 
-
-# Run Demo
+## Run Demo
 
 ```
 lein demo
@@ -15,16 +10,9 @@ lein demo
 
 Then open web-browser on port 8000.
 
-## in your project (as a library)
+## compile bundel
 
-The easiest way to run releases locally is leveraging the `clojure` cli
 ```
-clojure -Sdeps '{:deps {org.pinkgorilla/goldly-bundel {:mvn/version "0.2.35"}}}' -m goldly-server-bundel.app
+lein npm-install
+lein build-release
 ```
-
-# dev notes
-
-- this project exists to ship the compiled js bundle
-- it cannot be included in goldly itself, because goldly is a library
-  that is consumed in notebook (which builds its own bundel)
-  
