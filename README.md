@@ -1,6 +1,7 @@
 # demo - goldly custom bundel
 
-This is a demo tha hows how to build a custom goldly bundle with leiningen.
+This is a demo that shows how to build a custom goldly bundle with leiningen.
+No source code! Just configuration :-)
 
 ## Run Demo
 
