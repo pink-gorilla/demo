@@ -20,12 +20,30 @@ This is all you need!
 
 ## Run Demo (custom bundel - watch)
 
-Normally there is no need for this!
+You only need to build a custom bundel if
+- if you want to use ui-components that are not included in goldly-bundel.
+- if you want you want to compile your own clojurescript code into the bundel.
+  (this could be relevant if you need say core.async which is not available in 
+  sci interpreted clojurescript)
+
+But lets do it for fun anyhow.
+
+The following comands will buid a bundel, and recompile it in case a source file
+changes. Shadow-cljs calls this "watch".
 
 - with tools deps: `clojure -X:goldly`
 - with leiningen: `lein goldly`
 
+You can use "watch" which brings 10x developer tools.
+Or you can use "watch2" which does not. 10x developer tools mae the bundel bigger,
+but coould be helpful for debugging.
+
 ## Run Demo (custom bundel - build & run)
+
+This involves two steps:
+- *compiling* a javascript bundel (output is in target/webly/public)
+- *running* a web server and serving the page/bundel. 
+  After you compiled te bundel you can run it multiple times.  
 
 with leiningen:
 ```
