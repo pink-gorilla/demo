@@ -11,6 +11,7 @@
   :dependencies [[org.clojure/clojure  "1.10.3"]]
 
   :managed-dependencies [; conflict resolution
+                         ; this is not needed in tools.deps
                          [borkdude/sci "0.2.6"]
                          [com.fasterxml.jackson.core/jackson-core "2.12.4"]
                          [cljs-ajax "0.8.3"]]
@@ -30,7 +31,7 @@
 
   :aliases
   {; goldlyb is all you need
-   ; uses pre-built budel
+   ; uses pre-built bundel
    "goldlyb"
    ["with-profile" "+bundel"
     "run" "-m" "goldly-server.app" "goldly-demo.edn" "jetty"]
