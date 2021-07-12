@@ -34,8 +34,8 @@ changes. Shadow-cljs calls this "watch".
 - with tools deps: `clojure -X:goldly`
 - with leiningen: `lein goldly`
 
-You can use "watch" which brings 10x developer tools.
-Or you can use "watch2" which does not. 10x developer tools mae the bundel bigger,
+You can use *"watch"* which brings 10x developer tools.
+Or you can use *"watch2"* which does not. 10x developer tools make the bundel bigger,
 but coould be helpful for debugging.
 
 ## Run Demo (custom bundel - build & run)
@@ -43,7 +43,7 @@ but coould be helpful for debugging.
 This involves two steps:
 - *compiling* a javascript bundel (output is in target/webly/public)
 - *running* a web server and serving the page/bundel. 
-  After you compiled te bundel you can run it multiple times.  
+  After you compiled the bundel you can run it multiple times.  
 
 with leiningen:
 ```
