@@ -20,7 +20,7 @@ This is all you need!
 
 ## Run Demo (custom bundel - watch)
 
-You only need to build a custom bundel if
+You only need to build a custom bundel:
 - if you want to use ui-components that are not included in goldly-bundel.
 - if you want you want to compile your own clojurescript code into the bundel.
   (this could be relevant if you need say core.async which is not available in 
