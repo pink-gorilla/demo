@@ -1,0 +1,41 @@
+{:paths ["src"
+         "resources"
+         "target/webly"]
+ :deps {org.clojure/clojure    {:mvn/version "1.10.3"}}
+
+ :aliases
+ {:outdated
+  {:extra-deps {com.github.liquidz/antq {:mvn/version "RELEASE"}}
+   :main-opts ["-m"
+               "antq.core"]}
+  :cljfmt-fix
+  {:extra-deps {cljfmt/cljfmt {:mvn/version "0.8.0"}}
+   :main-opts ["-m" "cljfmt.main" "fix" "--indents" "cljfmt.edn"]}
+
+  ;; goldly
+
+  :goldlyb ;; goldly bundel - faster, but no extension config
+  {:extra-deps {org.pinkgorilla/goldly-bundel {:mvn/version "0.3.22"}}
+   :exec-fn goldly-server.app/goldly-server-run!
+   :exec-args {:profile "jetty"
+               :config "goldly-demo.edn"}}
+
+  :goldly ;; goldly - ui bundle custom build (takes more time)
+  {:lazy true
+   :extra-deps {org.pinkgorilla/goldly {:mvn/version "0.3.22"}
+                org.pinkgorilla/ui-input {:mvn/version "0.0.12"}
+                org.pinkgorilla/ui-aggrid {:mvn/version "0.0.11"}
+                org.pinkgorilla/ui-leaflet {:mvn/version "0.0.10"}
+                org.pinkgorilla/ui-vega  {:mvn/version "0.0.15"}
+                ;org.pinkgorilla/ui-cytoscape {:mvn/version "0.0.3"}
+                org.pinkgorilla/ui-gorilla  {:mvn/version "0.3.50"}
+                org.pinkgorilla/ui-binaryclock {:mvn/version "0.0.12"}}
+   :exec-fn goldly-server.app/goldly-server-run!
+   :exec-args {:profile "watch2"
+               :config "goldly-demo.edn"}}
+
+
+
+
+;           
+  }}

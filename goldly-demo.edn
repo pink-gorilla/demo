@@ -1,0 +1,18 @@
+{:webly {:ns-clj [goldly-server.app]}
+ :goldly
+ {:lazy true
+  :lazy-exclude #{"ui-binaryclock"}
+  :routes {"" :user/main
+                                  ; will go togoldly dev tools
+           "artefacts" :user/artefacts
+           "about" :user/about
+                                  ; user
+           "bmi" :user/bmi
+           "fortune" :user/fortune
+           "iss" :user/iss
+           "vega" :user/vega
+           "aggrid" :user/aggrid}
+  :systems
+  [fortune
+   systems.snippet-registry
+   systems.snippet-scratchpad]}}

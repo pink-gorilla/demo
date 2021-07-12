@@ -1,19 +1,32 @@
-# demo - goldly custom bundel
+# demo - goldly
 
-This is a demo that shows how to build a custom goldly bundle with leiningen.
-No source code! Just configuration :-)
+This is a demo that shows how to build a custom goldly app
+with tools.deps or leiningen.
 
-## Run Demo
+You would want to use *either* tools.deps *or leiningen.
+We have included both so you can choose.
+We recommend tools.deps (because it has less dependency resolution problems).
 
-```
-lein demo
-```
+First, clone this repo.
+After starting, open web-browser on port 8000.
 
-Then open web-browser on port 8000.
 
-## compile bundel
+## Run Demo (prebuilt bundel)
 
+This is all you need!
+
+- with tools deps: `clojure -X:goldlyb`
+- with leiningen: `lein goldlyb`
+
+
+## Run Demo (custom bundel)
+
+Normally there is no need for this!
+
+
+with leiningen:
 ```
 lein npm-install
 lein build-release
+lein jetty
 ```
