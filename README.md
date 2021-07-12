@@ -15,7 +15,7 @@ After starting, open web-browser on port 8000.
 
 This is all you need!
 
-- with tools deps: `clojure -X:goldlyb`
+- with tools.deps: `clojure -X:goldlyb`
 - with leiningen: `lein goldlyb`
 
 ## Run Demo (custom bundel - watch)
@@ -28,15 +28,15 @@ You only need to build a custom bundel if
 
 But lets do it for fun anyhow.
 
-The following comands will buid a bundel, and recompile it in case a source file
+The following commands will build a bundel, and recompile it in case a source file
 changes. Shadow-cljs calls this "watch".
 
-- with tools deps: `clojure -X:goldly`
+- with tools.deps: `clojure -X:goldly`
 - with leiningen: `lein goldly`
 
 You can use *"watch"* which brings 10x developer tools.
 Or you can use *"watch2"* which does not. 10x developer tools make the bundel bigger,
-but coould be helpful for debugging.
+but could be helpful for debugging.
 
 ## Run Demo (custom bundel - build & run)
 
