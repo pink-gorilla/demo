@@ -18,9 +18,10 @@
 
   :profiles
   {:bundel {:dependencies
-            [[org.pinkgorilla/goldly-bundel "0.3.22"]]}
+            [; no ui extension dependencies needed in goldly-bundel
+             [org.pinkgorilla/goldly-bundel "0.3.23"]]}
    :custom {:dependencies
-            [[org.pinkgorilla/goldly "0.3.22"]
+            [[org.pinkgorilla/goldly "0.3.23"]
              [org.pinkgorilla/ui-input "0.0.12"]
              [org.pinkgorilla/ui-aggrid "0.0.11"]
              [org.pinkgorilla/ui-leaflet "0.0.10"]
