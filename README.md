@@ -10,7 +10,6 @@ We recommend tools.deps (because it has less dependency resolution problems).
 First, clone this repo.
 After starting, open web-browser on port 8000.
 
-
 ## Run Demo (prebuilt bundel)
 
 This is all you need!
@@ -45,11 +44,11 @@ This involves two steps:
 - *running* a web server and serving the page/bundel. 
   After you compiled the bundel you can run it multiple times.  
 
+with tools.deps: `./scripts/compile_adv_run.sh`
+
 with leiningen:
 ```
 lein npm-install
 lein build-release
 lein jetty
 ```
-
-with tools.deps: `./scripts/compile_adv_run.sh`

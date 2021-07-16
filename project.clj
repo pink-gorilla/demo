@@ -19,13 +19,13 @@
   :profiles
   {:bundel {:dependencies
             [; no ui extension dependencies needed in goldly-bundel
-             [org.pinkgorilla/goldly-bundel "0.3.23"]]}
+             [org.pinkgorilla/goldly-bundel "0.3.28"]]}
    :custom {:dependencies
-            [[org.pinkgorilla/goldly "0.3.23"]
+            [[org.pinkgorilla/goldly "0.3.28"]
              [org.pinkgorilla/ui-input "0.0.12"]
              [org.pinkgorilla/ui-aggrid "0.0.11"]
              [org.pinkgorilla/ui-leaflet "0.0.10"]
-             [org.pinkgorilla/ui-vega "0.0.15" :exclusions [org.clojure/clojurescript]]
+             [org.pinkgorilla/ui-vega "0.0.16" :exclusions [org.clojure/clojurescript]]
              ;
              [org.pinkgorilla/ui-gorilla "0.3.50" :exclusions [org.clojure/clojurescript]]
              [org.pinkgorilla/ui-binaryclock "0.0.12"]]}}
