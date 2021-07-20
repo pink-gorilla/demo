@@ -1,9 +1,10 @@
 (def cookie-state (r/atom nil))
 (defn fortune []
   [:div
-    [:h1 "Fortune Cookies (Snippet)"]
+    [:h1.text-blue-500.text-xl "Fortune Cookies"]
     [:p "a demonstration to call server-side clj-functions (clj based)."]
            [:p "This would work with read database queries also :-)"]
+   
            [:button {:class "border m-2 p-3 border-pink-500"
                      :on-click (fn [& _]
                                  (println "getting cookie")

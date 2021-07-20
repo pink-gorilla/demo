@@ -19,10 +19,10 @@
   :profiles
   {:bundel {:dependencies
             [; no ui extension dependencies needed in goldly-bundel
-             [org.pinkgorilla/goldly-bundel "0.3.28"]]}
+             [org.pinkgorilla/goldly-bundel "0.3.35"]]}
    :custom {:dependencies
-            [[org.pinkgorilla/goldly "0.3.28"]
-             [org.pinkgorilla/ui-input "0.0.12"]
+            [[org.pinkgorilla/goldly "0.3.35"]
+             [org.pinkgorilla/ui-input "0.0.13"]
              [org.pinkgorilla/ui-aggrid "0.0.11"]
              [org.pinkgorilla/ui-leaflet "0.0.10"]
              [org.pinkgorilla/ui-vega "0.0.16" :exclusions [org.clojure/clojurescript]]
