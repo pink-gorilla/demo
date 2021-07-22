@@ -2,3 +2,5 @@
 ;; then this files will appear here.
 
 (println "hello from clojure")
+
+(+ 7 7)
