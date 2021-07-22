@@ -10,11 +10,9 @@
    [link-href "/goldly/about" "goldly developer tools"]
 
    [:div.bg.green-300
-      [link-href "/artefacts" "artefacts"]
-      [link-href "/about" "goldly about"]
-    
-    ]
-  
+    [link-href "/artefacts" "artefacts"]
+    [link-href "/about" "goldly about"]]
+
    [link-href "/vega" "vega"]
    [link-href "/bmi" "bmi"]
    [link-href "/fortune" "fortune cookies"]

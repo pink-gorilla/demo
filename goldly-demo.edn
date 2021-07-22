@@ -1,19 +1,17 @@
-{:webly {:ns-clj [goldly-server.app]}
- :goldly
- {:routes {"" :user/main
-           ; will go to goldly dev tools
-           "artefacts" :user/artefacts
-           "about" :user/about
-           ; user
-           "bmi" :user/bmi
-           "fortune" :user/fortune
-           "iss" :user/iss
-           "vega" :user/vega
-           "aggrid" :user/aggrid}
-  :systems
-  [fortune
-   systems.snippet-registry
-   systems.snippet-scratchpad]
-  :notebook-dir "goldly/notebooks"
-  :lazy true
+{:goldly
+ {:routes {:app {"" :user/main
+                 ; will go to goldly dev tools
+                 "artefacts" :user/artefacts
+                 "about" :user/about
+                 ; user
+                 "bmi" :user/bmi
+                 "fortune" :user/fortune
+                 "iss" :user/iss
+                 "vega" :user/vega
+                 "aggrid" :user/aggrid}}
+  :systems [fortune
+            systems.snippet-registry
+            systems.snippet-scratchpad]
+  :notebook-dir "src/goldly/notebooks"
+  :autoload-dir "src/goldly/cljs"
   :lazy-exclude #{"ui-binaryclock"}}}

@@ -20,13 +20,14 @@
    [svg "https://clojars.org/org.pinkgorilla/%s"
     "https://img.shields.io/clojars/v/org.pinkgorilla/%s.svg" p]])
 
-(def main ["webly" "goldly"  "pinkie"
-           "picasso"])
+(def apps ["webly" "goldly"])
 
-(def notebook ["notebook"
-               "nrepl-middleware" "notebook-encoding" "gorilla-explore"
-               "kernel-cljs-shadow"])
-(def ui ["ui-repl"
+(def kernel ["picasso"
+             "notebook"
+             "nrepl-middleware" "notebook-encoding" "gorilla-explore"
+             "kernel-cljs-shadow"])
+(def ui ["pinkie"
+         "ui-repl"
          "ui-input"
          "ui-site"
          "ui-vega"
@@ -56,12 +57,11 @@
   [:div.bg-green-100.h-screen
    [link-href "/" "goto main page"]
    [:h1.text-3xl.text-green-500.mb-5.mt-5 "PinkGorilla Clojars Artefacts"]
-   [:audio {:src "/r/demo/daddys-outta-town.mp3" 
+   [:audio {:src "/r/demo/daddys-outta-town.mp3"
             :controls false
             :auto-play true
             :loop true
-            :preload "auto"
-            }]
-   [artefacts "misc" main]
+            :preload "auto"}]
+   [artefacts "apps" apps]
    [artefacts "ui extensions" ui]
-   [artefacts "notebook" notebook]])
+   [artefacts "kernel" kernel]])

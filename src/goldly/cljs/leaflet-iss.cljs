@@ -6,7 +6,6 @@
    {:first true
     :data "not yet downloaded"}))
 
-
 (defn pos [] ;{ :iss_position {:longitude "-111.4007", :latitude "2.9204"}}
   (when-let [lng (get-in @issstate [:data :iss_position :longitude])]
     (when-let [lat (get-in @issstate [:data :iss_position :latitude])]
@@ -30,10 +29,10 @@
       [:p "location "  (pr-str p)]
       [leaflet {:box :fs ; :lg
                 :center p
-                   :zoom 4
-                   :features [{:type :marker
-                               :position p
-                               :popup "the international space station is here!"}]}]])])
+                :zoom 4
+                :features [{:type :marker
+                            :position p
+                            :popup "the international space station is here!"}]}]])])
 
 (defn link-href [href text]
   [:a.bg-blue-300.cursor-pointer.hover:bg-red-700.m-1
