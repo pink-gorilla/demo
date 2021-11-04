@@ -1,4 +1,4 @@
-(defproject demo/goldly-custom-bundel "0.0.1-SNAPSHOT"
+(defproject demo/goldly-demo "0.0.1-SNAPSHOT"
   :description "goldly demo"
   :license {:name "MIT"}
   :min-lein-version "2.9.3"
@@ -17,11 +17,11 @@
                          [cljs-ajax "0.8.3"]]
 
   :profiles
-  {:bundel {:dependencies
-            [; no ui extension dependencies needed in goldly-bundel
-             [org.pinkgorilla/goldly-bundel "0.3.38"]]}
+  {:docs {:dependencies
+            [; no ui extension dependencies needed in goldly-docs
+             [org.pinkgorilla/goldly-docs "0.3.68"]]}
    :custom {:dependencies
-            [[org.pinkgorilla/goldly "0.3.38"]
+            [[org.pinkgorilla/goldly "0.3.68"]
              [org.pinkgorilla/ui-input "0.0.13"]
              [org.pinkgorilla/ui-aggrid "0.0.11"]
              [org.pinkgorilla/ui-leaflet "0.0.10"]
@@ -30,27 +30,27 @@
              [org.pinkgorilla/ui-binaryclock "0.0.12"]]}}
 
   :aliases
-  {; goldlyb is all you need
+  {; goldly-docs is all you need
    ; uses pre-built bundel
-   "goldlyb"
-   ["with-profile" "+bundel"
-    "run" "-m" "goldly-server.app" "goldly-demo.edn" "jetty"]
+   "goldly-docs"
+   ["with-profile" "+docs"
+    "run" "-m" "goldly.app" "goldly-demo.edn" "jetty"]
 
    ; build your custom bundel
 
    "goldly"
    ["with-profile" "+custom"
-    "run" "-m" "goldly-server.app" "goldly-demo.edn" "watch2"]
+    "run" "-m" "goldly.app" "goldly-demo.edn" "watch2"]
 
    "npm-install"
    ["with-profile" "+custom"
-    "run" "-m" "goldly-server.app" "goldly-demo.edn" "npm-install"]
+    "run" "-m" "goldly.app" "goldly-demo.edn" "npm-install"]
 
    "build-release"
    ["with-profile" "+custom"
-    "run" "-m" "goldly-server.app" "goldly-demo.edn" "release"]
+    "run" "-m" "goldly.app" "goldly-demo.edn" "release"]
 
    "jetty"
    ["with-profile" "+custom"
-    "run" "-m" "goldly-server.app" "goldly-demo.edn" "jetty"]})
+    "run" "-m" "goldly.app" "goldly-demo.edn" "jetty"]})
 

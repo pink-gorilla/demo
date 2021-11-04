@@ -47,14 +47,10 @@
 ; (swap! bmi-data assoc :height 150)
 ;(swap! bmi-data assoc :height 180)
 
-(defn link-href [href text]
-  [:a.bg-blue-300.cursor-pointer.hover:bg-red-700.m-1
-   {:href href} text])
-
-(defmethod reagent-page :user/bmi [{:keys [route-params query-params handler] :as route}]
+(defn bmi-page :user/bmi [{:keys [route-params query-params handler] :as route}]
   [:div
    [link-href "/" "main"]
    [:div.text-green-300 "bodymass index"]
    [bmi-ui]])
 
-
+(add-page bmi-page :user/bmi)

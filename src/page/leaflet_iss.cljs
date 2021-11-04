@@ -34,11 +34,9 @@
                             :position p
                             :popup "the international space station is here!"}]}]])])
 
-(defn link-href [href text]
-  [:a.bg-blue-300.cursor-pointer.hover:bg-red-700.m-1
-   {:href href} text])
-
-(defmethod reagent-page :user/iss [{:keys [route-params query-params handler] :as route}]
+(defn iss-page [{:keys [route-params query-params handler] :as route}]
   [:div
    [link-href "/" "main"]
    [iss]])
+
+(add-page iss-page :user/iss)

@@ -16,12 +16,10 @@
    [:p.bg-yellow-500.italic.text-xl.text-blue-700
     (or (:cookie @cookie-state) "no cookie received!")]])
 
-(defn link-href [href text]
-  [:a.bg-blue-300.cursor-pointer.hover:bg-red-700.m-1
-   {:href href} text])
-
-(defmethod reagent-page :user/fortune [{:keys [route-params query-params handler] :as route}]
+(defn fortune-page [{:keys [route-params query-params handler] :as route}]
   [:div
    [link-href "/" "main"]
    [:div.text-green-300 "fortune cookies"]
    [fortune]])
+
+(add-page fortune-page :user/fortune)

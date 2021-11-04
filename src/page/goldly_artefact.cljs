@@ -3,6 +3,7 @@
          {:class class}
          [:h1.text-2xl name]]
         children))
+
 (defn svg [url-link url-img p]
   [:a {:href (format url-link p)}
    [:img.inline-block
@@ -20,26 +21,28 @@
    [svg "https://clojars.org/org.pinkgorilla/%s"
     "https://img.shields.io/clojars/v/org.pinkgorilla/%s.svg" p]])
 
-(def apps ["webly" "goldly"])
+(def build-tool ["webly" "goldly"])
 
-(def kernel ["picasso"
-             "notebook"
-             "nrepl-middleware" "notebook-encoding" "gorilla-explore"
-             "kernel-cljs-shadow"])
-(def ui ["pinkie"
-         "ui-repl"
-         "ui-input"
-         "ui-site"
-         "ui-vega"
-         "ui-highcharts"
-         "ui-math"
-         "ui-gorilla"
-         "ui-quil"
-         "ui-leaflet"
-         "ui-cytoscape"
-         "ui-code"
-         "ui-markdown"
-         "ui-binaryclock"])
+(def goldly-extensions ["reval"
+                        "ui-repl"
+                        "ui-input"
+                        "ui-site"
+                        "ui-vega"
+                        "ui-highcharts"
+                        "ui-math"
+                        "ui-gorilla"
+                        "ui-quil"
+                        "ui-leaflet"
+                        "ui-cytoscape"
+                        "ui-code"
+                        "ui-markdown"
+                        "ui-binaryclock"])
+
+(def notebook-legacy ["picasso"
+                      "pinkie"
+                      "notebook"
+                      "nrepl-middleware" "notebook-encoding" "gorilla-explore"
+                      "kernel-cljs-shadow"])
 
 ; ^:R
 (defn artefacts [name list]
@@ -49,11 +52,7 @@
    (into [:div]
          (map project list))])
 
-(defn link-href [href text]
-  [:a.bg-blue-300.cursor-pointer.hover:bg-red-700.m-1
-   {:href href} text])
-
-(defmethod reagent-page :user/artefacts [{:keys [route-params query-params handler] :as route}]
+(defn artefact-page [{:keys [route-params query-params handler] :as route}]
   [:div.bg-green-100.h-screen
    [link-href "/" "goto main page"]
    [:h1.text-3xl.text-green-500.mb-5.mt-5 "PinkGorilla Clojars Artefacts"]
@@ -62,6 +61,8 @@
             :auto-play true
             :loop true
             :preload "auto"}]
-   [artefacts "apps" apps]
-   [artefacts "ui extensions" ui]
-   [artefacts "kernel" kernel]])
+   [artefacts "build tools" build-tool]
+   [artefacts "goldly extensions" goldly-extensions]
+   [artefacts "notebook (legacy)" notebook-legacy]])
+
+(add-page artefact-page :user/artefact)

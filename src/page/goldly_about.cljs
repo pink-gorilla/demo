@@ -19,12 +19,10 @@
    (into [:div]
          (map show-video list))])
 
-(defn link-href [href text]
-  [:a.bg-blue-300.cursor-pointer.hover:bg-red-700.m-1
-   {:href href} text])
-
-(defmethod reagent-page :user/about [{:keys [route-params query-params handler] :as route}]
+(defn about-page [{:keys [route-params query-params handler] :as route}]
   [:div.bg-green-100.h-screen
    [link-href "/" "goto main page"]
    [:h1.text-3xl.text-blue-900.mb-5.mt-5 "Goldly"]
    [video-list "unsorted videos" videos]])
+
+(add-page about-page :user/about)

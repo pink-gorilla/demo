@@ -14,8 +14,8 @@ After starting, open web-browser on port 8000.
 
 This is all you need!
 
-- with tools.deps: `clojure -X:goldlyb`
-- with leiningen: `lein goldlyb`
+- with tools.deps: `clojure -X:goldly-docs`
+- with leiningen: `lein goldly-docs`
 
 ## Run Demo (custom bundel - watch)
 

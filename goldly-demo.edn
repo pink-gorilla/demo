@@ -1,17 +1,26 @@
-{:goldly
- {:routes {:app {"" :user/main
+{:goldly {:autoload-clj-ns [fortune-cookie]
+          :autoload-cljs-dir [;"src/goldly/lib"
+                             ;"src/goldly/devtools"
+                              "src/page"]
+          :routes {:app {"" :user/main
                  ; will go to goldly dev tools
-                 "artefacts" :user/artefacts
-                 "about" :user/about
+                         "artefacts" :user/artefact
+                         "about" :user/about
                  ; user
-                 "bmi" :user/bmi
-                 "fortune" :user/fortune
-                 "iss" :user/iss
-                 "vega" :user/vega
-                 "aggrid" :user/aggrid}}
-  :systems [fortune
-            systems.snippet-registry
-            systems.snippet-scratchpad]
-  :notebook-dir "src/goldly/notebooks"
-  :autoload-dir "src/goldly/cljs"
-  :lazy-exclude #{"ui-binaryclock"}}}
+                         "bmi" :user/bmi
+                         "fortune" :user/fortune
+                         "iss" :user/iss
+                         "vega" :user/vega
+                         "aggrid" :user/aggrid
+
+                  ; devtools
+                         "devtools/pages" :pages
+                         "devtools/help" :devtools
+                         "devtools/scratchpad" :scratchpad
+                         "devtools/viewer" :viewer
+                         "devtools/environment" :environment}}}
+
+ :devtools {:rdocument  {:storage-root "rdocument/"
+                         :url-root "/api/rdocument/file/"}
+            :collections {:my-notebooks [:clj "notebook/"]
+                          :demo [:clj "demo/notebook/"]}}}
