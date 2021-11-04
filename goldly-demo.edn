@@ -1,19 +1,18 @@
 {:goldly {:autoload-clj-ns [fortune-cookie]
-          :autoload-cljs-dir [;"src/goldly/lib"
-                             ;"src/goldly/devtools"
-                              "src/page"]
+          :autoload-cljs-dir ["src/page"]
           :routes {:app {"" :user/main
-                 ; will go to goldly dev tools
-                         "artefacts" :user/artefact
-                         "about" :user/about
-                 ; user
+                         ; user
                          "bmi" :user/bmi
                          "fortune" :user/fortune
                          "iss" :user/iss
                          "vega" :user/vega
                          "aggrid" :user/aggrid
 
-                  ; devtools
+                         ; will go to goldly dev tools
+                         "artefacts" :user/artefact
+                         "about" :user/about
+
+                        ; devtools
                          "devtools/pages" :pages
                          "devtools/help" :devtools
                          "devtools/scratchpad" :scratchpad

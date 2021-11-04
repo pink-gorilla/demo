@@ -1,31 +1,31 @@
 # demo - goldly
 
-This is a demo that shows how to build a custom goldly app
-with tools.deps or leiningen.
+This is a demo that shows how to use goldly with tools.deps or leiningen.
 
 You would want to use *either* tools.deps *or* leiningen.
 We have included both so you can choose.
 We recommend tools.deps (because it has less dependency resolution problems).
 
+To be very clear: tools.deps is the way to go. 
+
+## Run Demo (goldly docs)
+
 First, clone this repo.
-After starting, open web-browser on port 8000.
-
-## Run Demo (prebuilt bundel)
-
-This is all you need!
 
 - with tools.deps: `clojure -X:goldly-docs`
 - with leiningen: `lein goldly-docs`
 
-## Run Demo (custom bundel - watch)
+After starting, open web-browser on port 8000.
 
-You only need to build a custom bundel:
-- if you want to use ui-components that are not included in goldly-bundel.
-- if you want you want to compile your own clojurescript code into the bundel.
+## Run Demo (custom cljs build)
+
+You only need to build a custom cljs build:
+- if you want to use ui-components that are not included in goldly-docs.
+- if you want you want to compile your own clojurescript code.
   (this could be relevant if you need say core.async which is not available in 
   sci interpreted clojurescript)
 
-But lets do it for fun anyhow.
+For this demo, it is not neccesary to build cljs. But lets do it for fun anyhow.
 
 The following commands will build a bundel, and recompile it in case a source file
 changes. Shadow-cljs calls this "watch".

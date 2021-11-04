@@ -18,8 +18,8 @@
 
   :profiles
   {:docs {:dependencies
-            [; no ui extension dependencies needed in goldly-docs
-             [org.pinkgorilla/goldly-docs "0.3.68"]]}
+          [; no ui extension dependencies needed in goldly-docs
+           [org.pinkgorilla/goldly-docs "0.3.68"]]}
    :custom {:dependencies
             [[org.pinkgorilla/goldly "0.3.68"]
              [org.pinkgorilla/ui-input "0.0.13"]
