@@ -1,23 +1,13 @@
 # demo - goldly
 
-This is a demo that shows how to use goldly with tools.deps or leiningen.
+## demo running goldly-docs
 
-You would want to use *either* tools.deps *or* leiningen.
-We have included both so you can choose.
-We recommend tools.deps (because it has less dependency resolution problems).
+Goldly-docs brings everything precompiled. Saves lots of time.
 
-To be very clear: tools.deps is the way to go. 
-
-## Run Demo (goldly docs)
-
-First, clone this repo.
-
-- with tools.deps: `clojure -X:goldly-docs`
-- with leiningen: `lein goldly-docs`
-
+First, clone this repo. Then run: `clojure -X:goldly-docs`
 After starting, open web-browser on port 8000.
 
-## Run Demo (custom cljs build)
+## demo with custom dynamic cljs build (watch mode)
 
 You only need to build a custom cljs build:
 - if you want to use ui-components that are not included in goldly-docs.
@@ -30,23 +20,32 @@ For this demo, it is not neccesary to build cljs. But lets do it for fun anyhow.
 The following commands will build a bundel, and recompile it in case a source file
 changes. Shadow-cljs calls this "watch".
 
-- with tools.deps: `clojure -X:goldly`
-- with leiningen: `lein goldly`
+`clojure -X:goldly`
 
 You can use *"watch"* which brings 10x developer tools.
 Or you can use *"watch2"* which does not. 10x developer tools make the bundel bigger,
 but could be helpful for debugging.
 
-## Run Demo (custom bundel - build & run)
+## demo - compile custom cljs and then run it. (for deployment)
 
 This involves two steps:
 - *compiling* a javascript bundel (output is in target/webly/public)
 - *running* a web server and serving the page/bundel. 
   After you compiled the bundel you can run it multiple times.  
 
-with tools.deps: `./scripts/compile_adv_run.sh`
+ `./scripts/compile_adv_run.sh`
 
-with leiningen:
+
+## With Leiningen
+
+We recommend tools.deps (because it has less dependency resolution problems).
+
+You could try the following commands. We dont use leningen; it just makes problems.
+In other situations lieningen is a great tool, but we suffer from dependency resolution issues.
+
+ `lein goldly-docs`
+ `lein goldly`
+
 ```
 lein npm-install
 lein build-release

@@ -7,12 +7,14 @@
    [link-href "/devtools/help" "goldly developer tools"]
 
    [:div.bg.green-300
-    [link-href "/artefacts" "artefacts"]
+
     [link-href "/about" "goldly about"]]
+
+   [link-href "/time" "time - server push demo"]
+   [link-href "/fortune" "fortune cookies - request/response demo"]
 
    [link-href "/vega" "vega"]
    [link-href "/bmi" "bmi"]
-   [link-href "/fortune" "fortune cookies"]
    [link-href "/iss" "iss leaflet"]
    [link-href "/aggrid" "aggrid"]])
 
