@@ -1,28 +1,40 @@
-{:goldly {:autoload-clj-ns [fortune-cookie
-                            time
-                            ]
-          :autoload-cljs-dir ["src/page"]
-          :routes {:app {"" :user/main
-                         ; user
-                         "bmi" :user/bmi
+{:goldly {:autoload-clj-ns [goldly.devtools
+                            fortune-cookie
+                            time]
+          :autoload-cljs-dir ["goldly/lib"
+                              "goldly/devtools"
+                              "page"
+                              ;"src/page"
+                              ]
+          :routes {:app {; user
+                         "" :user/main
                          "fortune" :user/fortune
                          "time" :user/time
+                         "bmi" :user/bmi
+                         "bmiserver" :user/bmi-server
                          "iss" :user/iss
                          "vega" :user/vega
                          "aggrid" :user/aggrid
 
-                         ; will go to goldly dev tools
-                       
-                         "about" :user/about
-
                         ; devtools
+                         "devtools/viewer" :viewer
+                         "devtools/scratchpad" :scratchpad
+                         "devtools/theme" :theme
+                         "devtools/environment" :environment
+                         "devtools/config" :config
+                         "devtools/build" :build
                          "devtools/pages" :pages
                          "devtools/help" :devtools
-                         "devtools/scratchpad" :scratchpad
-                         "devtools/viewer" :viewer
-                         "devtools/environment" :environment}}}
+                         "goldly/reload" :goldly/reload-cljs}
+                    :api {"rdocument/ns" :rdocument/ns
+                          "rdocument/files" :rdocument/files
+                          ["rdocument/file/" :ns "/" :name] :rdocument/file ; http://localhost:8000/api/viewer/file/demo.playground.cljplot/vega-spec.edn
+                          }
+                   
+                   
+                   }}
 
- :devtools {:rdocument  {:storage-root "rdocument/"
-                         :url-root "/api/rdocument/file/"}
-            :collections {:my-notebooks [:clj "notebook/"]
-                          :demo [:clj "demo/notebook/"]}}}
+ :reval {:rdocument  {:storage-root "rdocument/"
+                      :url-root "/api/rdocument/file/"}
+         :collections {:my-notebooks [:clj "notebook/"]
+                       :demo [:clj "demo/notebook/"]}}}

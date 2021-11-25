@@ -3,7 +3,7 @@
    [taoensso.timbre :as log :refer [tracef debug debugf info infof warn error errorf]]
    [modular.date :refer [now-str]]
    [clojure.core.async :as async  :refer [<! <!! >! >!! put! chan go go-loop]]
-   [webly.ws.core :refer [send-all! send-response connected-uids]]))
+   [modular.ws.core :refer [send! send-all! send-response connected-uids]]))
 
 (defn start-time-pusher! []
   (go-loop []

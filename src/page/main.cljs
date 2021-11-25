@@ -18,4 +18,6 @@
    [link-href "/iss" "iss leaflet"]
    [link-href "/aggrid" "aggrid"]])
 
-(add-page main-page :user/main)
+; (add-page main-page :user/main)
+
+(add-page-template main-page :user/main)
