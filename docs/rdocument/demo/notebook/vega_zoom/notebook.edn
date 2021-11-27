@@ -1,0 +1,154 @@
+; saved on 2021-11-27 14:18:15
+{:content [{:out "",
+            :code "(ns demo.notebook.vega-zoom)",
+            :id :576f909a-f2da-4f26-8213-fdaa9f899786,
+            :ns "demo.notebook.vega-zoom",
+            :hiccup [:div.p-2.clj-nil [:p "nil"]]}
+           {:out "",
+            :code "^:fh\n[:p/vega\n {:spec {:description\n         \"An interactive scatter plot example supporting pan and zoom.\"\n         :autosize \"none\"\n         :config\n         {:axis\n          {:domain false\n           :tickSize 3\n           :tickColor \"#888\"\n           :labelFont \"Monaco, Courier New\"}}\n         :axes\n         [{:scale \"xscale\", :orient \"top\", :offset {:signal \"xoffset\"}}\n          {:scale \"yscale\", :orient \"right\", :offset {:signal \"yoffset\"}}]\n         :width 500\n         :scales\n         [{:name \"xscale\"\n           :zero false\n           :domain {:signal \"xdom\"}\n           :range {:signal \"xrange\"}}\n          {:name \"yscale\"\n           :zero false\n           :domain {:signal \"ydom\"}\n           :range {:signal \"yrange\"}}]\n         :padding {:top 10, :left 40, :bottom 20, :right 10}\n         :marks\n         [{:type \"symbol\"\n           :from {:data \"points\"}\n           :clip true\n           :encode\n           {:enter {:fillOpacity {:value 0.6}, :fill {:value \"steelblue\"}}\n            :update\n            {:x {:scale \"xscale\", :field \"u\"}\n             :y {:scale \"yscale\", :field \"v\"}\n             :size {:signal \"size\"}}\n            :hover {:fill {:value \"firebrick\"}}\n            :leave {:fill {:value \"steelblue\"}}\n            :select {:size {:signal \"size\", :mult 5}}\n            :release {:size {:signal \"size\"}}}}]\n         :$schema \"https://vega.github.io/schema/vega/v5.json\"\n         :signals\n         [{:name \"margin\", :value 20}\n          {:name \"hover\"\n           :on\n           [{:events \"*:mouseover\", :encode \"hover\"}\n            {:events \"*:mouseout\", :encode \"leave\"}\n            {:events \"*:mousedown\", :encode \"select\"}\n            {:events \"*:mouseup\", :encode \"release\"}]}\n          {:name \"xoffset\", :update \"-(height + padding.bottom)\"}\n          {:name \"yoffset\", :update \"-(width + padding.left)\"}\n          {:name \"xrange\", :update \"[0, width]\"}\n          {:name \"yrange\", :update \"[height, 0]\"}\n          {:name \"down\"\n           :value nil\n           :on\n           [{:events \"touchend\", :update \"null\"}\n            {:events \"mousedown, touchstart\", :update \"xy()\"}]}\n          {:name \"xcur\"\n           :value nil\n           :on\n           [{:events \"mousedown, touchstart, touchend\"\n             :update \"slice(xdom)\"}]}\n          {:name \"ycur\"\n           :value nil\n           :on\n           [{:events \"mousedown, touchstart, touchend\"\n             :update \"slice(ydom)\"}]}\n          {:name \"delta\"\n           :value [0 0]\n           :on\n           [{:events\n             [{:source \"window\"\n               :type \"mousemove\"\n               :consume true\n               :between\n               [{:type \"mousedown\"} {:source \"window\", :type \"mouseup\"}]}\n              {:type \"touchmove\"\n               :consume true\n               :filter \"event.touches.length === 1\"}]\n             :update \"down ? [down[0]-x(), y()-down[1]] : [0,0]\"}]}\n          {:name \"anchor\"\n           :value [0 0]\n           :on\n           [{:events \"wheel\"\n             :update \"[invert('xscale', x()), invert('yscale', y())]\"}\n            {:events {:type \"touchstart\", :filter \"event.touches.length===2\"}\n             :update \"[(xdom[0] + xdom[1]) / 2, (ydom[0] + ydom[1]) / 2]\"}]}\n          {:name \"zoom\"\n           :value 1\n           :on\n           [{:events \"wheel!\"\n             :force true\n             :update \"pow(1.001, event.deltaY * pow(16, event.deltaMode))\"}\n            {:events {:signal \"dist2\"}, :force true, :update \"dist1 / dist2\"}]}\n          {:name \"dist1\"\n           :value 0\n           :on\n           [{:events {:type \"touchstart\", :filter \"event.touches.length===2\"}\n             :update \"pinchDistance(event)\"}\n            {:events {:signal \"dist2\"}, :update \"dist2\"}]}\n          {:name \"dist2\"\n           :value 0\n           :on\n           [{:events\n             {:type \"touchmove\"\n              :consume true\n              :filter \"event.touches.length===2\"}\n             :update \"pinchDistance(event)\"}]}\n          {:name \"xdom\"\n           :update \"slice(xext)\"\n           :on\n           [{:events {:signal \"delta\"}\n             :update\n             \"[xcur[0] + span(xcur) * delta[0] / width, xcur[1] + span(xcur) * delta[0] / width]\"}\n            {:events {:signal \"zoom\"}\n             :update\n             \"[anchor[0] + (xdom[0] - anchor[0]) * zoom, anchor[0] + (xdom[1] - anchor[0]) * zoom]\"}]}\n          {:name \"ydom\"\n           :update \"slice(yext)\"\n           :on\n           [{:events {:signal \"delta\"}\n             :update\n             \"[ycur[0] + span(ycur) * delta[1] / height, ycur[1] + span(ycur) * delta[1] / height]\"}\n            {:events {:signal \"zoom\"}\n             :update\n             \"[anchor[1] + (ydom[0] - anchor[1]) * zoom, anchor[1] + (ydom[1] - anchor[1]) * zoom]\"}]}\n          {:name \"size\", :update \"clamp(20 / span(xdom), 1, 1000)\"}]\n         :height 300\n         :data\n         [{:name \"points\"\n           :url \"/r/data/normal-2d.json\"\n           :transform\n           [{:type \"extent\", :field \"u\", :signal \"xext\"}\n            {:type \"extent\", :field \"v\", :signal \"yext\"}]}]}}]",
+            :id :e5ad413f-6be4-47fb-a478-dbe52f7c2af9,
+            :ns "demo.notebook.vega-zoom",
+            :hiccup ^{:fh true}
+                    [:p/vega
+                     {:spec {:description "An interactive scatter plot example supporting pan and zoom.",
+                             :autosize "none",
+                             :config {:axis {:domain false,
+                                             :tickSize 3,
+                                             :tickColor "#888",
+                                             :labelFont "Monaco, Courier New"}},
+                             :axes [{:scale "xscale",
+                                     :orient "top",
+                                     :offset {:signal "xoffset"}}
+                                    {:scale "yscale",
+                                     :orient "right",
+                                     :offset {:signal "yoffset"}}],
+                             :width 500,
+                             :scales [{:name "xscale",
+                                       :zero false,
+                                       :domain {:signal "xdom"},
+                                       :range {:signal "xrange"}}
+                                      {:name "yscale",
+                                       :zero false,
+                                       :domain {:signal "ydom"},
+                                       :range {:signal "yrange"}}],
+                             :padding {:top 10,
+                                       :left 40,
+                                       :bottom 20,
+                                       :right 10},
+                             :marks [{:type "symbol",
+                                      :from {:data "points"},
+                                      :clip true,
+                                      :encode {:enter {:fillOpacity {:value 0.6},
+                                                       :fill {:value "steelblue"}},
+                                               :update {:x {:scale "xscale",
+                                                            :field "u"},
+                                                        :y {:scale "yscale",
+                                                            :field "v"},
+                                                        :size {:signal "size"}},
+                                               :hover {:fill {:value "firebrick"}},
+                                               :leave {:fill {:value "steelblue"}},
+                                               :select {:size {:signal "size",
+                                                               :mult 5}},
+                                               :release {:size {:signal "size"}}}}],
+                             :$schema "https://vega.github.io/schema/vega/v5.json",
+                             :signals [{:name "margin",
+                                        :value 20}
+                                       {:name "hover",
+                                        :on [{:events "*:mouseover",
+                                              :encode "hover"}
+                                             {:events "*:mouseout",
+                                              :encode "leave"}
+                                             {:events "*:mousedown",
+                                              :encode "select"}
+                                             {:events "*:mouseup",
+                                              :encode "release"}]}
+                                       {:name "xoffset",
+                                        :update "-(height + padding.bottom)"}
+                                       {:name "yoffset",
+                                        :update "-(width + padding.left)"}
+                                       {:name "xrange",
+                                        :update "[0, width]"}
+                                       {:name "yrange",
+                                        :update "[height, 0]"}
+                                       {:name "down",
+                                        :value nil,
+                                        :on [{:events "touchend",
+                                              :update "null"}
+                                             {:events "mousedown, touchstart",
+                                              :update "xy()"}]}
+                                       {:name "xcur",
+                                        :value nil,
+                                        :on [{:events "mousedown, touchstart, touchend",
+                                              :update "slice(xdom)"}]}
+                                       {:name "ycur",
+                                        :value nil,
+                                        :on [{:events "mousedown, touchstart, touchend",
+                                              :update "slice(ydom)"}]}
+                                       {:name "delta",
+                                        :value [0 0],
+                                        :on [{:events [{:source "window",
+                                                        :type "mousemove",
+                                                        :consume true,
+                                                        :between [{:type "mousedown"}
+                                                                  {:source "window",
+                                                                   :type "mouseup"}]}
+                                                       {:type "touchmove",
+                                                        :consume true,
+                                                        :filter "event.touches.length === 1"}],
+                                              :update "down ? [down[0]-x(), y()-down[1]] : [0,0]"}]}
+                                       {:name "anchor",
+                                        :value [0 0],
+                                        :on [{:events "wheel",
+                                              :update "[invert('xscale', x()), invert('yscale', y())]"}
+                                             {:events {:type "touchstart",
+                                                       :filter "event.touches.length===2"},
+                                              :update "[(xdom[0] + xdom[1]) / 2, (ydom[0] + ydom[1]) / 2]"}]}
+                                       {:name "zoom",
+                                        :value 1,
+                                        :on [{:events "wheel!",
+                                              :force true,
+                                              :update "pow(1.001, event.deltaY * pow(16, event.deltaMode))"}
+                                             {:events {:signal "dist2"},
+                                              :force true,
+                                              :update "dist1 / dist2"}]}
+                                       {:name "dist1",
+                                        :value 0,
+                                        :on [{:events {:type "touchstart",
+                                                       :filter "event.touches.length===2"},
+                                              :update "pinchDistance(event)"}
+                                             {:events {:signal "dist2"},
+                                              :update "dist2"}]}
+                                       {:name "dist2",
+                                        :value 0,
+                                        :on [{:events {:type "touchmove",
+                                                       :consume true,
+                                                       :filter "event.touches.length===2"},
+                                              :update "pinchDistance(event)"}]}
+                                       {:name "xdom",
+                                        :update "slice(xext)",
+                                        :on [{:events {:signal "delta"},
+                                              :update "[xcur[0] + span(xcur) * delta[0] / width, xcur[1] + span(xcur) * delta[0] / width]"}
+                                             {:events {:signal "zoom"},
+                                              :update "[anchor[0] + (xdom[0] - anchor[0]) * zoom, anchor[0] + (xdom[1] - anchor[0]) * zoom]"}]}
+                                       {:name "ydom",
+                                        :update "slice(yext)",
+                                        :on [{:events {:signal "delta"},
+                                              :update "[ycur[0] + span(ycur) * delta[1] / height, ycur[1] + span(ycur) * delta[1] / height]"}
+                                             {:events {:signal "zoom"},
+                                              :update "[anchor[1] + (ydom[0] - anchor[1]) * zoom, anchor[1] + (ydom[1] - anchor[1]) * zoom]"}]}
+                                       {:name "size",
+                                        :update "clamp(20 / span(xdom), 1, 1000)"}],
+                             :height 300,
+                             :data [{:name "points",
+                                     :url "/r/data/normal-2d.json",
+                                     :transform [{:type "extent",
+                                                  :field "u",
+                                                  :signal "xext"}
+                                                 {:type "extent",
+                                                  :field "v",
+                                                  :signal "yext"}]}]}}]}],
+ :meta {:id :e2c0fd84-86fa-48d1-8203-a6305bfae4b7,
+        :eval-time "2021-11-27 14:18:15",
+        :ns "demo.notebook.vega-zoom",
+        :java "16.0.1",
+        :clojure "1.10.3"}}

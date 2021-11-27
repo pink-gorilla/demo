@@ -18,8 +18,9 @@
 
 (defn time-page [{:keys [route-params query-params handler] :as route}]
   [:div
-   [link-href "/" "main"]
    [:div.text-green-300 "time ui"]
    [time-ui]])
 
-(add-page time-page :user/time)
+; (add-page time-page :user/time)
+
+(add-page-site time-page :user/time)

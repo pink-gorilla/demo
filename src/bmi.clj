@@ -1,3 +1,6 @@
+(ns bmi
+  (:require [goldly.service.core :as s]))
+
 (defn calc-bmi-server [bmi-data]
   (println "calc-bmi-server: " bmi-data)
   (let [{:keys [height weight bmi] :as data} bmi-data

@@ -1,0 +1,35 @@
+; saved on 2021-11-27 14:18:15
+{:content [{:out "",
+            :code "(ns demo.notebook.vegalite-zoom)",
+            :id :7d4e0a1b-bbcf-416a-9631-e52ee7adc298,
+            :ns "demo.notebook.vegalite-zoom",
+            :hiccup [:div.p-2.clj-nil [:p "nil"]]}
+           {:out "",
+            :code "^:fh\n[:p/vegalite\n {:spec {:data {:url \"/r/data/sp500.csv\"}\n         :vconcat\n         [{;:width 480\n           :mark \"area\"\n           :encoding {:x {:field \"date\"\n                          :type \"temporal\"\n                          :scale {:domain {:selection \"brush\"}}\n                          :axis {:title \"\"}}\n                      :y {:field \"price\", :type \"quantitative\"}}}\n          {;:width 480\n           :height 60\n           :mark \"area\"\n           :selection\n           {:brush {:type \"interval\", :encodings [\"x\"]}}\n           :encoding {:x {:field \"date\", :type \"temporal\"}\n                      :y\n                      {:field \"price\"\n                       :type \"quantitative\"\n                       :axis {:tickCount 3, :grid false}}}}]}}]",
+            :id :06d85e71-9ea2-4179-afdc-df26a702c248,
+            :ns "demo.notebook.vegalite-zoom",
+            :hiccup ^{:fh true}
+                    [:p/vegalite
+                     {:spec {:data {:url "/r/data/sp500.csv"},
+                             :vconcat [{:mark "area",
+                                        :encoding {:x {:field "date",
+                                                       :type "temporal",
+                                                       :scale {:domain {:selection "brush"}},
+                                                       :axis {:title ""}},
+                                                   :y {:field "price",
+                                                       :type "quantitative"}}}
+                                       {:height 60,
+                                        :mark "area",
+                                        :selection {:brush {:type "interval",
+                                                            :encodings ["x"]}},
+                                        :encoding {:x {:field "date",
+                                                       :type "temporal"},
+                                                   :y {:field "price",
+                                                       :type "quantitative",
+                                                       :axis {:tickCount 3,
+                                                              :grid false}}}}]}}]}],
+ :meta {:id :00d8c1b7-aef7-4b0e-a1d5-9527523feb53,
+        :eval-time "2021-11-27 14:18:15",
+        :ns "demo.notebook.vegalite-zoom",
+        :java "16.0.1",
+        :clojure "1.10.3"}}

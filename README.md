@@ -1,13 +1,5 @@
 # demo - goldly
 
-The snippets are primitive, but demonstrate certain features of goldly:
-- hello: demonstrates the simplest hiccup rendering usecase
-- click-counter demonstrates dynamic ui intteractions.
-- greeter: shows how to create links from one system to another; this can be 
-  used for master-detail type of navigation.
-- fortune: demonstrates how to load data from clojure (could be a database)
-- time: demonstrates to push data from clojure
-
 
 ## demo running goldly-docs
 
@@ -15,6 +7,13 @@ Goldly-docs brings everything precompiled. Saves lots of time.
 
 First, clone this repo. Then run: `clojure -X:goldly-docs`
 After starting, open web-browser on port 8080.
+
+The snippets are primitive, but demonstrate certain features of goldly:
+- bmi: complex ui interaction
+- fortune cookies: demonstrates how to load data from clojure (could be a database)
+- time: demonstrates to push data from clojure
+- iss: international space stations current position
+
 
 ## demo with custom dynamic cljs build (watch mode)
 

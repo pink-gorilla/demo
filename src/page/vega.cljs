@@ -47,7 +47,6 @@
 
 (defn vega-page [{:keys [route-params query-params handler] :as route}]
   [:div
-   [link-href "/" "main"]
    [:div.text-green-300 "vega..."]
 
    [vegalite {:box :sm
@@ -57,4 +56,4 @@
    [vegalite {:box :sm
               :spec s2}]])
 
-(add-page vega-page :user/vega)
+(add-page-site vega-page :user/vega)

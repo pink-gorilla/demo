@@ -15,4 +15,6 @@
             :pagination true
             :paginationAutoPageSize true}]])
 
-(add-page aggrid-page :user/aggrid)
+;(add-page aggrid-page :user/aggrid)
+
+(add-page-site aggrid-page :user/aggrid)

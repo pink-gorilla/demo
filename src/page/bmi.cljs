@@ -49,8 +49,8 @@
 
 (defn bmi-page :user/bmi [{:keys [route-params query-params handler] :as route}]
   [:div
-   [link-href "/" "main"]
    [:div.text-green-300 "bodymass index"]
    [bmi-ui]])
 
-(add-page bmi-page :user/bmi)
+;(add-page bmi-page :user/bmi)
+(add-page-site bmi-page :user/bmi)

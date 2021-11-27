@@ -1,0 +1,30 @@
+; saved on 2021-11-27 14:18:15
+{:content [{:out "",
+            :code "(ns demo.notebook.vegalite-arrow)",
+            :id :dfa559e1-4b89-45d4-9c45-a902335703cf,
+            :ns "demo.notebook.vegalite-arrow",
+            :hiccup [:div.p-2.clj-nil [:p "nil"]]}
+           {:out "",
+            :code "^:fh\n[:p/vegalite\n {:width 800\n  :height 600\n  :spec {:data {:url \"/r/data/chicago-crimes-2018.arrow\"\n                ;:url \"https://raw.githubusercontent.com/RandomFractals/ChicagoCrimes/master/data/2018/chicago-crimes-2018.arrow\"\n                :format {:type \"arrow\"}}\n         :mark \"bar\"\n         :encoding {:y {:field \"PrimaryType\"\n                        :type \"ordinal\"\n                        :sort {:encoding \"x\"}\n                        :axis {:title \"Crime Type\"}}\n                    :x {:aggregate \"count\"\n                        :field \"*\"\n                        :type \"quantitative\"\n                        :axis {:title \"# of Records\"}}}}}]",
+            :id :2566a1b3-c659-4c28-ac63-11f188f274d5,
+            :ns "demo.notebook.vegalite-arrow",
+            :hiccup ^{:fh true}
+                    [:p/vegalite
+                     {:width 800,
+                      :height 600,
+                      :spec {:data {:url "/r/data/chicago-crimes-2018.arrow",
+                                    :format {:type "arrow"}},
+                             :mark "bar",
+                             :encoding {:y {:field "PrimaryType",
+                                            :type "ordinal",
+                                            :sort {:encoding "x"},
+                                            :axis {:title "Crime Type"}},
+                                        :x {:aggregate "count",
+                                            :field "*",
+                                            :type "quantitative",
+                                            :axis {:title "# of Records"}}}}}]}],
+ :meta {:id :3787f1ab-dbd6-4a20-8ef4-0e6e31559f66,
+        :eval-time "2021-11-27 14:18:15",
+        :ns "demo.notebook.vegalite-arrow",
+        :java "16.0.1",
+        :clojure "1.10.3"}}

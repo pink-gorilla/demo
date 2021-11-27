@@ -18,8 +18,8 @@
 
 (defn fortune-page [{:keys [route-params query-params handler] :as route}]
   [:div
-   [link-href "/" "main"]
-   [:div.text-green-300 "fortune cookies"]
+   ;[link-href "/" "main"]
    [fortune]])
 
-(add-page fortune-page :user/fortune)
+;(add-page fortune-page :user/fortune)
+(add-page-site fortune-page :user/fortune)

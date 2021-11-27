@@ -3,21 +3,12 @@
 
 (defn main-page  [{:keys [handler route-params query-params] :as route}]
   [:div
-   [:h1.text-2xl.text-red-600.m-5 "demo user app"]
-   [link-href "/devtools/help" "goldly developer tools"]
+   [:h1.text-2xl.text-red-600.m-5 "demo-goldly"]
+   [:p "This website shows what you can do with goldly."]
 
-   [:div.bg.green-300
-
-    [link-href "/about" "goldly about"]]
-
-   [link-href "/time" "time - server push demo"]
-   [link-href "/fortune" "fortune cookies - request/response demo"]
-
-   [link-href "/vega" "vega"]
-   [link-href "/bmi" "bmi"]
-   [link-href "/iss" "iss leaflet"]
-   [link-href "/aggrid" "aggrid"]])
+   [:p "Users normally would not get developer tooling:"]
+   [link-href "/devtools/help" "goldly developer tools"]])
 
 ; (add-page main-page :user/main)
 
-(add-page-template main-page :user/main)
+(add-page-site main-page :user/main)

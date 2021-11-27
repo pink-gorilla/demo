@@ -36,7 +36,7 @@
 
 (defn iss-page [{:keys [route-params query-params handler] :as route}]
   [:div
-   [link-href "/" "main"]
    [iss]])
 
-(add-page iss-page :user/iss)
+;(add-page iss-page :user/iss)
+(add-page-site iss-page :user/iss)

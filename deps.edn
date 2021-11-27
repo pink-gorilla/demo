@@ -11,17 +11,17 @@
   :cljfmt-fix
   {:extra-deps {cljfmt/cljfmt {:mvn/version "0.8.0"}}
    :main-opts ["-m" "cljfmt.main" "fix" "--indents" "cljfmt.edn"]}
-
+   
   ;; goldly
+  
+  :nbeval {:extra-deps {org.pinkgorilla/goldly-docs {:mvn/version "0.4.461"}}
+           :exec-fn reval.task/nbeval
+           :exec-args {:config "goldly-demo.edn"}}
 
-  :goldly-docs {:extra-deps {org.pinkgorilla/goldly-docs {:mvn/version "0.4.457"}}
-                :exec-fn goldly.app/goldly-server-run!
-                :exec-args {:profile "jetty"
-                            :config "goldly-demo.edn"}}
-
-
-
-
+  :goldly {:extra-deps {org.pinkgorilla/goldly-docs {:mvn/version "0.4.461"}}
+           :exec-fn goldly.app/goldly-server-run!
+          :exec-args {:profile "jetty"
+                      :config "goldly-demo.edn"}}
 
 
 ;           
