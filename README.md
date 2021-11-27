@@ -1,6 +1,14 @@
 # demo - goldly
 
 
+## Static Demo
+
+A simple demo is on [Github Pages](https://pink-gorilla.github.io/demo-goldly/).
+
+There are no server services running in the static demo. 
+So the time pusher and the fortune cookies will not work.
+
+
 ## demo running goldly-docs
 
 Goldly-docs brings everything precompiled. Saves lots of time.
