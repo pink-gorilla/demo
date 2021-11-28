@@ -1,4 +1,5 @@
-{:prefix-static "/demo-goldly/r/"
+{:static-main-path "/demo-goldly"
+ 
  :goldly {:autoload-clj-ns [goldly.devtools
                             fortune-cookie
                             time]

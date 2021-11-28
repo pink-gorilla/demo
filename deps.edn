@@ -14,14 +14,21 @@
    
   ;; goldly
   
-  :nbeval {:extra-deps {org.pinkgorilla/goldly-docs {:mvn/version "0.4.461"}}
+  :nbeval {:extra-deps {org.pinkgorilla/goldly-docs {:mvn/version "0.4.467"}}
            :exec-fn reval.task/nbeval
            :exec-args {:config "goldly-demo.edn"}}
 
-  :goldly {:extra-deps {org.pinkgorilla/goldly-docs {:mvn/version "0.4.461"}}
+  :goldly {:extra-deps {org.pinkgorilla/goldly {:mvn/version "0.4.467"}}
            :exec-fn goldly.app/goldly-server-run!
           :exec-args {:profile "jetty"
                       :config "goldly-demo.edn"}}
+  
+
+  :goldly-docs {:extra-deps {org.pinkgorilla/goldly-docs {:mvn/version "0.4.467"}}
+           :exec-fn goldly.app/goldly-server-run!
+           :exec-args {:profile "jetty"
+                       :config "goldly-demo.edn"}}
+
 
 
 ;           
