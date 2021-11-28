@@ -1,12 +1,12 @@
-; saved on 2021-11-28 15:16:49
+; saved on 2021-11-28 16:15:59
 {:content [{:out "",
             :code "(ns demo.notebook.vegalite-arrow)",
-            :id :baeb5d48-2a80-45cc-a916-f2cafa4b89db,
+            :id :2f2dd15c-1449-4201-87b0-d9688df249fc,
             :ns "demo.notebook.vegalite-arrow",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
             :code "^:fh\n[:p/vegalite\n {:width 800\n  :height 600\n  :spec {:data {:url \"/r/data/chicago-crimes-2018.arrow\"\n                ;:url \"https://raw.githubusercontent.com/RandomFractals/ChicagoCrimes/master/data/2018/chicago-crimes-2018.arrow\"\n                :format {:type \"arrow\"}}\n         :mark \"bar\"\n         :encoding {:y {:field \"PrimaryType\"\n                        :type \"ordinal\"\n                        :sort {:encoding \"x\"}\n                        :axis {:title \"Crime Type\"}}\n                    :x {:aggregate \"count\"\n                        :field \"*\"\n                        :type \"quantitative\"\n                        :axis {:title \"# of Records\"}}}}}]",
-            :id :1b5ecf07-cf75-4b7a-a864-e12095f1636a,
+            :id :f3b74f7d-b09d-4b3f-a485-d87dff6ca72f,
             :ns "demo.notebook.vegalite-arrow",
             :hiccup ^{:fh true}
                     [:p/vegalite
@@ -23,8 +23,8 @@
                                             :field "*",
                                             :type "quantitative",
                                             :axis {:title "# of Records"}}}}}]}],
- :meta {:id :b74539cf-40db-407a-ba21-5283e0dab137,
-        :eval-time "2021-11-28 15:16:49",
+ :meta {:id :350c423c-ea21-44c8-afa6-f6da6e1e390c,
+        :eval-time "2021-11-28 16:15:59",
         :ns "demo.notebook.vegalite-arrow",
         :java "16.0.1",
         :clojure "1.10.3"}}

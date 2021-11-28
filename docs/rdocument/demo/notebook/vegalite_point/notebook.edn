@@ -1,12 +1,12 @@
-; saved on 2021-11-28 15:16:49
+; saved on 2021-11-28 16:15:59
 {:content [{:out "",
             :code "(ns demo.notebook.vegalite-point)",
-            :id :4de2c151-092c-45a3-8032-2f4ad8d78b13,
+            :id :cd76e103-5677-4612-83a8-9352120d933a,
             :ns "demo.notebook.vegalite-point",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
             :code "^:fh\n[:p/vegalite\n {:spec {:data {:values [{:x 3 :y 4}\n                         {:x 7 :y 1}\n                         {:x 5 :y 7}\n                         {:x 2 :y 6}]}\n         :mark :point\n         :encoding {:x {:field :x :type :quantitative}\n                    :y {:field :y :type :quantitative}}}}]",
-            :id :1c0a3441-a97c-4f88-b5f6-82a0cd0edcc6,
+            :id :967283d9-6e8c-4d30-a91f-9b844ffdb34d,
             :ns "demo.notebook.vegalite-point",
             :hiccup ^{:fh true}
                     [:p/vegalite
@@ -19,8 +19,8 @@
                                             :type :quantitative},
                                         :y {:field :y,
                                             :type :quantitative}}}}]}],
- :meta {:id :3a9dbd23-94c9-43a4-902a-f2942214e338,
-        :eval-time "2021-11-28 15:16:49",
+ :meta {:id :3470b238-f3d4-4333-a4c5-9713e01e8814,
+        :eval-time "2021-11-28 16:15:59",
         :ns "demo.notebook.vegalite-point",
         :java "16.0.1",
         :clojure "1.10.3"}}

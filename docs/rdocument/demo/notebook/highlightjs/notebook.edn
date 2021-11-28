@@ -1,7 +1,7 @@
-; saved on 2021-11-28 15:16:48
+; saved on 2021-11-28 16:15:59
 {:content [{:out "",
             :code "^:R\n[:div\n [:p \"this snippet demonstrates to usehighlight.js\"]\n [:p \"eval button click will just print the code to browser console.\"]\n [:p/highlightjs \"(+ 8 8)\\n(def add [a b] \\n   (+ a b))\\n(add)\"]]",
-            :id :5063042e-c0d4-4196-8d38-76ea0212bb23,
+            :id :835b1b70-ae45-495c-ad57-660fd8aebd75,
             :ns "demo.notebook.highlightjs",
             :hiccup ^{:R true}
                     [:div
@@ -11,8 +11,8 @@
                       "eval button click will just print the code to browser console."]
                      [:p/highlightjs
                       "(+ 8 8)\n(def add [a b] \n   (+ a b))\n(add)"]]}],
- :meta {:id :bd9f5251-cbd2-4768-9e76-6b119bf23ecf,
-        :eval-time "2021-11-28 15:16:48",
+ :meta {:id :38c06300-7415-46ad-8893-29a1ddac201c,
+        :eval-time "2021-11-28 16:15:59",
         :ns "demo.notebook.highlightjs",
         :java "16.0.1",
         :clojure "1.10.3"}}

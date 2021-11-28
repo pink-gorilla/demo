@@ -1,19 +1,19 @@
-; saved on 2021-11-28 15:16:48
+; saved on 2021-11-28 16:15:59
 {:content [{:out "",
             :code "(ns demo.notebook.gorillaplot.core\n  (:require\n   [pinkgorilla.vega.plot.core :refer [list-plot bar-chart compose histogram plot]]))",
-            :id :f0ea9cb3-bd0f-4af2-90ee-ba1fa1c009cd,
+            :id :50035dec-ca08-46f4-a5ec-506df0b08713,
             :ns "demo.notebook.gorillaplot.core",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
             :code "(def d\n  [1 3 5 7 9 5 4 6 9 8 3 5 6])",
-            :id :4fb31ab4-9983-4613-8189-7b43137a3806,
+            :id :a054299c-9868-4e54-b999-cfb36091d64d,
             :ns "demo.notebook.gorillaplot.core",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.gorillaplot.core/d"]}
            {:out "",
             :code "(list-plot d)",
-            :id :94053530-7a6f-4ef4-8178-498ecdb4c307,
+            :id :23346c1a-c7ce-42fa-9f80-36d0b6600f19,
             :ns "demo.notebook.gorillaplot.core",
             :hiccup ^{:R true}
                     [:p/vega
@@ -24,10 +24,10 @@
                                 :left 55,
                                 :bottom 40,
                                 :right 10},
-                      :data [{:name "651ef729-d0cd-4a46-81b7-b0095f8c2ac8",
+                      :data [{:name "c0902162-6dbb-4941-980d-6e2a82d6255c",
                               :values []}],
                       :marks [{:type "symbol",
-                               :from {:data "651ef729-d0cd-4a46-81b7-b0095f8c2ac8"},
+                               :from {:data "c0902162-6dbb-4941-980d-6e2a82d6255c"},
                                :encode {:enter {:x {:scale "x",
                                                     :field "x"},
                                                 :y {:scale "y",
@@ -43,14 +43,14 @@
                                 :type "linear",
                                 :range "width",
                                 :zero false,
-                                :domain {:data "651ef729-d0cd-4a46-81b7-b0095f8c2ac8",
+                                :domain {:data "c0902162-6dbb-4941-980d-6e2a82d6255c",
                                          :field "x"}}
                                {:name "y",
                                 :type "linear",
                                 :range "height",
                                 :nice true,
                                 :zero false,
-                                :domain {:data "651ef729-d0cd-4a46-81b7-b0095f8c2ac8",
+                                :domain {:data "c0902162-6dbb-4941-980d-6e2a82d6255c",
                                          :field "y"}}],
                       :axes [{:orient "bottom", :scale "x"}
                              {:orient "left", :scale "y"}]}]}
@@ -452,7 +452,7 @@
                                 :class "clojure.main",
                                 :method "main"}]},
             :code "(list-plot d :joined true :plot-size 400 :aspect-ratio 1.6 :opacity 0.5 :plot-range [:all :all])",
-            :id :1be26a3c-2b05-4812-8b19-31b7627e9995,
+            :id :cdbcf894-b65d-4bf8-8a54-b430aaca2fa3,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.Compiler$CompilerException",
@@ -873,7 +873,7 @@
                                 :class "clojure.main",
                                 :method "main"}]},
             :code "(bar-chart (range (count d)) d)",
-            :id :69340168-6925-4e92-af21-51dca223f193,
+            :id :f34ae059-206b-456d-bc9d-3de0a006db87,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.Compiler$CompilerException",
@@ -1294,7 +1294,7 @@
                                 :class "clojure.main",
                                 :method "main"}]},
             :code "(def p (list-plot d))",
-            :id :cc7b4d23-3b72-4a26-ad98-af6dd4a8bc65,
+            :id :675b860a-09d8-4041-ab0a-498e6115034f,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.Compiler$CompilerException",
@@ -1715,7 +1715,7 @@
                                 :class "clojure.main",
                                 :method "main"}]},
             :code "(def p2 (list-plot d :joined true :plot-range [1 5]))",
-            :id :2b91c3f5-98b7-4324-b68e-0daf56c89878,
+            :id :b4ef9239-ad88-4036-b956-2cfd8b1fc293,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.Compiler$CompilerException",
@@ -2136,7 +2136,7 @@
                                 :class "clojure.main",
                                 :method "main"}]},
             :code "(compose p p2)",
-            :id :87b88526-b44c-4834-9901-c48bcc3445b9,
+            :id :f3134072-0558-4ef6-a4e7-d012a0806cba,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.Compiler$CompilerException",
@@ -2557,7 +2557,7 @@
                                 :class "clojure.main",
                                 :method "main"}]},
             :code "(plot (fn [x] (Math/sin x)) [0 10] :color \"orange\" :plot-points 50)",
-            :id :d47585ee-e7e9-4b80-a7e7-9366a2ba1b3e,
+            :id :8fcc195a-8115-449f-8a26-662c92a1e55c,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.Compiler$CompilerException",
@@ -2978,7 +2978,7 @@
                                 :class "clojure.main",
                                 :method "main"}]},
             :code "(compose\n (list-plot (map #(vector % (rand %)) (range 0 10 0.01)) :opacity 0.3 :symbol-size 50)\n (plot (fn [x] (* x (Math/pow (Math/sin x) 2))) [0 10]))",
-            :id :f7ff3184-8a7f-425a-bc4f-9df2037afab0,
+            :id :4d853e6e-aac1-415b-ab1f-79f679973ff8,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.Compiler$CompilerException",
@@ -3399,7 +3399,7 @@
                                 :class "clojure.main",
                                 :method "main"}]},
             :code "(compose\n (histogram (repeatedly 1000 #(rand 10)) :color \"steelblue\" :bins 100 :normalize :probability-density)\n (plot (constantly 0.1) [0 10]))",
-            :id :cd02cb9b-0755-413b-8387-8a45a3012076,
+            :id :b036a657-3ec9-4c11-be78-c8e953d8042a,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.Compiler$CompilerException",
@@ -3820,7 +3820,7 @@
                                 :class "clojure.main",
                                 :method "main"}]},
             :code "(defn gaussian\n  [x sigma mu]\n  (* (/ 0.4 sigma) (Math/exp (- (/ (* (- x mu) (- x mu)) (* 2 (* sigma sigma)))))))",
-            :id :0b54a124-5816-4104-8d89-9d679f92b9a4,
+            :id :b8d818bd-10e7-41eb-933e-8388f0648311,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.Compiler$CompilerException",
@@ -4241,7 +4241,7 @@
                                 :class "clojure.main",
                                 :method "main"}]},
             :code "(compose\n (histogram (repeatedly 10000 #(- (apply + (repeatedly 50 rand)) 25))\n            :bins 100\n            :normalise :probability-density)\n (plot #(gaussian % 2 0) [-10 10]))",
-            :id :08b45234-dea1-4ff4-9807-0a0cbe1c50f0,
+            :id :d047dfa4-74d7-4249-85d8-dbc990975b8f,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.Compiler$CompilerException",
@@ -4662,11 +4662,11 @@
                                 :class "clojure.main",
                                 :method "main"}]},
             :code "(compose\n (histogram (repeatedly 10000 #(- (apply + (repeatedly 50 rand)) 25))\n            :bins 100\n            :normalise :probability-density)\n (histogram (repeatedly 10000 #(- (apply + (repeatedly 50 rand)) 23))\n            :bins 100\n            :normalise :probability-density\n            :color \"green\")\n (plot #(gaussian % 2 0) [-10 10])\n (plot #(gaussian % 2 2) [-10 10] :color \"orange\"))",
-            :id :ba9a3c32-94e8-4abc-bc3f-e1e573b956cc,
+            :id :f5d07a12-1d77-4d5d-a9ec-67a5e2014c04,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}],
- :meta {:id :a374784d-ea5a-4065-a093-dfe8816b6077,
-        :eval-time "2021-11-28 15:16:48",
+ :meta {:id :9de59b32-f406-4591-ae1a-c06fef4af8a0,
+        :eval-time "2021-11-28 16:15:59",
         :ns "demo.notebook.gorillaplot-core",
         :java "16.0.1",
         :clojure "1.10.3"}}
