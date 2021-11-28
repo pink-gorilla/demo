@@ -1,21 +1,21 @@
-; saved on 2021-11-28 16:15:58
+; saved on 2021-11-28 20:10:17
 {:content [{:out "",
             :code "(ns notebook.hello)",
-            :id :3e8cc7f1-c4d8-4dde-8f0a-3d1b8a488d61,
+            :id :d83aa61c-03e7-452f-8f64-f249ddcf0500,
             :ns "notebook.hello",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "hello from clojure\n",
             :code "(println \"hello from clojure\")",
-            :id :5c7e772c-18ab-46d9-b624-d1e2686bfe88,
+            :id :85a11870-de50-47ff-b789-17a470c1f724,
             :ns "notebook.hello",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
             :code "(+ 7 7)",
-            :id :8c9fe4a2-f494-45e9-b5b4-2e81a4e6e7f8,
+            :id :c79f224f-dbc8-4192-86d8-878f71b379ce,
             :ns "notebook.hello",
             :hiccup [:span {:style {:color "blue"}} "14"]}],
- :meta {:id :46697253-f941-4c64-82f0-0ea71db428e2,
-        :eval-time "2021-11-28 16:15:58",
+ :meta {:id :2e1f48b9-8a20-4ac6-9199-aedc988a83d5,
+        :eval-time "2021-11-28 20:10:17",
         :ns "notebook.hello",
         :java "16.0.1",
         :clojure "1.10.3"}}

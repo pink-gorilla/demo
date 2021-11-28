@@ -1,12 +1,12 @@
-; saved on 2021-11-28 16:15:59
+; saved on 2021-11-28 20:10:19
 {:content [{:out "",
             :code "(ns demo.notebook.vegalite-multiline)",
-            :id :9e9c806d-9ade-41f5-a8d4-b77b39afb992,
+            :id :d692804e-eb8e-4217-b41b-923c2136d8ed,
             :ns "demo.notebook.vegalite-multiline",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
             :code "^:fh\n[:p/vegalite\n {:width 1400\n  :height 600\n  :spec {:description \"Stock prices of 5 Tech Companies over Time.\"\n         :data {:url \"/r/data/stocks.csv\"}\n         :transform [;{:filter \"datum.symbol==='GOOG'\"},\n                     {:filter {:field \"date\", :timeUnit \"year\", :range [2007, 2010]}}]\n         :mark \"line\"\n         :selection   {:brush {:type \"interval\"}} ; :encodings [\"x\"]\n         :encoding  {;:row {:field \"symbol\" :type \"nominal\"}\n    ;:x {:field \"date\", :type \"temporal\"   :scale {:domain {:selection \"brush\"}}}\n                     :x {:field \"date\" :type \"temporal\"\n                         :axis {:tickCount 8\n                                :labelAlign \"left\"\n                                :labelExpr \"[timeFormat(datum.value, '%b'), timeFormat(datum.value, '%m') == '01' ? timeFormat(datum.value, '%Y') : '']\"\n                                :labelOffset 4\n                                :labelPadding -24\n                                :tickSize 30\n                                :gridDash {:condition {:test {:field \"value\" :timeUnit \"month\", :equal 1}, :value []}\n                                           :value [2,2]}\n                                :tickDash {:condition {:test {:field \"value\", :timeUnit \"month\", :equal 1}, :value []}\n                                           :value [2,2]}}}\n                     :y {:field \"price\", :type \"quantitative\"}\n                     :color {:field \"symbol\", :type \"nominal\"}}}}]",
-            :id :d3d74fde-ed1d-485e-9d47-632bcbdee60a,
+            :id :c904620b-7d2b-448a-91db-1cfc39656073,
             :ns "demo.notebook.vegalite-multiline",
             :hiccup ^{:fh true}
                     [:p/vegalite
@@ -44,8 +44,8 @@
                                             :type "quantitative"},
                                         :color {:field "symbol",
                                                 :type "nominal"}}}}]}],
- :meta {:id :e5361e57-7107-4eac-ae13-f94565de0202,
-        :eval-time "2021-11-28 16:15:59",
+ :meta {:id :b5144a82-a1b9-48fe-8c0b-269ced49e369,
+        :eval-time "2021-11-28 20:10:19",
         :ns "demo.notebook.vegalite-multiline",
         :java "16.0.1",
         :clojure "1.10.3"}}

@@ -1,26 +1,26 @@
-; saved on 2021-11-28 16:15:58
+; saved on 2021-11-28 20:10:18
 {:content [{:out "",
             :code "(ns demo.notebook.aggrid)",
-            :id :1f4ff2cc-5681-4cce-8679-335b5f122915,
+            :id :823543bc-fe20-410c-9a0d-d0ce81196fb8,
             :ns "demo.notebook.aggrid",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
             :code "(def columnDefs [{:headerName \"Make\" :field \"make\"}\n                 {:headerName \"Model\" :field \"model\"}\n                 {:headerName \"Price\" :field \"price\"}])",
-            :id :b29b1594-7464-44bd-a279-776e92d2df68,
+            :id :73a2d48e-c8ea-4c51-a856-ee2344e7fbf9,
             :ns "demo.notebook.aggrid",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.aggrid/columnDefs"]}
            {:out "",
             :code "(def \trowData [{:make \"Toyota\" :model \"Celica\" :price 35000}\n               {:make \"Ford\" :model \"Mondeo\" :price 32000}\n               {:make \"Porsche\" :model \"Boxter\" :price 72000}])",
-            :id :edb1e852-fcaa-4b15-9142-073de9a2dd83,
+            :id :2258e2a1-7f77-415a-b458-ccec4a12b106,
             :ns "demo.notebook.aggrid",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.aggrid/rowData"]}
            {:out "",
             :code "^:R [:div ; .aggrid-container\n     [:h1 \"simple demo:\"]\n     [:div {:style {:height \"200px\"\n                    :width \"800px\"}}\n      [:p/aggrid {:columnDefs columnDefs\n                  :rowData rowData}]]]",
-            :id :02d222c1-86db-4d17-b2a4-71f9018ec5d6,
+            :id :fd45a074-b002-4c7d-9729-e79c222680fa,
             :ns "demo.notebook.aggrid",
             :hiccup ^{:R true}
                     [:div
@@ -46,36 +46,36 @@
                                    :price 72000}]}]]]}
            {:out "",
             :code "(def rates\n  [{:tenor \"1D\" :rate 1 :vol-factor 1 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"5D\" :rate 3 :vol-factor 1.5 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"1M\" :rate 6 :vol-factor 0.9444443333 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"6M\" :rate 4 :vol-factor 2.1234567890123456789 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"1Y\" :rate 5 :vol-factor 3 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"2Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"5Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"10Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"30Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"50Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"60Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"70Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"80Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}])",
-            :id :9a3b69a0-a58e-4d98-8a46-43f17c40a9c2,
+            :id :df4d53db-4f25-4999-b465-1607e8bf9d9d,
             :ns "demo.notebook.aggrid",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.aggrid/rates"]}
            {:out "",
             :code "#_(defn round-number\n    [number]\n    (if (nil? number) \"\" (f/format  [(f/float 0)] number)))",
-            :id :3e9749cb-e242-4230-905b-b64eed4e14d9,
+            :id :617c7f5a-e46a-4432-8d18-8baa9d8bbadb,
             :ns "demo.notebook.aggrid",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
             :code "#_(defn round-number-digits\n    [digits number] ; digits is first parameter, so it can easily be applied (data last)\n    (if (nil? number) \"\" (f/format  [(f/float digits)] number)))",
-            :id :57aa764b-7319-4f60-9f6a-6f9321b7d0c9,
+            :id :a4b332a7-ae6b-410f-92c4-f38c9788cad9,
             :ns "demo.notebook.aggrid",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
             :code "#_(defn currency-formatter [params]\n    (let [p (js->clj params)\n          v (get p \"value\")]\n      (do ;(println \"params are: \" p)\n       ;(println \"value: \"  v)\n        (round-number-digits 2 v))))",
-            :id :a16277d1-2731-4d06-8844-4e8c86f16f25,
+            :id :76faecb4-adb4-467d-985e-8ccc053eea22,
             :ns "demo.notebook.aggrid",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
             :code "(def rateCols [{:headerName \"MyTenor\" :field \"tenor\" :width 100 :sortable true :filter true :lockPosition true :pinned \"left\"}\n               {:headerName \"Metric/A\" :valueGetter \"data.metrics.a\" :width 50 :sortable false :filter false}\n               {:headerName \"Rate\" :field \"rate\" :width 50 :sortable true :filter false}\n               {:headerName \"Vol-F\" :field \"vol-factor\" :width 50\n                ;:valueFormatter currency-formatter \n                :sortable false :filter false}\n               {:headerName \"Comment\" :field \"s\" :width 300 :sortable false :filter false}])",
-            :id :5ee4f707-3ed0-420f-8697-02f68a0eac88,
+            :id :9fe1759c-ca58-4294-a91c-7677a4f16b65,
             :ns "demo.notebook.aggrid",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.aggrid/rateCols"]}
            {:out "",
             :code "^:R [:div {:className \"ag-theme-balham\"\n           :style {; either both pixels, or both percentage.\n                   :height \"400px\"\n                   :width \"800px\"\n                 ;:height \"100%\"\n                 ;:width \"100%\"\n                   :color \"blue\"}}\n     [:p/aggrid {:columnDefs  rateCols\n                 :rowData rates\n                 :pagination true\n                 :paginationAutoPageSize true}]]",
-            :id :94c0c096-acdb-4449-8033-829815a11683,
+            :id :870e80eb-3e6f-4445-b4ff-3e506191cc4f,
             :ns "demo.notebook.aggrid",
             :hiccup ^{:R true}
                     [:div
@@ -263,8 +263,8 @@
                                   :report-metrics {:a 1}}],
                        :pagination true,
                        :paginationAutoPageSize true}]]}],
- :meta {:id :8f27af69-2d3c-43f5-9be8-8c87837c7309,
-        :eval-time "2021-11-28 16:15:58",
+ :meta {:id :927a0bc8-a4a6-4177-8db5-03023f6306b2,
+        :eval-time "2021-11-28 20:10:18",
         :ns "demo.notebook.aggrid",
         :java "16.0.1",
         :clojure "1.10.3"}}

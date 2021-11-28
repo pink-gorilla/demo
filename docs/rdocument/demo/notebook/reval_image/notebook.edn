@@ -1,12 +1,12 @@
-; saved on 2021-11-28 16:15:59
+; saved on 2021-11-28 20:10:18
 {:content [{:out "",
             :code "(ns demo.notebook.reval-image\n  (:require\n   [clojure.java.io :as io]\n   [modular.persist.protocol :refer [loadr]]\n   [reval.type.protocol :refer [to-hiccup]]\n   [reval.ui :refer [img-inline img]]))",
-            :id :ae2d1815-0dd5-4690-80af-a8048513a7a7,
+            :id :b9c68991-f975-46d2-bacc-1ad7e91baf0b,
             :ns "demo.notebook.reval-image",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
             :code "(-> \"demo/public/sun.png\"\n    io/file\n    .exists)",
-            :id :2ef46d64-c5de-4798-b25d-5d3c4281d1b0,
+            :id :a119ffb3-ab47-4bc4-a09f-1d952333cb3d,
             :ns "demo.notebook.reval-image",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.Compiler$CompilerException",
@@ -407,7 +407,7 @@
                                 :class "clojure.main",
                                 :method "main"}]},
             :code "(-> (loadr :png \"demo/public/sun.png\")\n    img-inline\n    ;to-hiccup\n    )",
-            :id :7e69e837-5faf-40bd-9d9f-abedefb564fa,
+            :id :1fa91d49-eae3-4ce7-a239-220454169fa8,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.Compiler$CompilerException",
@@ -828,11 +828,11 @@
                                 :class "clojure.main",
                                 :method "main"}]},
             :code "(-> (loadr :png \"demo/public/sun.png\")\n    img\n    (assoc :alt \"adf\")\n    ;type\n    ;to-hiccup\n    )",
-            :id :b4f0ba33-6bed-43c1-878b-a3c48878d8dd,
+            :id :22e038e3-58c5-4da1-9515-374262f81f83,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}],
- :meta {:id :8ac282d6-5354-4fe5-a739-670869edc2b7,
-        :eval-time "2021-11-28 16:15:59",
+ :meta {:id :8016d109-8b45-49ea-a053-485cc5bdc901,
+        :eval-time "2021-11-28 20:10:18",
         :ns "demo.notebook.reval-image",
         :java "16.0.1",
         :clojure "1.10.3"}}

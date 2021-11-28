@@ -6,6 +6,6 @@ clojure -X:goldly-docs :profile '"npm-install"'
 # clojure -X:goldly :profile '"release-adv"'
 clojure -X:goldly-docs :profile '"static"'
 
-clojure -X:nbeval
+# clojure -X:nbeval
 
 ./script/copy.sh
