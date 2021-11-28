@@ -1,26 +1,26 @@
-; saved on 2021-11-28 15:06:29
+; saved on 2021-11-28 15:16:49
 {:content [{:out "",
             :code "(ns demo.notebook.vegalite-bar)",
-            :id :e4cf93a7-0d83-40e6-8c3b-af253f29a8b9,
+            :id :da8a5ef2-c68f-4733-95e9-7a316cbd32d1,
             :ns "demo.notebook.vegalite-bar",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
             :code "(def data\n  {:table [{:a \"A\" :b 28} {:a \"B\" :b 55} {:a \"C\" :b 43} {:a \"D\" :b 91}\n           {:a \"E\" :b 81} {:a \"F\" :b 53} {:a \"G\" :b 19} {:a \"H\" :b 87}\n           {:a \"I\" :b 52} {:a \"J\" :b 127}]})",
-            :id :7c9b30dd-e0b2-4c7f-8f6a-bf110d0afa00,
+            :id :8fa5d0c5-d365-4e0b-b35c-5146863a6eff,
             :ns "demo.notebook.vegalite-bar",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.vegalite-bar/data"]}
            {:out "",
             :code "(def bar\n  {;:$schema \"https://vega.github.io/schema/vega-lite/v4.json\"\n   :description \"A simple bar chart with embedded data.\"\n   :mark {:type \"bar\"\n          ;:tooltip true\n          :tooltip {:content \"data\"}}\n   :encoding {:x {:field \"a\" :type \"ordinal\"}\n              :y {:field \"b\" :type \"quantitative\"}}\n   :data {:name \"table\"}})",
-            :id :766d6d14-dd69-4ef6-bd6e-8474abb2efbb,
+            :id :9aabbb82-2834-449f-9b59-18ff9e8ce419,
             :ns "demo.notebook.vegalite-bar",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.vegalite-bar/bar"]}
            {:out "",
             :code "^:fh\n[:p/vegalite {:spec bar :data data}]",
-            :id :3dedeec4-497e-4642-b2d7-91254827eb9d,
+            :id :d30b92f1-7722-46d7-bf21-a224e0e6cf51,
             :ns "demo.notebook.vegalite-bar",
             :hiccup ^{:fh true}
                     [:p/vegalite
@@ -42,8 +42,8 @@
                                      {:a "H", :b 87}
                                      {:a "I", :b 52}
                                      {:a "J", :b 127}]}}]}],
- :meta {:id :195bd2ed-a8da-4e3d-a3d9-eec23ed25a91,
-        :eval-time "2021-11-28 15:06:29",
+ :meta {:id :a8353bb9-ced1-4619-86d4-0211e4533058,
+        :eval-time "2021-11-28 15:16:49",
         :ns "demo.notebook.vegalite-bar",
         :java "16.0.1",
         :clojure "1.10.3"}}

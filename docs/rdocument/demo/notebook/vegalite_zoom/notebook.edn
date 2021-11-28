@@ -1,12 +1,12 @@
-; saved on 2021-11-28 15:06:29
+; saved on 2021-11-28 15:16:49
 {:content [{:out "",
             :code "(ns demo.notebook.vegalite-zoom)",
-            :id :4ab8e2ff-0fa7-49f6-9c7d-f1b1016e220c,
+            :id :9447024e-2df0-4791-8c2f-f406a915294f,
             :ns "demo.notebook.vegalite-zoom",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
             :code "^:fh\n[:p/vegalite\n {:spec {:data {:url \"/r/data/sp500.csv\"}\n         :vconcat\n         [{;:width 480\n           :mark \"area\"\n           :encoding {:x {:field \"date\"\n                          :type \"temporal\"\n                          :scale {:domain {:selection \"brush\"}}\n                          :axis {:title \"\"}}\n                      :y {:field \"price\", :type \"quantitative\"}}}\n          {;:width 480\n           :height 60\n           :mark \"area\"\n           :selection\n           {:brush {:type \"interval\", :encodings [\"x\"]}}\n           :encoding {:x {:field \"date\", :type \"temporal\"}\n                      :y\n                      {:field \"price\"\n                       :type \"quantitative\"\n                       :axis {:tickCount 3, :grid false}}}}]}}]",
-            :id :8f6776de-aa09-4c68-a23a-aef4bc2f3748,
+            :id :859a6984-5b0c-40b3-b811-ceba8d2b706e,
             :ns "demo.notebook.vegalite-zoom",
             :hiccup ^{:fh true}
                     [:p/vegalite
@@ -28,8 +28,8 @@
                                                        :type "quantitative",
                                                        :axis {:tickCount 3,
                                                               :grid false}}}}]}}]}],
- :meta {:id :d37db581-199b-4c5d-9dc4-96724b7a2474,
-        :eval-time "2021-11-28 15:06:29",
+ :meta {:id :1075510a-9354-402d-9494-398d7596bfe4,
+        :eval-time "2021-11-28 15:16:49",
         :ns "demo.notebook.vegalite-zoom",
         :java "16.0.1",
         :clojure "1.10.3"}}
