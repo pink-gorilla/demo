@@ -2,11 +2,20 @@
 
 
 echo "copying static site"
+rm -r ./docs
+mkdir ./docs
+
+
+cp -r ./target/res/public ./docs
+cp -r ./target/webly/public ./docs
+
 cp -r ./target/static/*.html ./docs
-cp -r ./target/static/r/config.edn ./docs/r/config.edn
+cp -r ./target/static/r/config.edn ./docs/public/config.edn
 
-cp -r ./target/res/public ./docs/r
+mv ./docs/public ./docs/r
+#mkdir ./docs/r
+# mv ./docs/public ./docs/r
 
-cp -r ./target/webly/public ./docs/r
 
-
+cp -r src/lib ./docs/r/lib
+cp -r src/page ./docs/r/page

@@ -14,3 +14,16 @@
     (recur)))
 
 (start-time-pusher!)
+
+
+
+(comment
+  
+(require '[goldly.cljs.discover])
+  (goldly.cljs.discover/generate-cljs-autoload)
+
+
+
+
+; 
+)  
