@@ -1,6 +1,5 @@
 
 
-
 ;; site layout
 
 (defn site-header []

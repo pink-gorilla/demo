@@ -9,7 +9,7 @@ So the time pusher and the fortune cookies will not work.
 
 ## demo running goldly-docs
 
-First, clone this repo. Then run: `clojure -X:goldly-docs`
+First, clone this repo. Then run: `clojure -X:docs-run`
 After starting, open web-browser on port 8080.
 
 We demonstrate certain features of goldly:
@@ -32,7 +32,7 @@ For this demo, it is not neccesary to build cljs. But lets do it for fun anyhow.
 The following commands will build a bundel, and recompile it in case a source file
 changes. Shadow-cljs calls this "watch".
 
-`clojure -X:goldly`
+`clojure -X:docs-build`
 
 You can use *"watch"* which brings 10x developer tools.
 Or you can use *"watch2"* which does not. 10x developer tools make the bundel bigger,

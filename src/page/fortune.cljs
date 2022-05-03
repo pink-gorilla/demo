@@ -9,7 +9,7 @@
              :on-click (fn [& _]
                          (println "getting cookie")
                          (run-a cookie-state [:cookie] :cookie/get 3))} "get a specific cookie"]
-   [:button {:class "border m-2 p-3 border-pink-500"
+   [:button {:class "border m-2 p-3 border-blue-300 bg-red-100"
              :on-click (fn [& _]
                          (println "getting cookie")
                          (run-a cookie-state [:cookie] :cookie/get))} "get a random cookie"]

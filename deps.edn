@@ -1,7 +1,8 @@
 {:paths ["src"
          "resources"
          "target/webly"]
- :deps {org.clojure/clojure    {:mvn/version "1.10.3"}}
+ :deps {org.clojure/clojure    {:mvn/version "1.10.3"}
+        org.pinkgorilla/goldly-docs {:mvn/version "0.4.511"}}
 
  :aliases
  {:outdated
@@ -11,18 +12,28 @@
   :cljfmt-fix
   {:extra-deps {cljfmt/cljfmt {:mvn/version "0.8.0"}}
    :main-opts ["-m" "cljfmt.main" "fix" "--indents" "cljfmt.edn"]}
-   
-  ;; goldly
-  
-  :nbeval {:extra-deps {org.pinkgorilla/goldly-docs {:mvn/version "0.4.477"}}
-           :exec-fn reval.task/nbeval
-           :exec-args {:config "goldly-demo.edn"}}
 
-  :goldly-docs {:extra-deps {org.pinkgorilla/goldly-docs {:mvn/version "0.4.477"}}
-           :exec-fn goldly.app/goldly-server-run!
-           :exec-args {:profile "jetty"
-                       :config "goldly-demo.edn"}}
+  ; RUN SERVICES (keep running)
+  :docs-run
+  {:jvm-opts ["-Dmaven.wagon.rto=90000"]
+   :exec-fn modular.system/start!
+   :exec-args {:profile "jetty"
+               :config ["webly/config.edn" "goldly/config.edn" "goldly/docs-config.edn"
+                        "demo.edn"]
+               :services "goldly/docs-services.edn"}}
 
+  ; BUILD BUNDLE (then exit)
+  :docs-build  ; used to create goldly-docs jar
+  {:jvm-opts ["-Dmaven.wagon.rto=90000"]
+   :exec-fn goldly.app.build/goldly-build
+   :exec-args {:profile "compile"
+               :config ["webly/config.edn" "goldly/config.edn" "goldly/docs-config.edn"
+                        "demo.edn"]}}
+
+  ;; nb eval
+
+  :nbeval {:exec-fn reval.task/nbeval
+           :exec-args {:config "demo.edn"}}
 
 
 ;           

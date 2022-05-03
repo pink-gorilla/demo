@@ -19,3 +19,13 @@ mv ./docs/public ./docs/r
 
 cp -r src/lib ./docs/r/lib
 cp -r src/page ./docs/r/page
+
+
+
+cp -r ./target/sci/ ./docs/
+
+
+cp -r ./docs/sci/lib ./docs/r/
+cp -r ./docs/sci/goldly ./docs/r/
+cp -r ./docs/sci/page ./docs/r/
+

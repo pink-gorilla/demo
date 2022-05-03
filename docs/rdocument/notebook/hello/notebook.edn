@@ -1,0 +1,21 @@
+; saved on 2021-12-05 16:25:10
+{:content [{:out "",
+            :code "(ns notebook.hello)",
+            :id :d7dcc2cb-2e3b-473c-920e-ae6d7e2954b7,
+            :ns "notebook.hello",
+            :hiccup [:div.p-2.clj-nil [:p "nil"]]}
+           {:out "hello from clojure\n",
+            :code "(println \"hello from clojure\")",
+            :id :4f51b8f4-95cf-4de3-9f1d-65736ba791bb,
+            :ns "notebook.hello",
+            :hiccup [:div.p-2.clj-nil [:p "nil"]]}
+           {:out "",
+            :code "(+ 7 7)",
+            :id :0811d370-720a-467b-883a-24ba24b3dd94,
+            :ns "notebook.hello",
+            :hiccup [:span {:style {:color "blue"}} "14"]}],
+ :meta {:id :64f06c91-379e-4989-b527-d6b0a5639d45,
+        :eval-time "2021-12-05 16:25:10",
+        :ns "notebook.hello",
+        :java "17.0.1",
+        :clojure "1.10.3"}}
