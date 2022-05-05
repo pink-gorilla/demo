@@ -2,7 +2,7 @@
          "resources"
          "target/webly"]
  :deps {org.clojure/clojure    {:mvn/version "1.10.3"}
-        org.pinkgorilla/goldly-docs {:mvn/version "0.4.511"}}
+        org.pinkgorilla/goldly-docs {:mvn/version "0.4.512"}}
 
  :aliases
  {:outdated
