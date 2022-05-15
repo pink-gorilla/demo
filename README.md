@@ -1,11 +1,5 @@
 # demo - goldly
 
-## Static Demo
-
-A simple demo is on [Github Pages](https://pink-gorilla.github.io/demo-goldly/).
-
-There are no server services running in the static demo. 
-So the time pusher and the fortune cookies will not work.
 
 ## demo running goldly-docs
 
@@ -32,11 +26,22 @@ For this demo, it is not neccesary to build cljs. But lets do it for fun anyhow.
 The following commands will build a bundel, and recompile it in case a source file
 changes. Shadow-cljs calls this "watch".
 
-`clojure -X:docs-build`
+`clojure -X:docs-build :profile '"npm-install"'
+ clojure -X:docs-build :profile '"compile2"'
+`
 
 You can use *"watch"* which brings 10x developer tools.
 Or you can use *"watch2"* which does not. 10x developer tools make the bundel bigger,
 but could be helpful for debugging.
+
+
+## Static Demo
+
+A simple demo is on [Github Pages](https://pink-gorilla.github.io/demo-goldly/).
+
+There are no server services running in the static demo. 
+So the time pusher and the fortune cookies will not work.
+
 
 ## demo  - build static website
 

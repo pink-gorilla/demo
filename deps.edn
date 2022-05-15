@@ -1,8 +1,9 @@
 {:paths ["src"
-         "resources"
-         "target/webly"]
+         "resources" ; json resources
+         "target/webly" ; in case we build ourselves.
+         ]
  :deps {org.clojure/clojure    {:mvn/version "1.10.3"}
-        org.pinkgorilla/goldly-docs {:mvn/version "0.4.512"}}
+        org.pinkgorilla/goldly-docs {:mvn/version "0.4.518"}}
 
  :aliases
  {:outdated
@@ -23,10 +24,10 @@
                :services "goldly/docs-services.edn"}}
 
   ; BUILD BUNDLE (then exit)
-  :docs-build  ; used to create goldly-docs jar
+  :docs-build 
   {:jvm-opts ["-Dmaven.wagon.rto=90000"]
    :exec-fn goldly.app.build/goldly-build
-   :exec-args {:profile "compile"
+   :exec-args {:profile "compile2"
                :config ["webly/config.edn" "goldly/config.edn" "goldly/docs-config.edn"
                         "demo.edn"]}}
 
