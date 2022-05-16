@@ -26,9 +26,12 @@ For this demo, it is not neccesary to build cljs. But lets do it for fun anyhow.
 The following commands will build a bundel, and recompile it in case a source file
 changes. Shadow-cljs calls this "watch".
 
-`clojure -X:docs-build :profile '"npm-install"'
- clojure -X:docs-build :profile '"compile2"'
-`
+
+``` 
+  clojure -X:docs-build :profile '"npm-install"'
+  clojure -X:docs-build :profile '"compile2"'
+  clojure -X:docs-run
+```
 
 You can use *"watch"* which brings 10x developer tools.
 Or you can use *"watch2"* which does not. 10x developer tools make the bundel bigger,

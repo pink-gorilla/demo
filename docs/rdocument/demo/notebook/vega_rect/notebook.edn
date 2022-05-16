@@ -1,0 +1,89 @@
+; saved on 2022-05-16 21:38:04
+{:content [{:out "",
+            :code "(ns demo.notebook.vega-rect)",
+            :id :fb2813d5-7abe-45f2-bf42-50b9b2338f75,
+            :ns "demo.notebook.vega-rect",
+            :hiccup [:div.p-2.clj-nil [:p "nil"]]}
+           {:out "",
+            :code "^:R\n['user/vega\n {:spec {:$schema \"https://vega.github.io/schema/vega/v5.json\"\n         :padding {:left 5, :right 5, :top 5, :bottom 5}\n\n         :data [{:name \"table\"}]\n\n         :signals [{:name \"tooltip\"\n                    :value {}\n                    :on [{:events \"rect:mouseover\", :update \"datum\"}\n                         {:events \"rect:mouseout\", :update \"{}\"}]}]\n\n         :scales [{:name \"xscale\"\n                   :type \"band\"\n                   :domain {:data \"table\", :field \"category\"}\n                   :range \"width\"}\n                  {:name \"yscale\"\n                   :domain {:data \"table\", :field \"amount\"}\n                   :nice true\n                   :range \"height\"}]\n\n         :axes [{:orient \"bottom\", :scale \"xscale\"}\n                {:orient \"left\", :scale \"yscale\"}]\n\n         :marks [{:type \"rect\"\n                  :from {:data \"table\"}\n                  :encode {:enter {:x {:scale \"xscale\", :field \"category\", :offset 1}\n                                   :width {:scale \"xscale\", :band 1, :offset -1}\n                                   :y {:scale \"yscale\", :field \"amount\"}\n                                   :y2 {:scale \"yscale\", :value 0}}\n                           :update {:fill {:value \"steelblue\"}}\n                           :hover {:fill {:value \"red\"}}}}\n                 {:type \"text\"\n                  :encode {:enter {:align {:value \"center\"}\n                                   :baseline {:value \"bottom\"}\n                                   :fill {:value \"#333\"}}\n                           :update {:x {:scale \"xscale\", :signal \"tooltip.category\", :band 0.5}\n                                    :y {:scale \"yscale\", :signal \"tooltip.amount\", :offset -2}\n                                    :text {:signal \"tooltip.amount\"}\n                                    :fillOpacity [{:test \"datum === tooltip\", :value 0}, {:value 1}]}}}]}\n\n  :data {:table [{:category \"A\", :amount 28}\n                 {:category \"B\", :amount 55}\n                 {:category \"C\", :amount 43}\n                 {:category \"D\", :amount 91}\n                 {:category \"E\", :amount 81}\n                 {:category \"F\", :amount 53}\n                 {:category \"G\", :amount 19}\n                 {:category \"H\", :amount 87}]}\n\n  :width 400\n  :height 400}]",
+            :id :90fbd189-d8dc-485d-bb4a-a782e90ce750,
+            :ns "demo.notebook.vega-rect",
+            :hiccup ^{:R true}
+                    [user/vega
+                     {:spec {:$schema "https://vega.github.io/schema/vega/v5.json",
+                             :padding {:left 5,
+                                       :right 5,
+                                       :top 5,
+                                       :bottom 5},
+                             :data [{:name "table"}],
+                             :signals [{:name "tooltip",
+                                        :value {},
+                                        :on [{:events "rect:mouseover",
+                                              :update "datum"}
+                                             {:events "rect:mouseout",
+                                              :update "{}"}]}],
+                             :scales [{:name "xscale",
+                                       :type "band",
+                                       :domain {:data "table",
+                                                :field "category"},
+                                       :range "width"}
+                                      {:name "yscale",
+                                       :domain {:data "table",
+                                                :field "amount"},
+                                       :nice true,
+                                       :range "height"}],
+                             :axes [{:orient "bottom",
+                                     :scale "xscale"}
+                                    {:orient "left",
+                                     :scale "yscale"}],
+                             :marks [{:type "rect",
+                                      :from {:data "table"},
+                                      :encode {:enter {:x {:scale "xscale",
+                                                           :field "category",
+                                                           :offset 1},
+                                                       :width {:scale "xscale",
+                                                               :band 1,
+                                                               :offset -1},
+                                                       :y {:scale "yscale",
+                                                           :field "amount"},
+                                                       :y2 {:scale "yscale",
+                                                            :value 0}},
+                                               :update {:fill {:value "steelblue"}},
+                                               :hover {:fill {:value "red"}}}}
+                                     {:type "text",
+                                      :encode {:enter {:align {:value "center"},
+                                                       :baseline {:value "bottom"},
+                                                       :fill {:value "#333"}},
+                                               :update {:x {:scale "xscale",
+                                                            :signal "tooltip.category",
+                                                            :band 0.5},
+                                                        :y {:scale "yscale",
+                                                            :signal "tooltip.amount",
+                                                            :offset -2},
+                                                        :text {:signal "tooltip.amount"},
+                                                        :fillOpacity [{:test "datum === tooltip",
+                                                                       :value 0}
+                                                                      {:value 1}]}}}]},
+                      :data {:table [{:category "A",
+                                      :amount 28}
+                                     {:category "B",
+                                      :amount 55}
+                                     {:category "C",
+                                      :amount 43}
+                                     {:category "D",
+                                      :amount 91}
+                                     {:category "E",
+                                      :amount 81}
+                                     {:category "F",
+                                      :amount 53}
+                                     {:category "G",
+                                      :amount 19}
+                                     {:category "H",
+                                      :amount 87}]},
+                      :width 400,
+                      :height 400}]}],
+ :meta {:id :0bd3c42c-95c2-4e90-abed-fa449ac882b0,
+        :eval-time "2022-05-16 21:38:04",
+        :ns "demo.notebook.vega-rect",
+        :java "17.0.1",
+        :clojure "1.10.3"}}

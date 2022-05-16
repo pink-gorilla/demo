@@ -1,0 +1,22 @@
+; saved on 2022-05-16 21:37:58
+{:content [{:out "",
+            :code "(ns demo.notebook.leaflet-simple)",
+            :id :1bbe1584-8c24-45c3-8bad-570b8cdf75aa,
+            :ns "demo.notebook.leaflet-simple",
+            :hiccup [:div.p-2.clj-nil [:p "nil"]]}
+           {:out "",
+            :code "^:R\n['user/leaflet\n {:box :md\n  :center [51.505, -0.09]\n  :features [{:type :rectangle :bounds [[51.49, -0.08]\n                                        [51.5, -0.06]]}]}]",
+            :id :7282ede7-57b9-47df-9c37-bade57ec146f,
+            :ns "demo.notebook.leaflet-simple",
+            :hiccup ^{:R true}
+                    [user/leaflet
+                     {:box :md,
+                      :center [51.505 -0.09],
+                      :features [{:type :rectangle,
+                                  :bounds [[51.49 -0.08]
+                                           [51.5 -0.06]]}]}]}],
+ :meta {:id :e7eab881-bb4c-456c-8702-a9072a12ea7c,
+        :eval-time "2022-05-16 21:37:58",
+        :ns "demo.notebook.leaflet-simple",
+        :java "17.0.1",
+        :clojure "1.10.3"}}

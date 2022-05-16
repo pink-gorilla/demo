@@ -1,0 +1,75 @@
+; saved on 2022-05-16 21:37:25
+{:content [{:out "",
+            :code "; this is our helper function to assemble a highchart object. it contains\n\n; default values that we will use for multiple charts\n\n(defn make-chart-config [data]\n  {:chart {:type \"line\"\n           :animation false}\n   :title {:text (:title data)}\n   :subtitle {:text (:subtitle data)}\n   :yAxis {:min 0\n           :title {:text \"\"\n                   :align \"high\"}}\n               ;:labels {:overflow \"justify\"}\n\n   :xAxis {:categories (:labels data)}\n   :tooltip {:valueSuffix \" %\"}\n   :plotOptions {:series\n                 {:animation 0\n                  :label\n                  {;:pointStart 2010\n                   :connectorAllowed false}}}\n   :legend {;:x -40\n            ;:y 100\n            ;:floating true\n            ;:borderWidth 1\n            ;:shadow true\n            :layout \"vertical\"\n            :align \"right\"\n            :verticalAlign \"top\"}\n   :credits {:enabled false}\n   :series (:series data)})",
+            :id :00ec2d60-fb2a-4324-b3dd-e805978700c7,
+            :ns "demo.notebook.highcharts",
+            :hiccup [:span
+                     {:style {:color "deeppink"}}
+                     "#'demo.notebook.highcharts/make-chart-config"]}
+           {:out "",
+            :code "(def highchart-spec\n  (make-chart-config\n   {:title \"Economic Activity\"\n    :subtitle \"made with Love\"\n    :labels [\"Jan\" \"Feb\" \"Mar\" \"Apr\" \"May\" \"Jun\" \"Jul\" \"Aug\"]\n    :series\n    [{:name \"Installation\" :data [439 523 577 698 931 1131 1333 1175]}\n     {:name \"Manufacturing\" :data [249 244 292 291 390 302 381 404]}\n     {:name \"Sales & Distribution\" :data [117 172 165 191 285 247 321 393]}]}))",
+            :id :0da928ce-219b-4dac-a268-9b664958ebd6,
+            :ns "demo.notebook.highcharts",
+            :hiccup [:span
+                     {:style {:color "deeppink"}}
+                     "#'demo.notebook.highcharts/highchart-spec"]}
+           {:out "",
+            :code "^:R\n['user/highchart {:data highchart-spec}]",
+            :id :7602bfe4-40cb-4fa8-8108-6a6a4abb1833,
+            :ns "demo.notebook.highcharts",
+            :hiccup ^{:R true}
+                    [user/highchart
+                     {:data {:series [{:name "Installation",
+                                       :data [439
+                                              523
+                                              577
+                                              698
+                                              931
+                                              1131
+                                              1333
+                                              1175]}
+                                      {:name "Manufacturing",
+                                       :data [249
+                                              244
+                                              292
+                                              291
+                                              390
+                                              302
+                                              381
+                                              404]}
+                                      {:name "Sales & Distribution",
+                                       :data [117
+                                              172
+                                              165
+                                              191
+                                              285
+                                              247
+                                              321
+                                              393]}],
+                             :legend {:layout "vertical",
+                                      :align "right",
+                                      :verticalAlign "top"},
+                             :plotOptions {:series {:animation 0,
+                                                    :label {:connectorAllowed false}}},
+                             :title {:text "Economic Activity"},
+                             :chart {:type "line",
+                                     :animation false},
+                             :yAxis {:min 0,
+                                     :title {:text "",
+                                             :align "high"}},
+                             :credits {:enabled false},
+                             :subtitle {:text "made with Love"},
+                             :xAxis {:categories ["Jan"
+                                                  "Feb"
+                                                  "Mar"
+                                                  "Apr"
+                                                  "May"
+                                                  "Jun"
+                                                  "Jul"
+                                                  "Aug"]},
+                             :tooltip {:valueSuffix " %"}}}]}],
+ :meta {:id :59f2a8f2-632a-459c-9383-54f780e96708,
+        :eval-time "2022-05-16 21:37:25",
+        :ns "demo.notebook.highcharts",
+        :java "17.0.1",
+        :clojure "1.10.3"}}

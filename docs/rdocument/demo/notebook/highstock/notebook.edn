@@ -1,0 +1,274 @@
+; saved on 2022-05-16 21:37:11
+{:content [{:out "",
+            :code "; :subtitle {:text (:subtitle data)}\n\n;:yAxis {;:min 0\n\n;        :title {:text \"\"\n\n;                :align \"high\"}}\n\n;               ;:labels {:overflow \"justify\"}\n\n;  :legend  {;:x -40\n\n;     ;:y 100\n\n;     ;:floating true\n\n;     ;:borderWidth 1\n\n;     ;:shadow true\n\n;            :layout \"vertical\"\n\n;            :align \"right\"\n\n;            :verticalAlign \"top\"}\n\n(defn make-chart-config [{:keys [title ohlc close volume]}]\n  (let [grouping {:units [[\"week\" [1]] ; // unit name - allowed multiples\n                          [\"month\" [1, 2, 3, 4, 6]]]}]\n    {;:chart {;:type \"line\"\n   ;        :animation false}\n     :title {:text title}\n   ;:xAxis {:categories (:labels data)}\n   ;:tooltip {:valueSuffix \" %\"}\n     :rangeSelector {;:selected 1   ; time selector on the top\n                     :verticalAlign \"top\"\n                     :x 0\n                     :y 0}\n     :plotOptions {:series {:animation 0\n                          ;:label {;:pointStart 2010\n                          ;        :connectorAllowed false}\n                            }}\n\n     :credits {:enabled false}\n\n     :yAxis [{:labels {:align \"right\" :x -3}\n              :title {:text \"OHLC\"}\n              :height \"60%\"\n              :lineWidth 2\n            ;resize: {\n            ;    enabled: true\n            ;}\n              }{:labels {:align \"right\" :x -3}\n                :title {:text \"Volume\"},\n                :top \"65%\",\n                :height \"35%\",\n                :offset 0,\n                :lineWidth 2}]\n\n     :series [{:type \"candlestick\" ; :type \"ohlc\"\n               :name \"priceseries\"\n               :data ohlc\n               :dataGrouping grouping\n               :id \"27\"}\n              {:type         \"line\"\n               :name         \"close\"\n               :linkedTo     \"priceseries\"\n               :data         close\n             ;:yAxis        1\n               :dataGrouping grouping}\n\n              {:type \"flags\"\n               :data [{:x 1561469400000     ; // Point where the flag appears\n                       :title \"O\" ;, // Title of flag displayed on the chart \n                       :text  \"open trade\" ;  // Text displayed when the flag are highlighted.\n                       }]\n               :onSeries  \"27\" ;  // Id of which series it should be placed on. If not defined  the flag series will be put on the X axis\n               :shape \"flag\"  ;// Defines the shape of the flags.\n               :dataGrouping grouping}\n              {:type \"column\"\n               :name \"Volume\"\n               :data volume,\n               :yAxis 1,\n               :dataGrouping grouping}]}))",
+            :id :2d88eba7-e063-4619-8a43-e0b885391be4,
+            :ns "demo.notebook.highstock",
+            :hiccup [:span
+                     {:style {:color "deeppink"}}
+                     "#'demo.notebook.highstock/make-chart-config"]}
+           {:out "",
+            :code "(def ohlc-series\n  [[1560864600000,49.01,50.07,48.8,49.61]\n   [1560951000000,49.92,49.97,49.33,49.47]\n   [1561037400000,50.09,50.15,49.51,49.87]\n   [1561123800000,49.7,50.21,49.54,49.69]\n   [1561383000000,49.63,50.04,49.54,49.65]\n   [1561469400000,49.61,49.81,48.82,48.89]\n   [1561555800000,49.44,50.25,49.34,49.95]\n   [1561642200000,50.07,50.39,49.89,49.94]\n   [1561728600000,49.67,49.88,49.26,49.48]\n   [1561987800000,50.79,51.12,50.16,50.39]\n   [1562074200000,50.35,50.78,50.34,50.68]\n   [1562160600000,50.82,51.11,50.67,51.1]\n   [1562333400000,50.84,51.27,50.72,51.06]\n   [1562592600000,50.2,50.35,49.6,50.01]\n   [1562679000000,49.8,50.38,49.7,50.31]\n   [1562765400000,50.46,50.93,50.39,50.81]\n   [1562851800000,50.83,51.1,50.43,50.44]\n   [1562938200000,50.61,51,50.55,50.83]])",
+            :id :d17f797c-a6b3-4d42-a426-d40cc1dd6550,
+            :ns "demo.notebook.highstock",
+            :hiccup [:span
+                     {:style {:color "deeppink"}}
+                     "#'demo.notebook.highstock/ohlc-series"]}
+           {:out "",
+            :code "(def close-series\n  [[1560864600000,49.01]\n   [1560951000000,49.92]\n   [1561037400000,50.09]\n   [1561123800000,49.7]\n   [1561383000000,49.63]\n   [1561469400000,49.61]\n   [1561555800000,49.44]\n   [1561642200000,50.07]\n   [1561728600000,49.67]\n   [1561987800000,50.79]\n   [1562074200000,50.35]\n   [1562160600000,50.82]\n   [1562333400000,50.84]\n   [1562592600000,50.2]\n   [1562679000000,49.8]\n   [1562765400000,50.46]\n   [1562851800000,50.83]\n   [1562938200000,50.61]])",
+            :id :05a4be57-b0b2-45ba-9f95-78fac054fe98,
+            :ns "demo.notebook.highstock",
+            :hiccup [:span
+                     {:style {:color "deeppink"}}
+                     "#'demo.notebook.highstock/close-series"]}
+           {:out "",
+            :code "(def volume-series\n  [[1560864600000,49.01]\n   [1560951000000,49.92]\n   [1561037400000,50.09]\n   [1561123800000,49.7]\n   [1561383000000,49.63]\n   [1561469400000,49.61]\n   [1561555800000,49.44]\n   [1561642200000,50.07]\n   [1561728600000,49.67]\n   [1561987800000,50.79]\n   [1562074200000,50.35]\n   [1562160600000,50.82]\n   [1562333400000,50.84]\n   [1562592600000,50.2]\n   [1562679000000,49.8]\n   [1562765400000,50.46]\n   [1562851800000,50.83]\n   [1562938200000,50.61]])",
+            :id :55e26194-0d50-4aac-ae73-bf34187f32d1,
+            :ns "demo.notebook.highstock",
+            :hiccup [:span
+                     {:style {:color "deeppink"}}
+                     "#'demo.notebook.highstock/volume-series"]}
+           {:out "",
+            :code "(def highchart-spec\n  (make-chart-config\n   {:title \"stockchart\"\n    :ohlc ohlc-series\n    :close close-series\n    :volume volume-series}))",
+            :id :586db367-6861-4f3e-8aeb-8e11162968e1,
+            :ns "demo.notebook.highstock",
+            :hiccup [:span
+                     {:style {:color "deeppink"}}
+                     "#'demo.notebook.highstock/highchart-spec"]}
+           {:out "",
+            :code "^:R\n['user/highstock {:data highchart-spec}]",
+            :id :0821d0ed-ca48-4ae8-bf7f-67044a00b45e,
+            :ns "demo.notebook.highstock",
+            :hiccup ^{:R true}
+                    [user/highstock
+                     {:data {:title {:text "stockchart"},
+                             :rangeSelector {:verticalAlign "top",
+                                             :x 0,
+                                             :y 0},
+                             :plotOptions {:series {:animation 0}},
+                             :credits {:enabled false},
+                             :yAxis [{:labels {:align "right",
+                                               :x -3},
+                                      :title {:text "OHLC"},
+                                      :height "60%",
+                                      :lineWidth 2}
+                                     {:labels {:align "right",
+                                               :x -3},
+                                      :title {:text "Volume"},
+                                      :top "65%",
+                                      :height "35%",
+                                      :offset 0,
+                                      :lineWidth 2}],
+                             :series [{:type "candlestick",
+                                       :name "priceseries",
+                                       :data [[1560864600000
+                                               49.01
+                                               50.07
+                                               48.8
+                                               49.61]
+                                              [1560951000000
+                                               49.92
+                                               49.97
+                                               49.33
+                                               49.47]
+                                              [1561037400000
+                                               50.09
+                                               50.15
+                                               49.51
+                                               49.87]
+                                              [1561123800000
+                                               49.7
+                                               50.21
+                                               49.54
+                                               49.69]
+                                              [1561383000000
+                                               49.63
+                                               50.04
+                                               49.54
+                                               49.65]
+                                              [1561469400000
+                                               49.61
+                                               49.81
+                                               48.82
+                                               48.89]
+                                              [1561555800000
+                                               49.44
+                                               50.25
+                                               49.34
+                                               49.95]
+                                              [1561642200000
+                                               50.07
+                                               50.39
+                                               49.89
+                                               49.94]
+                                              [1561728600000
+                                               49.67
+                                               49.88
+                                               49.26
+                                               49.48]
+                                              [1561987800000
+                                               50.79
+                                               51.12
+                                               50.16
+                                               50.39]
+                                              [1562074200000
+                                               50.35
+                                               50.78
+                                               50.34
+                                               50.68]
+                                              [1562160600000
+                                               50.82
+                                               51.11
+                                               50.67
+                                               51.1]
+                                              [1562333400000
+                                               50.84
+                                               51.27
+                                               50.72
+                                               51.06]
+                                              [1562592600000
+                                               50.2
+                                               50.35
+                                               49.6
+                                               50.01]
+                                              [1562679000000
+                                               49.8
+                                               50.38
+                                               49.7
+                                               50.31]
+                                              [1562765400000
+                                               50.46
+                                               50.93
+                                               50.39
+                                               50.81]
+                                              [1562851800000
+                                               50.83
+                                               51.1
+                                               50.43
+                                               50.44]
+                                              [1562938200000
+                                               50.61
+                                               51
+                                               50.55
+                                               50.83]],
+                                       :dataGrouping {:units [["week"
+                                                               [1]]
+                                                              ["month"
+                                                               [1
+                                                                2
+                                                                3
+                                                                4
+                                                                6]]]},
+                                       :id "27"}
+                                      {:type "line",
+                                       :name "close",
+                                       :linkedTo "priceseries",
+                                       :data [[1560864600000
+                                               49.01]
+                                              [1560951000000
+                                               49.92]
+                                              [1561037400000
+                                               50.09]
+                                              [1561123800000
+                                               49.7]
+                                              [1561383000000
+                                               49.63]
+                                              [1561469400000
+                                               49.61]
+                                              [1561555800000
+                                               49.44]
+                                              [1561642200000
+                                               50.07]
+                                              [1561728600000
+                                               49.67]
+                                              [1561987800000
+                                               50.79]
+                                              [1562074200000
+                                               50.35]
+                                              [1562160600000
+                                               50.82]
+                                              [1562333400000
+                                               50.84]
+                                              [1562592600000
+                                               50.2]
+                                              [1562679000000
+                                               49.8]
+                                              [1562765400000
+                                               50.46]
+                                              [1562851800000
+                                               50.83]
+                                              [1562938200000
+                                               50.61]],
+                                       :dataGrouping {:units [["week"
+                                                               [1]]
+                                                              ["month"
+                                                               [1
+                                                                2
+                                                                3
+                                                                4
+                                                                6]]]}}
+                                      {:type "flags",
+                                       :data [{:x 1561469400000,
+                                               :title "O",
+                                               :text "open trade"}],
+                                       :onSeries "27",
+                                       :shape "flag",
+                                       :dataGrouping {:units [["week"
+                                                               [1]]
+                                                              ["month"
+                                                               [1
+                                                                2
+                                                                3
+                                                                4
+                                                                6]]]}}
+                                      {:type "column",
+                                       :name "Volume",
+                                       :data [[1560864600000
+                                               49.01]
+                                              [1560951000000
+                                               49.92]
+                                              [1561037400000
+                                               50.09]
+                                              [1561123800000
+                                               49.7]
+                                              [1561383000000
+                                               49.63]
+                                              [1561469400000
+                                               49.61]
+                                              [1561555800000
+                                               49.44]
+                                              [1561642200000
+                                               50.07]
+                                              [1561728600000
+                                               49.67]
+                                              [1561987800000
+                                               50.79]
+                                              [1562074200000
+                                               50.35]
+                                              [1562160600000
+                                               50.82]
+                                              [1562333400000
+                                               50.84]
+                                              [1562592600000
+                                               50.2]
+                                              [1562679000000
+                                               49.8]
+                                              [1562765400000
+                                               50.46]
+                                              [1562851800000
+                                               50.83]
+                                              [1562938200000
+                                               50.61]],
+                                       :yAxis 1,
+                                       :dataGrouping {:units [["week"
+                                                               [1]]
+                                                              ["month"
+                                                               [1
+                                                                2
+                                                                3
+                                                                4
+                                                                6]]]}}]}}]}],
+ :meta {:id :bf194300-4649-43b0-bb28-e84c205cf39e,
+        :eval-time "2022-05-16 21:37:11",
+        :ns "demo.notebook.highstock",
+        :java "17.0.1",
+        :clojure "1.10.3"}}

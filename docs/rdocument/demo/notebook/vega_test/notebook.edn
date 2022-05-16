@@ -1,0 +1,152 @@
+; saved on 2022-05-16 21:38:13
+{:content [{:out "",
+            :code "(ns demo.notebook.vega-test)",
+            :id :1127e708-c318-4ba2-9479-9fd571901f5e,
+            :ns "demo.notebook.vega-test",
+            :hiccup [:div.p-2.clj-nil [:p "nil"]]}
+           {:out "",
+            :code "^:R\n['user/vega {:$schema \"https://vega.github.io/schema/vega/v5.json\"\n             :width 400\n             :height 247.2187886279357\n             :padding {:top 10, :left 55, :bottom 40, :right 10}\n             :data [{:name \"50bbe3dd-798b-434d-b1b2-6095fee74a3d\", :values [{:x 0, :y 7}\n                                                                            {:x 1, :y 8}\n                                                                            {:x 2, :y 7} {:x 3, :y 4} {:x 4, :y 6}]}]\n             :marks [{:type \"symbol\"\n                      :from {:data \"50bbe3dd-798b-434d-b1b2-6095fee74a3d\"}\n                      :encode {:enter {:x {:scale \"x\", :field \"x\"}\n                                       :y {:scale \"y\", :field \"y\"}\n                                       :fill {:value \"steelblue\"}\n                                       :fillOpacity {:value 1}}\n                               :update {:shape \"circle\", :size {:value 70}, :stroke {:value \"transparent\"}}\n                               :hover {:size {:value 210}, :stroke {:value \"white\"}}}}]\n             :scales [{:name \"x\", :type \"linear\", :range \"width\", :zero false, :domain {:data \"50bbe3dd-798b-434d-b1b2-6095fee74a3d\", :field \"x\"}}\n                      {:name \"y\", :type \"linear\", :range \"height\", :nice true, :zero false, :domain {:data \"50bbe3dd-798b-434d-b1b2-6095fee74a3d\", :field \"y\"}}]\n             :axes [{:orient \"bottom\", :scale \"x\"} {:orient \"left\", :scale \"y\"}]}]",
+            :id :f44b8166-a81d-48de-9e94-9f54c1abe852,
+            :ns "demo.notebook.vega-test",
+            :hiccup ^{:R true}
+                    [user/vega
+                     {:$schema "https://vega.github.io/schema/vega/v5.json",
+                      :width 400,
+                      :height 247.2187886279357,
+                      :padding {:top 10,
+                                :left 55,
+                                :bottom 40,
+                                :right 10},
+                      :data [{:name "50bbe3dd-798b-434d-b1b2-6095fee74a3d",
+                              :values [{:x 0, :y 7}
+                                       {:x 1, :y 8}
+                                       {:x 2, :y 7}
+                                       {:x 3, :y 4}
+                                       {:x 4, :y 6}]}],
+                      :marks [{:type "symbol",
+                               :from {:data "50bbe3dd-798b-434d-b1b2-6095fee74a3d"},
+                               :encode {:enter {:x {:scale "x",
+                                                    :field "x"},
+                                                :y {:scale "y",
+                                                    :field "y"},
+                                                :fill {:value "steelblue"},
+                                                :fillOpacity {:value 1}},
+                                        :update {:shape "circle",
+                                                 :size {:value 70},
+                                                 :stroke {:value "transparent"}},
+                                        :hover {:size {:value 210},
+                                                :stroke {:value "white"}}}}],
+                      :scales [{:name "x",
+                                :type "linear",
+                                :range "width",
+                                :zero false,
+                                :domain {:data "50bbe3dd-798b-434d-b1b2-6095fee74a3d",
+                                         :field "x"}}
+                               {:name "y",
+                                :type "linear",
+                                :range "height",
+                                :nice true,
+                                :zero false,
+                                :domain {:data "50bbe3dd-798b-434d-b1b2-6095fee74a3d",
+                                         :field "y"}}],
+                      :axes [{:orient "bottom", :scale "x"}
+                             {:orient "left", :scale "y"}]}]}
+           {:out "",
+            :code "^:R\n['user/vega {:$schema \"https://vega.github.io/schema/vega/v5.json\", :width 400, :height 247.2187886279357, :padding {:top 10, :left 55, :bottom 40, :right 10}, :data [{:name \"6348d171-8e7b-4a02-8b9a-bea64dbcbdce\", :values [{:x 0, :y 7} {:x 1, :y 8} {:x 2, :y 7} {:x 3, :y 4} {:x 4, :y 6}]}], :marks [{:type \"symbol\", :from {:data \"6348d171-8e7b-4a02-8b9a-bea64dbcbdce\"}, :encode {:enter {:x {:scale \"x\", :field \"x\"}, :y {:scale \"y\", :field \"y\"}, :fill {:value \"steelblue\"}, :fillOpacity {:value 1}}, :update {:shape \"circle\", :size {:value 70}, :stroke {:value \"transparent\"}}, :hover {:size {:value 210}, :stroke {:value \"white\"}}}}], :scales [{:name \"x\", :type \"linear\", :range \"width\", :zero false, :domain {:data \"6348d171-8e7b-4a02-8b9a-bea64dbcbdce\", :field \"x\"}} {:name \"y\", :type \"linear\", :range \"height\", :nice true, :zero false, :domain {:data \"6348d171-8e7b-4a02-8b9a-bea64dbcbdce\", :field \"y\"}}], :axes [{:orient \"bottom\", :scale \"x\"} {:orient \"left\", :scale \"y\"}]}]",
+            :id :d061da28-52b4-46a0-a62c-ef64b27f98e4,
+            :ns "demo.notebook.vega-test",
+            :hiccup ^{:R true}
+                    [user/vega
+                     {:$schema "https://vega.github.io/schema/vega/v5.json",
+                      :width 400,
+                      :height 247.2187886279357,
+                      :padding {:top 10,
+                                :left 55,
+                                :bottom 40,
+                                :right 10},
+                      :data [{:name "6348d171-8e7b-4a02-8b9a-bea64dbcbdce",
+                              :values [{:x 0, :y 7}
+                                       {:x 1, :y 8}
+                                       {:x 2, :y 7}
+                                       {:x 3, :y 4}
+                                       {:x 4, :y 6}]}],
+                      :marks [{:type "symbol",
+                               :from {:data "6348d171-8e7b-4a02-8b9a-bea64dbcbdce"},
+                               :encode {:enter {:x {:scale "x",
+                                                    :field "x"},
+                                                :y {:scale "y",
+                                                    :field "y"},
+                                                :fill {:value "steelblue"},
+                                                :fillOpacity {:value 1}},
+                                        :update {:shape "circle",
+                                                 :size {:value 70},
+                                                 :stroke {:value "transparent"}},
+                                        :hover {:size {:value 210},
+                                                :stroke {:value "white"}}}}],
+                      :scales [{:name "x",
+                                :type "linear",
+                                :range "width",
+                                :zero false,
+                                :domain {:data "6348d171-8e7b-4a02-8b9a-bea64dbcbdce",
+                                         :field "x"}}
+                               {:name "y",
+                                :type "linear",
+                                :range "height",
+                                :nice true,
+                                :zero false,
+                                :domain {:data "6348d171-8e7b-4a02-8b9a-bea64dbcbdce",
+                                         :field "y"}}],
+                      :axes [{:orient "bottom", :scale "x"}
+                             {:orient "left", :scale "y"}]}]}
+           {:out "",
+            :code "^:R\n['user/vega {:$schema \"https://vega.github.io/schema/vega/v5.json\", :width 400, :height 247.2187886279357, :padding {:top 10, :left 55, :bottom 40, :right 10}, :data [{:name \"9612b327-d447-478a-84a6-27af98f319f0\", :values [{:x 0, :y 7} {:x 1, :y 8} {:x 2, :y 7} {:x 3, :y 4} {:x 4, :y 6}]}], :marks [{:type \"symbol\", :from {:data \"9612b327-d447-478a-84a6-27af98f319f0\"}, :encode {:enter {:x {:scale \"x\", :field \"x\"}, :y {:scale \"y\", :field \"y\"}, :fill {:value \"steelblue\"}, :fillOpacity {:value 1}}, :update {:shape \"circle\", :size {:value 70}, :stroke {:value \"transparent\"}}, :hover {:size {:value 210}, :stroke {:value \"white\"}}}}], :scales [{:name \"x\", :type \"linear\", :range \"width\", :zero false, :domain {:data \"9612b327-d447-478a-84a6-27af98f319f0\", :field \"x\"}} {:name \"y\", :type \"linear\", :range \"height\", :nice true, :zero false, :domain {:data \"9612b327-d447-478a-84a6-27af98f319f0\", :field \"y\"}}], :axes [{:orient \"bottom\", :scale \"x\"} {:orient \"left\", :scale \"y\"}]}]",
+            :id :f0a1635a-24ec-434e-85d3-c95159a48fd4,
+            :ns "demo.notebook.vega-test",
+            :hiccup ^{:R true}
+                    [user/vega
+                     {:$schema "https://vega.github.io/schema/vega/v5.json",
+                      :width 400,
+                      :height 247.2187886279357,
+                      :padding {:top 10,
+                                :left 55,
+                                :bottom 40,
+                                :right 10},
+                      :data [{:name "9612b327-d447-478a-84a6-27af98f319f0",
+                              :values [{:x 0, :y 7}
+                                       {:x 1, :y 8}
+                                       {:x 2, :y 7}
+                                       {:x 3, :y 4}
+                                       {:x 4, :y 6}]}],
+                      :marks [{:type "symbol",
+                               :from {:data "9612b327-d447-478a-84a6-27af98f319f0"},
+                               :encode {:enter {:x {:scale "x",
+                                                    :field "x"},
+                                                :y {:scale "y",
+                                                    :field "y"},
+                                                :fill {:value "steelblue"},
+                                                :fillOpacity {:value 1}},
+                                        :update {:shape "circle",
+                                                 :size {:value 70},
+                                                 :stroke {:value "transparent"}},
+                                        :hover {:size {:value 210},
+                                                :stroke {:value "white"}}}}],
+                      :scales [{:name "x",
+                                :type "linear",
+                                :range "width",
+                                :zero false,
+                                :domain {:data "9612b327-d447-478a-84a6-27af98f319f0",
+                                         :field "x"}}
+                               {:name "y",
+                                :type "linear",
+                                :range "height",
+                                :nice true,
+                                :zero false,
+                                :domain {:data "9612b327-d447-478a-84a6-27af98f319f0",
+                                         :field "y"}}],
+                      :axes [{:orient "bottom", :scale "x"}
+                             {:orient "left", :scale "y"}]}]}],
+ :meta {:id :3750f7ae-5774-4d8c-b816-a9338950ff0c,
+        :eval-time "2022-05-16 21:38:13",
+        :ns "demo.notebook.vega-test",
+        :java "17.0.1",
+        :clojure "1.10.3"}}
