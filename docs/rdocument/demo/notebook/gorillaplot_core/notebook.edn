@@ -1,19 +1,19 @@
-; saved on 2022-05-16 21:36:56
+; saved on 2022-05-17 07:46:30
 {:content [{:out "",
             :code "(ns demo.notebook.gorillaplot.core\n  (:require\n   [pinkgorilla.vega.plot.core :refer [list-plot bar-chart compose histogram plot]]))",
-            :id :8ec0a9af-94fb-4bd1-ba32-1ec2ed2460a8,
+            :id :b92556d4-0261-4a42-a83b-3ca790d2fbf5,
             :ns "demo.notebook.gorillaplot.core",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
             :code "(def d\n  [1 3 5 7 9 5 4 6 9 8 3 5 6])",
-            :id :39e435df-3a13-49b5-9773-cf3e9742bb8c,
+            :id :9f8e1d26-2d0e-458c-99fd-56758c472b5a,
             :ns "demo.notebook.gorillaplot.core",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.gorillaplot.core/d"]}
            {:out "",
             :code "(list-plot d)",
-            :id :3c34a038-1b45-4fee-a70d-98392dbe28de,
+            :id :d3465d87-aaf7-4e63-85cf-5fd73fb3eb8c,
             :ns "demo.notebook.gorillaplot.core",
             :hiccup ^{:R true}
                     [user/vega
@@ -24,10 +24,10 @@
                                 :left 55,
                                 :bottom 40,
                                 :right 10},
-                      :data [{:name "c193c927-ee0c-4a0e-a274-cd66b8198cff",
+                      :data [{:name "ca1f8790-d7fc-460e-876d-61b61af0770f",
                               :values []}],
                       :marks [{:type "symbol",
-                               :from {:data "c193c927-ee0c-4a0e-a274-cd66b8198cff"},
+                               :from {:data "ca1f8790-d7fc-460e-876d-61b61af0770f"},
                                :encode {:enter {:x {:scale "x",
                                                     :field "x"},
                                                 :y {:scale "y",
@@ -43,19 +43,19 @@
                                 :type "linear",
                                 :range "width",
                                 :zero false,
-                                :domain {:data "c193c927-ee0c-4a0e-a274-cd66b8198cff",
+                                :domain {:data "ca1f8790-d7fc-460e-876d-61b61af0770f",
                                          :field "x"}}
                                {:name "y",
                                 :type "linear",
                                 :range "height",
                                 :nice true,
                                 :zero false,
-                                :domain {:data "c193c927-ee0c-4a0e-a274-cd66b8198cff",
+                                :domain {:data "ca1f8790-d7fc-460e-876d-61b61af0770f",
                                          :field "y"}}],
                       :axes [{:orient "bottom", :scale "x"}
                              {:orient "left", :scale "y"}]}]}
            {:err {:class "clojure.lang.ArityException",
-                  :message "Wrong number of args (11) passed to: pinkgorilla.vega.plot.core/wrap-vega/fn--61164",
+                  :message "Wrong number of args (11) passed to: pinkgorilla.vega.plot.core/wrap-vega/fn--61347",
                   :stacktrace [{:name "clojure.lang.AFn/throwArity",
                                 :file "AFn.java",
                                 :line 429,
@@ -66,15 +66,15 @@
                                 :line 77,
                                 :class "clojure.lang.AFn",
                                 :method "invoke"}
-                               {:name "demo.notebook.gorillaplot.core$eval61203/invokeStatic",
+                               {:name "demo.notebook.gorillaplot.core$eval61386/invokeStatic",
                                 :file nil,
                                 :line 1,
-                                :class "demo.notebook.gorillaplot.core$eval61203",
+                                :class "demo.notebook.gorillaplot.core$eval61386",
                                 :method "invokeStatic"}
-                               {:name "demo.notebook.gorillaplot.core$eval61203/invoke",
+                               {:name "demo.notebook.gorillaplot.core$eval61386/invoke",
                                 :file nil,
                                 :line -1,
-                                :class "demo.notebook.gorillaplot.core$eval61203",
+                                :class "demo.notebook.gorillaplot.core$eval61386",
                                 :method "invoke"}
                                {:name "clojure.lang.Compiler/eval",
                                 :file "Compiler.java",
@@ -126,10 +126,10 @@
                                 :line 57,
                                 :class "reval.kernel.clj_eval$clj_eval",
                                 :method "invoke"}
-                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915/invoke",
+                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917/invoke",
                                 :file "notebook.clj",
                                 :line 98,
-                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915",
+                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917",
                                 :method "invoke"}
                                {:name "clojure.core$map$fn__5884/invoke",
                                 :file "core.clj",
@@ -321,25 +321,25 @@
                                 :line 80,
                                 :class "modular.ws.msg_handler$event_msg_handler",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761/invoke",
                                 :file "sente.cljc",
                                 :line 1755,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761",
                                 :method "invoke"}
                                {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30638/invoke",
                                 :file "sente.cljc",
                                 :line 1741,
                                 :class "taoensso.sente$_start_chsk_router_BANG_$fn__30638",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741",
                                 :method "invoke"}
                                {:name "clojure.core.async.impl.ioc_macros$run_state_machine/invokeStatic",
                                 :file "ioc_macros.clj",
@@ -361,20 +361,20 @@
                                 :line 980,
                                 :class "clojure.core.async.impl.ioc_macros$run_state_machine_wrapped",
                                 :method "invoke"}
-                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25180/invoke",
+                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25181/invoke",
                                 :file "async.clj",
                                 :line 421,
-                                :class "clojure.core.async$ioc_alts_BANG_$fn__25180",
+                                :class "clojure.core.async$ioc_alts_BANG_$fn__25181",
                                 :method "invoke"}
-                               {:name "clojure.core.async$do_alts$fn__25111$fn__25114/invoke",
+                               {:name "clojure.core.async$do_alts$fn__25112$fn__25115/invoke",
                                 :file "async.clj",
                                 :line 288,
-                                :class "clojure.core.async$do_alts$fn__25111$fn__25114",
+                                :class "clojure.core.async$do_alts$fn__25112$fn__25115",
                                 :method "invoke"}
-                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677/invoke",
+                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678/invoke",
                                 :file "channels.clj",
                                 :line 99,
-                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677",
+                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -391,10 +391,10 @@
                                 :line 635,
                                 :class "java.util.concurrent.ThreadPoolExecutor$Worker",
                                 :method "run"}
-                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546/invoke",
+                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547/invoke",
                                 :file "concurrent.clj",
                                 :line 29,
-                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546",
+                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -407,7 +407,7 @@
                                 :class "java.lang.Thread",
                                 :method "run"}]},
             :code "(list-plot d :joined true :plot-size 400 :aspect-ratio 1.6 :opacity 0.5 :plot-range [:all :all])",
-            :id :eae133ce-cbfd-458f-8700-6ac76975ae6f,
+            :id :b604d992-f2d4-4b6f-af04-a02f6accf12c,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.ExceptionInfo",
@@ -502,10 +502,10 @@
                                 :line 57,
                                 :class "reval.kernel.clj_eval$clj_eval",
                                 :method "invoke"}
-                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915/invoke",
+                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917/invoke",
                                 :file "notebook.clj",
                                 :line 98,
-                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915",
+                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917",
                                 :method "invoke"}
                                {:name "clojure.core$map$fn__5884/invoke",
                                 :file "core.clj",
@@ -697,25 +697,25 @@
                                 :line 80,
                                 :class "modular.ws.msg_handler$event_msg_handler",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761/invoke",
                                 :file "sente.cljc",
                                 :line 1755,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761",
                                 :method "invoke"}
                                {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30638/invoke",
                                 :file "sente.cljc",
                                 :line 1741,
                                 :class "taoensso.sente$_start_chsk_router_BANG_$fn__30638",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741",
                                 :method "invoke"}
                                {:name "clojure.core.async.impl.ioc_macros$run_state_machine/invokeStatic",
                                 :file "ioc_macros.clj",
@@ -737,20 +737,20 @@
                                 :line 980,
                                 :class "clojure.core.async.impl.ioc_macros$run_state_machine_wrapped",
                                 :method "invoke"}
-                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25180/invoke",
+                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25181/invoke",
                                 :file "async.clj",
                                 :line 421,
-                                :class "clojure.core.async$ioc_alts_BANG_$fn__25180",
+                                :class "clojure.core.async$ioc_alts_BANG_$fn__25181",
                                 :method "invoke"}
-                               {:name "clojure.core.async$do_alts$fn__25111$fn__25114/invoke",
+                               {:name "clojure.core.async$do_alts$fn__25112$fn__25115/invoke",
                                 :file "async.clj",
                                 :line 288,
-                                :class "clojure.core.async$do_alts$fn__25111$fn__25114",
+                                :class "clojure.core.async$do_alts$fn__25112$fn__25115",
                                 :method "invoke"}
-                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677/invoke",
+                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678/invoke",
                                 :file "channels.clj",
                                 :line 99,
-                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677",
+                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -767,10 +767,10 @@
                                 :line 635,
                                 :class "java.util.concurrent.ThreadPoolExecutor$Worker",
                                 :method "run"}
-                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546/invoke",
+                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547/invoke",
                                 :file "concurrent.clj",
                                 :line 29,
-                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546",
+                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -783,7 +783,7 @@
                                 :class "java.lang.Thread",
                                 :method "run"}]},
             :code "(bar-chart (range (count d)) d)",
-            :id :6b787b9e-5eae-40ce-937b-6f00bb0113c9,
+            :id :f6b63c64-b396-444d-b3e6-de92572b7a44,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.ExceptionInfo",
@@ -878,10 +878,10 @@
                                 :line 57,
                                 :class "reval.kernel.clj_eval$clj_eval",
                                 :method "invoke"}
-                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915/invoke",
+                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917/invoke",
                                 :file "notebook.clj",
                                 :line 98,
-                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915",
+                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917",
                                 :method "invoke"}
                                {:name "clojure.core$map$fn__5884/invoke",
                                 :file "core.clj",
@@ -1073,25 +1073,25 @@
                                 :line 80,
                                 :class "modular.ws.msg_handler$event_msg_handler",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761/invoke",
                                 :file "sente.cljc",
                                 :line 1755,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761",
                                 :method "invoke"}
                                {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30638/invoke",
                                 :file "sente.cljc",
                                 :line 1741,
                                 :class "taoensso.sente$_start_chsk_router_BANG_$fn__30638",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741",
                                 :method "invoke"}
                                {:name "clojure.core.async.impl.ioc_macros$run_state_machine/invokeStatic",
                                 :file "ioc_macros.clj",
@@ -1113,20 +1113,20 @@
                                 :line 980,
                                 :class "clojure.core.async.impl.ioc_macros$run_state_machine_wrapped",
                                 :method "invoke"}
-                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25180/invoke",
+                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25181/invoke",
                                 :file "async.clj",
                                 :line 421,
-                                :class "clojure.core.async$ioc_alts_BANG_$fn__25180",
+                                :class "clojure.core.async$ioc_alts_BANG_$fn__25181",
                                 :method "invoke"}
-                               {:name "clojure.core.async$do_alts$fn__25111$fn__25114/invoke",
+                               {:name "clojure.core.async$do_alts$fn__25112$fn__25115/invoke",
                                 :file "async.clj",
                                 :line 288,
-                                :class "clojure.core.async$do_alts$fn__25111$fn__25114",
+                                :class "clojure.core.async$do_alts$fn__25112$fn__25115",
                                 :method "invoke"}
-                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677/invoke",
+                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678/invoke",
                                 :file "channels.clj",
                                 :line 99,
-                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677",
+                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -1143,10 +1143,10 @@
                                 :line 635,
                                 :class "java.util.concurrent.ThreadPoolExecutor$Worker",
                                 :method "run"}
-                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546/invoke",
+                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547/invoke",
                                 :file "concurrent.clj",
                                 :line 29,
-                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546",
+                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -1159,7 +1159,7 @@
                                 :class "java.lang.Thread",
                                 :method "run"}]},
             :code "(def p (list-plot d))",
-            :id :9308409c-f357-4f53-813d-d134119fa95c,
+            :id :9375f2a3-f43b-4667-ac23-9d7e7277aaf2,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.ExceptionInfo",
@@ -1254,10 +1254,10 @@
                                 :line 57,
                                 :class "reval.kernel.clj_eval$clj_eval",
                                 :method "invoke"}
-                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915/invoke",
+                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917/invoke",
                                 :file "notebook.clj",
                                 :line 98,
-                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915",
+                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917",
                                 :method "invoke"}
                                {:name "clojure.core$map$fn__5884/invoke",
                                 :file "core.clj",
@@ -1449,25 +1449,25 @@
                                 :line 80,
                                 :class "modular.ws.msg_handler$event_msg_handler",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761/invoke",
                                 :file "sente.cljc",
                                 :line 1755,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761",
                                 :method "invoke"}
                                {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30638/invoke",
                                 :file "sente.cljc",
                                 :line 1741,
                                 :class "taoensso.sente$_start_chsk_router_BANG_$fn__30638",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741",
                                 :method "invoke"}
                                {:name "clojure.core.async.impl.ioc_macros$run_state_machine/invokeStatic",
                                 :file "ioc_macros.clj",
@@ -1489,20 +1489,20 @@
                                 :line 980,
                                 :class "clojure.core.async.impl.ioc_macros$run_state_machine_wrapped",
                                 :method "invoke"}
-                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25180/invoke",
+                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25181/invoke",
                                 :file "async.clj",
                                 :line 421,
-                                :class "clojure.core.async$ioc_alts_BANG_$fn__25180",
+                                :class "clojure.core.async$ioc_alts_BANG_$fn__25181",
                                 :method "invoke"}
-                               {:name "clojure.core.async$do_alts$fn__25111$fn__25114/invoke",
+                               {:name "clojure.core.async$do_alts$fn__25112$fn__25115/invoke",
                                 :file "async.clj",
                                 :line 288,
-                                :class "clojure.core.async$do_alts$fn__25111$fn__25114",
+                                :class "clojure.core.async$do_alts$fn__25112$fn__25115",
                                 :method "invoke"}
-                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677/invoke",
+                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678/invoke",
                                 :file "channels.clj",
                                 :line 99,
-                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677",
+                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -1519,10 +1519,10 @@
                                 :line 635,
                                 :class "java.util.concurrent.ThreadPoolExecutor$Worker",
                                 :method "run"}
-                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546/invoke",
+                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547/invoke",
                                 :file "concurrent.clj",
                                 :line 29,
-                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546",
+                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -1535,7 +1535,7 @@
                                 :class "java.lang.Thread",
                                 :method "run"}]},
             :code "(def p2 (list-plot d :joined true :plot-range [1 5]))",
-            :id :178d9e22-db8d-4230-a36a-032a958b1c0e,
+            :id :8822e8df-37cb-435c-8bb1-fd4d0558e431,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.ExceptionInfo",
@@ -1630,10 +1630,10 @@
                                 :line 57,
                                 :class "reval.kernel.clj_eval$clj_eval",
                                 :method "invoke"}
-                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915/invoke",
+                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917/invoke",
                                 :file "notebook.clj",
                                 :line 98,
-                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915",
+                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917",
                                 :method "invoke"}
                                {:name "clojure.core$map$fn__5884/invoke",
                                 :file "core.clj",
@@ -1825,25 +1825,25 @@
                                 :line 80,
                                 :class "modular.ws.msg_handler$event_msg_handler",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761/invoke",
                                 :file "sente.cljc",
                                 :line 1755,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761",
                                 :method "invoke"}
                                {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30638/invoke",
                                 :file "sente.cljc",
                                 :line 1741,
                                 :class "taoensso.sente$_start_chsk_router_BANG_$fn__30638",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741",
                                 :method "invoke"}
                                {:name "clojure.core.async.impl.ioc_macros$run_state_machine/invokeStatic",
                                 :file "ioc_macros.clj",
@@ -1865,20 +1865,20 @@
                                 :line 980,
                                 :class "clojure.core.async.impl.ioc_macros$run_state_machine_wrapped",
                                 :method "invoke"}
-                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25180/invoke",
+                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25181/invoke",
                                 :file "async.clj",
                                 :line 421,
-                                :class "clojure.core.async$ioc_alts_BANG_$fn__25180",
+                                :class "clojure.core.async$ioc_alts_BANG_$fn__25181",
                                 :method "invoke"}
-                               {:name "clojure.core.async$do_alts$fn__25111$fn__25114/invoke",
+                               {:name "clojure.core.async$do_alts$fn__25112$fn__25115/invoke",
                                 :file "async.clj",
                                 :line 288,
-                                :class "clojure.core.async$do_alts$fn__25111$fn__25114",
+                                :class "clojure.core.async$do_alts$fn__25112$fn__25115",
                                 :method "invoke"}
-                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677/invoke",
+                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678/invoke",
                                 :file "channels.clj",
                                 :line 99,
-                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677",
+                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -1895,10 +1895,10 @@
                                 :line 635,
                                 :class "java.util.concurrent.ThreadPoolExecutor$Worker",
                                 :method "run"}
-                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546/invoke",
+                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547/invoke",
                                 :file "concurrent.clj",
                                 :line 29,
-                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546",
+                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -1911,7 +1911,7 @@
                                 :class "java.lang.Thread",
                                 :method "run"}]},
             :code "(compose p p2)",
-            :id :45368d8a-973d-4bbf-a159-48652f2cb25e,
+            :id :59ba7ce2-f61a-41b3-9b84-2af2b1e99c46,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.ExceptionInfo",
@@ -2006,10 +2006,10 @@
                                 :line 57,
                                 :class "reval.kernel.clj_eval$clj_eval",
                                 :method "invoke"}
-                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915/invoke",
+                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917/invoke",
                                 :file "notebook.clj",
                                 :line 98,
-                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915",
+                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917",
                                 :method "invoke"}
                                {:name "clojure.core$map$fn__5884/invoke",
                                 :file "core.clj",
@@ -2201,25 +2201,25 @@
                                 :line 80,
                                 :class "modular.ws.msg_handler$event_msg_handler",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761/invoke",
                                 :file "sente.cljc",
                                 :line 1755,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761",
                                 :method "invoke"}
                                {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30638/invoke",
                                 :file "sente.cljc",
                                 :line 1741,
                                 :class "taoensso.sente$_start_chsk_router_BANG_$fn__30638",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741",
                                 :method "invoke"}
                                {:name "clojure.core.async.impl.ioc_macros$run_state_machine/invokeStatic",
                                 :file "ioc_macros.clj",
@@ -2241,20 +2241,20 @@
                                 :line 980,
                                 :class "clojure.core.async.impl.ioc_macros$run_state_machine_wrapped",
                                 :method "invoke"}
-                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25180/invoke",
+                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25181/invoke",
                                 :file "async.clj",
                                 :line 421,
-                                :class "clojure.core.async$ioc_alts_BANG_$fn__25180",
+                                :class "clojure.core.async$ioc_alts_BANG_$fn__25181",
                                 :method "invoke"}
-                               {:name "clojure.core.async$do_alts$fn__25111$fn__25114/invoke",
+                               {:name "clojure.core.async$do_alts$fn__25112$fn__25115/invoke",
                                 :file "async.clj",
                                 :line 288,
-                                :class "clojure.core.async$do_alts$fn__25111$fn__25114",
+                                :class "clojure.core.async$do_alts$fn__25112$fn__25115",
                                 :method "invoke"}
-                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677/invoke",
+                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678/invoke",
                                 :file "channels.clj",
                                 :line 99,
-                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677",
+                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -2271,10 +2271,10 @@
                                 :line 635,
                                 :class "java.util.concurrent.ThreadPoolExecutor$Worker",
                                 :method "run"}
-                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546/invoke",
+                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547/invoke",
                                 :file "concurrent.clj",
                                 :line 29,
-                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546",
+                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -2287,7 +2287,7 @@
                                 :class "java.lang.Thread",
                                 :method "run"}]},
             :code "(plot (fn [x] (Math/sin x)) [0 10] :color \"orange\" :plot-points 50)",
-            :id :b2e5863f-ee1d-490b-8427-bb5af7b66a13,
+            :id :fe14ac81-869f-4dd0-bdfb-80422199351c,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.ExceptionInfo",
@@ -2382,10 +2382,10 @@
                                 :line 57,
                                 :class "reval.kernel.clj_eval$clj_eval",
                                 :method "invoke"}
-                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915/invoke",
+                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917/invoke",
                                 :file "notebook.clj",
                                 :line 98,
-                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915",
+                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917",
                                 :method "invoke"}
                                {:name "clojure.core$map$fn__5884/invoke",
                                 :file "core.clj",
@@ -2577,25 +2577,25 @@
                                 :line 80,
                                 :class "modular.ws.msg_handler$event_msg_handler",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761/invoke",
                                 :file "sente.cljc",
                                 :line 1755,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761",
                                 :method "invoke"}
                                {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30638/invoke",
                                 :file "sente.cljc",
                                 :line 1741,
                                 :class "taoensso.sente$_start_chsk_router_BANG_$fn__30638",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741",
                                 :method "invoke"}
                                {:name "clojure.core.async.impl.ioc_macros$run_state_machine/invokeStatic",
                                 :file "ioc_macros.clj",
@@ -2617,20 +2617,20 @@
                                 :line 980,
                                 :class "clojure.core.async.impl.ioc_macros$run_state_machine_wrapped",
                                 :method "invoke"}
-                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25180/invoke",
+                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25181/invoke",
                                 :file "async.clj",
                                 :line 421,
-                                :class "clojure.core.async$ioc_alts_BANG_$fn__25180",
+                                :class "clojure.core.async$ioc_alts_BANG_$fn__25181",
                                 :method "invoke"}
-                               {:name "clojure.core.async$do_alts$fn__25111$fn__25114/invoke",
+                               {:name "clojure.core.async$do_alts$fn__25112$fn__25115/invoke",
                                 :file "async.clj",
                                 :line 288,
-                                :class "clojure.core.async$do_alts$fn__25111$fn__25114",
+                                :class "clojure.core.async$do_alts$fn__25112$fn__25115",
                                 :method "invoke"}
-                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677/invoke",
+                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678/invoke",
                                 :file "channels.clj",
                                 :line 99,
-                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677",
+                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -2647,10 +2647,10 @@
                                 :line 635,
                                 :class "java.util.concurrent.ThreadPoolExecutor$Worker",
                                 :method "run"}
-                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546/invoke",
+                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547/invoke",
                                 :file "concurrent.clj",
                                 :line 29,
-                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546",
+                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -2663,7 +2663,7 @@
                                 :class "java.lang.Thread",
                                 :method "run"}]},
             :code "(compose\n (list-plot (map #(vector % (rand %)) (range 0 10 0.01)) :opacity 0.3 :symbol-size 50)\n (plot (fn [x] (* x (Math/pow (Math/sin x) 2))) [0 10]))",
-            :id :d5ea9e2f-e042-4ff4-a7a5-d7cff5438bbb,
+            :id :c1a64a8b-3563-48b0-addb-78eb16c58879,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.ExceptionInfo",
@@ -2758,10 +2758,10 @@
                                 :line 57,
                                 :class "reval.kernel.clj_eval$clj_eval",
                                 :method "invoke"}
-                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915/invoke",
+                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917/invoke",
                                 :file "notebook.clj",
                                 :line 98,
-                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915",
+                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917",
                                 :method "invoke"}
                                {:name "clojure.core$map$fn__5884/invoke",
                                 :file "core.clj",
@@ -2953,25 +2953,25 @@
                                 :line 80,
                                 :class "modular.ws.msg_handler$event_msg_handler",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761/invoke",
                                 :file "sente.cljc",
                                 :line 1755,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761",
                                 :method "invoke"}
                                {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30638/invoke",
                                 :file "sente.cljc",
                                 :line 1741,
                                 :class "taoensso.sente$_start_chsk_router_BANG_$fn__30638",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741",
                                 :method "invoke"}
                                {:name "clojure.core.async.impl.ioc_macros$run_state_machine/invokeStatic",
                                 :file "ioc_macros.clj",
@@ -2993,20 +2993,20 @@
                                 :line 980,
                                 :class "clojure.core.async.impl.ioc_macros$run_state_machine_wrapped",
                                 :method "invoke"}
-                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25180/invoke",
+                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25181/invoke",
                                 :file "async.clj",
                                 :line 421,
-                                :class "clojure.core.async$ioc_alts_BANG_$fn__25180",
+                                :class "clojure.core.async$ioc_alts_BANG_$fn__25181",
                                 :method "invoke"}
-                               {:name "clojure.core.async$do_alts$fn__25111$fn__25114/invoke",
+                               {:name "clojure.core.async$do_alts$fn__25112$fn__25115/invoke",
                                 :file "async.clj",
                                 :line 288,
-                                :class "clojure.core.async$do_alts$fn__25111$fn__25114",
+                                :class "clojure.core.async$do_alts$fn__25112$fn__25115",
                                 :method "invoke"}
-                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677/invoke",
+                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678/invoke",
                                 :file "channels.clj",
                                 :line 99,
-                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677",
+                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -3023,10 +3023,10 @@
                                 :line 635,
                                 :class "java.util.concurrent.ThreadPoolExecutor$Worker",
                                 :method "run"}
-                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546/invoke",
+                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547/invoke",
                                 :file "concurrent.clj",
                                 :line 29,
-                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546",
+                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -3039,7 +3039,7 @@
                                 :class "java.lang.Thread",
                                 :method "run"}]},
             :code "(compose\n (histogram (repeatedly 1000 #(rand 10)) :color \"steelblue\" :bins 100 :normalize :probability-density)\n (plot (constantly 0.1) [0 10]))",
-            :id :b1a731b3-4cfb-4f9a-ad64-d1068927d348,
+            :id :1a16b3c5-974c-4f13-9ffb-47c876712988,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.ExceptionInfo",
@@ -3134,10 +3134,10 @@
                                 :line 57,
                                 :class "reval.kernel.clj_eval$clj_eval",
                                 :method "invoke"}
-                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915/invoke",
+                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917/invoke",
                                 :file "notebook.clj",
                                 :line 98,
-                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915",
+                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917",
                                 :method "invoke"}
                                {:name "clojure.core$map$fn__5884/invoke",
                                 :file "core.clj",
@@ -3329,25 +3329,25 @@
                                 :line 80,
                                 :class "modular.ws.msg_handler$event_msg_handler",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761/invoke",
                                 :file "sente.cljc",
                                 :line 1755,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761",
                                 :method "invoke"}
                                {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30638/invoke",
                                 :file "sente.cljc",
                                 :line 1741,
                                 :class "taoensso.sente$_start_chsk_router_BANG_$fn__30638",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741",
                                 :method "invoke"}
                                {:name "clojure.core.async.impl.ioc_macros$run_state_machine/invokeStatic",
                                 :file "ioc_macros.clj",
@@ -3369,20 +3369,20 @@
                                 :line 980,
                                 :class "clojure.core.async.impl.ioc_macros$run_state_machine_wrapped",
                                 :method "invoke"}
-                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25180/invoke",
+                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25181/invoke",
                                 :file "async.clj",
                                 :line 421,
-                                :class "clojure.core.async$ioc_alts_BANG_$fn__25180",
+                                :class "clojure.core.async$ioc_alts_BANG_$fn__25181",
                                 :method "invoke"}
-                               {:name "clojure.core.async$do_alts$fn__25111$fn__25114/invoke",
+                               {:name "clojure.core.async$do_alts$fn__25112$fn__25115/invoke",
                                 :file "async.clj",
                                 :line 288,
-                                :class "clojure.core.async$do_alts$fn__25111$fn__25114",
+                                :class "clojure.core.async$do_alts$fn__25112$fn__25115",
                                 :method "invoke"}
-                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677/invoke",
+                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678/invoke",
                                 :file "channels.clj",
                                 :line 99,
-                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677",
+                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -3399,10 +3399,10 @@
                                 :line 635,
                                 :class "java.util.concurrent.ThreadPoolExecutor$Worker",
                                 :method "run"}
-                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546/invoke",
+                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547/invoke",
                                 :file "concurrent.clj",
                                 :line 29,
-                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546",
+                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -3415,7 +3415,7 @@
                                 :class "java.lang.Thread",
                                 :method "run"}]},
             :code "(defn gaussian\n  [x sigma mu]\n  (* (/ 0.4 sigma) (Math/exp (- (/ (* (- x mu) (- x mu)) (* 2 (* sigma sigma)))))))",
-            :id :8f0f6324-4077-4054-bed8-681dfda0bf27,
+            :id :f12b38e1-1ea3-4fd1-843f-e7f9ac088377,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.ExceptionInfo",
@@ -3510,10 +3510,10 @@
                                 :line 57,
                                 :class "reval.kernel.clj_eval$clj_eval",
                                 :method "invoke"}
-                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915/invoke",
+                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917/invoke",
                                 :file "notebook.clj",
                                 :line 98,
-                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915",
+                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917",
                                 :method "invoke"}
                                {:name "clojure.core$map$fn__5884/invoke",
                                 :file "core.clj",
@@ -3705,25 +3705,25 @@
                                 :line 80,
                                 :class "modular.ws.msg_handler$event_msg_handler",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761/invoke",
                                 :file "sente.cljc",
                                 :line 1755,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761",
                                 :method "invoke"}
                                {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30638/invoke",
                                 :file "sente.cljc",
                                 :line 1741,
                                 :class "taoensso.sente$_start_chsk_router_BANG_$fn__30638",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741",
                                 :method "invoke"}
                                {:name "clojure.core.async.impl.ioc_macros$run_state_machine/invokeStatic",
                                 :file "ioc_macros.clj",
@@ -3745,20 +3745,20 @@
                                 :line 980,
                                 :class "clojure.core.async.impl.ioc_macros$run_state_machine_wrapped",
                                 :method "invoke"}
-                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25180/invoke",
+                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25181/invoke",
                                 :file "async.clj",
                                 :line 421,
-                                :class "clojure.core.async$ioc_alts_BANG_$fn__25180",
+                                :class "clojure.core.async$ioc_alts_BANG_$fn__25181",
                                 :method "invoke"}
-                               {:name "clojure.core.async$do_alts$fn__25111$fn__25114/invoke",
+                               {:name "clojure.core.async$do_alts$fn__25112$fn__25115/invoke",
                                 :file "async.clj",
                                 :line 288,
-                                :class "clojure.core.async$do_alts$fn__25111$fn__25114",
+                                :class "clojure.core.async$do_alts$fn__25112$fn__25115",
                                 :method "invoke"}
-                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677/invoke",
+                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678/invoke",
                                 :file "channels.clj",
                                 :line 99,
-                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677",
+                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -3775,10 +3775,10 @@
                                 :line 635,
                                 :class "java.util.concurrent.ThreadPoolExecutor$Worker",
                                 :method "run"}
-                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546/invoke",
+                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547/invoke",
                                 :file "concurrent.clj",
                                 :line 29,
-                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546",
+                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -3791,7 +3791,7 @@
                                 :class "java.lang.Thread",
                                 :method "run"}]},
             :code "(compose\n (histogram (repeatedly 10000 #(- (apply + (repeatedly 50 rand)) 25))\n            :bins 100\n            :normalise :probability-density)\n (plot #(gaussian % 2 0) [-10 10]))",
-            :id :755a8f80-0cd8-436f-8ef1-0917bc5d5df2,
+            :id :1009b398-28c2-4ad6-9ca6-75c85790e55c,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.ExceptionInfo",
@@ -3886,10 +3886,10 @@
                                 :line 57,
                                 :class "reval.kernel.clj_eval$clj_eval",
                                 :method "invoke"}
-                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915/invoke",
+                               {:name "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917/invoke",
                                 :file "notebook.clj",
                                 :line 98,
-                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37915",
+                                :class "reval.document.notebook$eval_nb_segments$nb_eval_segment__37917",
                                 :method "invoke"}
                                {:name "clojure.core$map$fn__5884/invoke",
                                 :file "core.clj",
@@ -4081,25 +4081,25 @@
                                 :line 80,
                                 :class "modular.ws.msg_handler$event_msg_handler",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761/invoke",
                                 :file "sente.cljc",
                                 :line 1755,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743$inst_30711__30761",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743$inst_30711__30761",
                                 :method "invoke"}
                                {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30638/invoke",
                                 :file "sente.cljc",
                                 :line 1741,
                                 :class "taoensso.sente$_start_chsk_router_BANG_$fn__30638",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741$fn__30743",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741$fn__30743",
                                 :method "invoke"}
-                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741/invoke",
+                               {:name "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741/invoke",
                                 :file "sente.cljc",
                                 :line 1743,
-                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24933__auto____30741",
+                                :class "taoensso.sente$_start_chsk_router_BANG_$fn__30720$state_machine__24934__auto____30741",
                                 :method "invoke"}
                                {:name "clojure.core.async.impl.ioc_macros$run_state_machine/invokeStatic",
                                 :file "ioc_macros.clj",
@@ -4121,20 +4121,20 @@
                                 :line 980,
                                 :class "clojure.core.async.impl.ioc_macros$run_state_machine_wrapped",
                                 :method "invoke"}
-                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25180/invoke",
+                               {:name "clojure.core.async$ioc_alts_BANG_$fn__25181/invoke",
                                 :file "async.clj",
                                 :line 421,
-                                :class "clojure.core.async$ioc_alts_BANG_$fn__25180",
+                                :class "clojure.core.async$ioc_alts_BANG_$fn__25181",
                                 :method "invoke"}
-                               {:name "clojure.core.async$do_alts$fn__25111$fn__25114/invoke",
+                               {:name "clojure.core.async$do_alts$fn__25112$fn__25115/invoke",
                                 :file "async.clj",
                                 :line 288,
-                                :class "clojure.core.async$do_alts$fn__25111$fn__25114",
+                                :class "clojure.core.async$do_alts$fn__25112$fn__25115",
                                 :method "invoke"}
-                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677/invoke",
+                               {:name "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678/invoke",
                                 :file "channels.clj",
                                 :line 99,
-                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19676$fn__19677",
+                                :class "clojure.core.async.impl.channels.ManyToManyChannel$fn__19677$fn__19678",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -4151,10 +4151,10 @@
                                 :line 635,
                                 :class "java.util.concurrent.ThreadPoolExecutor$Worker",
                                 :method "run"}
-                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546/invoke",
+                               {:name "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547/invoke",
                                 :file "concurrent.clj",
                                 :line 29,
-                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19545$fn__19546",
+                                :class "clojure.core.async.impl.concurrent$counted_thread_factory$reify__19546$fn__19547",
                                 :method "invoke"}
                                {:name "clojure.lang.AFn/run",
                                 :file "AFn.java",
@@ -4167,11 +4167,11 @@
                                 :class "java.lang.Thread",
                                 :method "run"}]},
             :code "(compose\n (histogram (repeatedly 10000 #(- (apply + (repeatedly 50 rand)) 25))\n            :bins 100\n            :normalise :probability-density)\n (histogram (repeatedly 10000 #(- (apply + (repeatedly 50 rand)) 23))\n            :bins 100\n            :normalise :probability-density\n            :color \"green\")\n (plot #(gaussian % 2 0) [-10 10])\n (plot #(gaussian % 2 2) [-10 10] :color \"orange\"))",
-            :id :54c86df0-2553-4edb-9f68-ff47764f4fd2,
+            :id :8290eac6-51a7-472e-b7ee-6f5ada1d6845,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}],
- :meta {:id :c3ae900a-61ba-404d-a3d5-6cbad27582fa,
-        :eval-time "2022-05-16 21:36:56",
+ :meta {:id :8fbb7d2c-4f96-4b12-a6af-768e91ec16ef,
+        :eval-time "2022-05-17 07:46:30",
         :ns "demo.notebook.gorillaplot-core",
         :java "17.0.1",
         :clojure "1.10.3"}}

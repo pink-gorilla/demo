@@ -1,0 +1,23 @@
+; saved on 2022-05-17 07:47:09
+{:content [{:out "",
+            :code "(ns demo.notebook.highlightjs)",
+            :id :725c854c-03d5-441f-b1ca-fbac176f903c,
+            :ns "demo.notebook.highlightjs",
+            :hiccup [:div.p-2.clj-nil [:p "nil"]]}
+           {:out "",
+            :code "^:R\n[:div\n [:p \"this snippet demonstrates to use highlight.js\"]\n [:p \"eval button click will just print the code to browser console.\"]\n ['user/highlightjs \"(+ 8 8)\\n(def add [a b] \\n   (+ a b))\\n(add)\"]]",
+            :id :a99c7642-97b0-41bb-bbad-bf87afcdb613,
+            :ns "demo.notebook.highlightjs",
+            :hiccup ^{:R true}
+                    [:div
+                     [:p
+                      "this snippet demonstrates to use highlight.js"]
+                     [:p
+                      "eval button click will just print the code to browser console."]
+                     [user/highlightjs
+                      "(+ 8 8)\n(def add [a b] \n   (+ a b))\n(add)"]]}],
+ :meta {:id :42303076-5780-490d-aa0e-bdcab74ff8f1,
+        :eval-time "2022-05-17 07:47:09",
+        :ns "demo.notebook.highlightjs",
+        :java "17.0.1",
+        :clojure "1.10.3"}}

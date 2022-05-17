@@ -1,12 +1,12 @@
-; saved on 2022-05-16 21:36:50
+; saved on 2022-05-17 07:46:05
 {:content [{:out "",
             :code "(ns demo.notebook.aggrid-size)",
-            :id :bf11845e-3adc-467c-9c8b-5c1f381bc53d,
+            :id :27ec1c50-7a6f-4548-b701-d1ae13b174b9,
             :ns "demo.notebook.aggrid-size",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
             :code "^:R\n[:p/aggrid {:data [{:make \"Toyota\" :model \"Celica\" :price 35000}\n                   {:make \"Ford\" :model \"Mondeo\" :price 32000}\n                   {:make \"Porsche\" :model \"Boxter\" :price 72000}]}]",
-            :id :0bf311ed-9569-4205-a180-f38b874f9652,
+            :id :f43d5bf6-033d-43b5-b3c9-74ee95ee9313,
             :ns "demo.notebook.aggrid-size",
             :hiccup ^{:R true}
                     [:p/aggrid
@@ -21,14 +21,14 @@
                               :price 72000}]}]}
            {:out "",
             :code "(def rates\n  [{:tenor \"1D\" :rate 1 :vol-factor 1 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"5D\" :rate 3 :vol-factor 1.5 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"1M\" :rate 6 :vol-factor 0.9444443333 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"6M\" :rate 4 :vol-factor 2.1234567890123456789 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"1Y\" :rate 5 :vol-factor 3 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"2Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"5Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"10Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"30Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"50Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"60Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"70Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"80Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}])",
-            :id :64387949-cf3d-4f7f-bc90-f8d6f1f951cf,
+            :id :6283bc6d-66da-4a32-8e52-a2ba0b09577d,
             :ns "demo.notebook.aggrid-size",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.aggrid-size/rates"]}
            {:out "",
             :code "^:R\n[:p/aggrid {:data rates\n            :box :lg}]",
-            :id :cb4bd78d-921d-4bc4-9323-ddb49f9bbb51,
+            :id :6f4406f0-51e9-46f9-b8ac-85c07fe2eb34,
             :ns "demo.notebook.aggrid-size",
             :hiccup ^{:R true}
                     [:p/aggrid
@@ -185,7 +185,7 @@
                       :box :lg}]}
            {:out "",
             :code "^:R\n['user/aggrid {:style {:width \"100%\"\n                       :height \"250px\"}\n               :data [{:make \"Toyota\" :model \"Celica\" :price 35000}\n                      {:make \"Ford\" :model \"Mondeo\" :price 32000}\n                      {:make \"Porsche\" :model \"Boxter\" :price 72000}]}]",
-            :id :0818c42f-e9ff-4435-878b-b5577e85a711,
+            :id :25680771-d913-4b11-96d3-851364c4a0e7,
             :ns "demo.notebook.aggrid-size",
             :hiccup ^{:R true}
                     [user/aggrid
@@ -200,8 +200,8 @@
                              {:make "Porsche",
                               :model "Boxter",
                               :price 72000}]}]}],
- :meta {:id :06bd5d04-1c63-4d9b-9386-c0e8f9af1179,
-        :eval-time "2022-05-16 21:36:50",
+ :meta {:id :aa95d853-bea1-470b-940a-96ec9f4cbcbb,
+        :eval-time "2022-05-17 07:46:05",
         :ns "demo.notebook.aggrid-size",
         :java "17.0.1",
         :clojure "1.10.3"}}
