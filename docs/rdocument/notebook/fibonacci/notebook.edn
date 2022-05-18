@@ -1,0 +1,67 @@
+; saved on 2022-05-18 07:29:41
+{:content [{:out "",
+            :code "; infinite seq\n\n(def fib-seq-seq\n  ((fn fib [a b]\n     (lazy-seq (cons a (fib b (+ a b)))))\n   0 1))",
+            :id :efc73534-5072-486a-8467-7a28c943b522,
+            :ns "notebook.fibonacci",
+            :hiccup [:span
+                     {:style {:color "deeppink"}}
+                     "#'notebook.fibonacci/fib-seq-seq"]}
+           {:out "",
+            :code "(take 20 fib-seq-seq)",
+            :id :80bdf32d-5900-4210-907d-e345853e15aa,
+            :ns "notebook.fibonacci",
+            :hiccup [:span
+                     {:class "clj-lazy-seq"}
+                     [:span.font-bold.teal-700.mr-1 "("]
+                     [:span.items
+                      [:span {:style {:color "blue"}} "0"]
+                      [:span " "]
+                      [:span {:style {:color "blue"}} "1"]
+                      [:span " "]
+                      [:span {:style {:color "blue"}} "1"]
+                      [:span " "]
+                      [:span {:style {:color "blue"}} "2"]
+                      [:span " "]
+                      [:span {:style {:color "blue"}} "3"]
+                      [:span " "]
+                      [:span {:style {:color "blue"}} "5"]
+                      [:span " "]
+                      [:span {:style {:color "blue"}} "8"]
+                      [:span " "]
+                      [:span {:style {:color "blue"}} "13"]
+                      [:span " "]
+                      [:span {:style {:color "blue"}} "21"]
+                      [:span " "]
+                      [:span {:style {:color "blue"}} "34"]
+                      [:span " "]
+                      [:span {:style {:color "blue"}} "55"]
+                      [:span " "]
+                      [:span {:style {:color "blue"}} "89"]
+                      [:span " "]
+                      [:span {:style {:color "blue"}} "144"]
+                      [:span " "]
+                      [:span {:style {:color "blue"}} "233"]
+                      [:span " "]
+                      [:span {:style {:color "blue"}} "377"]
+                      [:span " "]
+                      [:span {:style {:color "blue"}} "610"]
+                      [:span " "]
+                      [:span {:style {:color "blue"}} "987"]
+                      [:span " "]
+                      [:span
+                       {:style {:color "blue"}}
+                       "1597"]
+                      [:span " "]
+                      [:span
+                       {:style {:color "blue"}}
+                       "2584"]
+                      [:span " "]
+                      [:span
+                       {:style {:color "blue"}}
+                       "4181"]]
+                     [:span.font-bold.teal-700.ml-1 ")"]]}],
+ :meta {:id :0b0de638-b756-4f4d-9e77-a3d2d66c2c19,
+        :eval-time "2022-05-18 07:29:41",
+        :ns "notebook.fibonacci",
+        :java "17.0.1",
+        :clojure "1.10.3"}}

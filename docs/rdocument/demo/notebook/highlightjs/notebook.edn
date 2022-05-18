@@ -1,23 +1,22 @@
-; saved on 2022-05-17 07:47:09
+; saved on 2022-05-18 07:21:49
 {:content [{:out "",
             :code "(ns demo.notebook.highlightjs)",
-            :id :725c854c-03d5-441f-b1ca-fbac176f903c,
+            :id :fc7f22b7-44d4-4386-b6f8-9ad18836c6c8,
             :ns "demo.notebook.highlightjs",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
-            :code "^:R\n[:div\n [:p \"this snippet demonstrates to use highlight.js\"]\n [:p \"eval button click will just print the code to browser console.\"]\n ['user/highlightjs \"(+ 8 8)\\n(def add [a b] \\n   (+ a b))\\n(add)\"]]",
-            :id :a99c7642-97b0-41bb-bbad-bf87afcdb613,
+            :code "^:R\n[:div.bg-blue-500 ; test how background is on different color\n [:p \"this snippet demonstrates to use highlight.js\"]\n ['user/highlightjs \"(+ 8 8)\\n(def add [a b] \\n   (+ a b))\\n(add)\"]\n [:p \"live goes on!\"]]",
+            :id :83c4fbd4-11a9-4b8d-8d25-f1620624e578,
             :ns "demo.notebook.highlightjs",
             :hiccup ^{:R true}
-                    [:div
+                    [:div.bg-blue-500
                      [:p
                       "this snippet demonstrates to use highlight.js"]
-                     [:p
-                      "eval button click will just print the code to browser console."]
                      [user/highlightjs
-                      "(+ 8 8)\n(def add [a b] \n   (+ a b))\n(add)"]]}],
- :meta {:id :42303076-5780-490d-aa0e-bdcab74ff8f1,
-        :eval-time "2022-05-17 07:47:09",
+                      "(+ 8 8)\n(def add [a b] \n   (+ a b))\n(add)"]
+                     [:p "live goes on!"]]}],
+ :meta {:id :e8392600-096d-48e6-86b2-d1acfc1c3da0,
+        :eval-time "2022-05-18 07:21:49",
         :ns "demo.notebook.highlightjs",
         :java "17.0.1",
         :clojure "1.10.3"}}

@@ -1,8 +1,8 @@
-; saved on 2022-05-18 07:26:34
+; saved on 2022-05-18 07:29:14
 {:content [{:out "",
-            :code "(ns demo.notebook.sparkline)",
-            :id :1180462e-0b99-4369-a2c0-a5f5d88f6305,
-            :ns "demo.notebook.sparkline",
+            :code "(ns demo.notebook.tree)",
+            :id :87333b9c-56b8-4a0b-b4c8-241f7b22594a,
+            :ns "demo.notebook.tree",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "java.lang.RuntimeException",
                   :message "Unable to resolve symbol: Namespace in this context",
@@ -422,7 +422,7 @@
                                 :class "java.lang.Thread",
                                 :method "run"}]},
             :code "Namespace",
-            :id :9d5b26b9-2ea4-4ad7-a66f-83503e58e681,
+            :id :ff94d39b-0848-4aa0-9946-174210f73b02,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.ExceptionInfo",
@@ -798,7 +798,7 @@
                                 :class "java.lang.Thread",
                                 :method "run"}]},
             :code "not",
-            :id :c756722a-6e39-4d41-8a70-4b581c120797,
+            :id :001c74eb-f16a-4eba-a7d3-eca9329c66bf,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.ExceptionInfo",
@@ -1174,7 +1174,7 @@
                                 :class "java.lang.Thread",
                                 :method "run"}]},
             :code "found",
-            :id :a5e64c47-d274-42a6-bd1b-b4f162cbe616,
+            :id :e1fe0ea8-afe7-40bd-8684-3528edfaa8df,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.ExceptionInfo",
@@ -1550,7 +1550,7 @@
                                 :class "java.lang.Thread",
                                 :method "run"}]},
             :code "on",
-            :id :73d9aa58-18a8-4319-98c6-1826fce751fa,
+            :id :db52a261-12f7-484b-b55f-90bbbabd87dd,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:err {:class "clojure.lang.ExceptionInfo",
@@ -1926,11 +1926,11 @@
                                 :class "java.lang.Thread",
                                 :method "run"}]},
             :code "classpath",
-            :id :ad5c8d33-6dc0-473a-8667-7f8c783e61d4,
+            :id :e13d22a5-9579-4df8-bfe7-bb21b506cfda,
             :ns nil,
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}],
- :meta {:id :9f781059-7ea7-4f67-97cf-4fd41af64729,
-        :eval-time "2022-05-18 07:26:34",
-        :ns "demo.notebook.sparkline",
+ :meta {:id :07ea55ba-6d87-4b18-9758-be27609b6efe,
+        :eval-time "2022-05-18 07:29:14",
+        :ns "demo.notebook.tree",
         :java "17.0.1",
         :clojure "1.10.3"}}

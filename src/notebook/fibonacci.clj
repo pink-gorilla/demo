@@ -7,5 +7,5 @@
      (lazy-seq (cons a (fib b (+ a b)))))
    0 1))
 
-(take 10 fib-seq-seq)
+(take 20 fib-seq-seq)
 

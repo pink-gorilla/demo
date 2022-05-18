@@ -1,13 +1,17 @@
 
-(ns demo.greeter)
+(ns page.greeter
+  (:require 
+    [user :refer [add-page-site]]))
 
 (defn greeter-details-page [route-data]
   [:div
    [:p "this shows how to do master-detail relations"]
    [:p "Access this component only via greeter."]
-   [:p.bg-blue-300.mg-3 "the best dad in the world is: " ext]])
+   [:p.bg-blue-300.mg-3 "the best dad in the world is: " (pr-str route-data)]])
 
-(add-page greeter-details-page :demo-greeter-details)
+(add-page-site greeter-details-page :demo-greeter-details)
+
+(def prefix "yes: ")
 
 (defn greeter-page [route-data]
   (let [state (r/atom {:in ""
@@ -26,7 +30,7 @@
         [:p.m-2.p-1.border.border-round (str "goto person: " (:in @state))]]
        [:div.text-2xl (:msg @state)]])))
 
-(add-page greeter-page :demo-greeter)
+(add-page-site greeter-page :demo-greeter)
 
 
 
