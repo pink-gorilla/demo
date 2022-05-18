@@ -1,21 +1,21 @@
-; saved on 2022-05-18 07:25:54
+; saved on 2022-05-18 21:20:44
 {:content [{:out "",
             :code "; this is our helper function to assemble a highchart object. it contains\n\n; default values that we will use for multiple charts\n\n(defn make-chart-config [data]\n  {:chart {:type \"line\"\n           :animation false}\n   :title {:text (:title data)}\n   :subtitle {:text (:subtitle data)}\n   :yAxis {:min 0\n           :title {:text \"\"\n                   :align \"high\"}}\n               ;:labels {:overflow \"justify\"}\n\n   :xAxis {:categories (:labels data)}\n   :tooltip {:valueSuffix \" %\"}\n   :plotOptions {:series\n                 {:animation 0\n                  :label\n                  {;:pointStart 2010\n                   :connectorAllowed false}}}\n   :legend {;:x -40\n            ;:y 100\n            ;:floating true\n            ;:borderWidth 1\n            ;:shadow true\n            :layout \"vertical\"\n            :align \"right\"\n            :verticalAlign \"top\"}\n   :credits {:enabled false}\n   :series (:series data)})",
-            :id :7555f920-8927-4da9-b48f-d31c7a0a23bf,
+            :id :324b4471-3a93-4488-8620-d34b13ed6d75,
             :ns "demo.notebook.highcharts",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.highcharts/make-chart-config"]}
            {:out "",
             :code "(def highchart-spec\n  (make-chart-config\n   {:title \"Economic Activity\"\n    :subtitle \"made with Love\"\n    :labels [\"Jan\" \"Feb\" \"Mar\" \"Apr\" \"May\" \"Jun\" \"Jul\" \"Aug\"]\n    :series\n    [{:name \"Installation\" :data [439 523 577 698 931 1131 1333 1175]}\n     {:name \"Manufacturing\" :data [249 244 292 291 390 302 381 404]}\n     {:name \"Sales & Distribution\" :data [117 172 165 191 285 247 321 393]}]}))",
-            :id :b8d694c4-35f3-4b74-bdd3-8e41ecca5e5c,
+            :id :9e215e65-a327-4a08-881f-86f93bfd5047,
             :ns "demo.notebook.highcharts",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.highcharts/highchart-spec"]}
            {:out "",
             :code "^:R\n['user/highchart {:data highchart-spec}]",
-            :id :ce24c2bb-055e-47d6-ab9c-165a47dff837,
+            :id :a2051505-868a-44ae-ac08-8c7e5a99d21d,
             :ns "demo.notebook.highcharts",
             :hiccup ^{:R true}
                     [user/highchart
@@ -68,8 +68,8 @@
                                                   "Jul"
                                                   "Aug"]},
                              :tooltip {:valueSuffix " %"}}}]}],
- :meta {:id :d4a0c730-8a2c-49a5-b68b-454589c73f6c,
-        :eval-time "2022-05-18 07:25:54",
+ :meta {:id :c640ddd0-7b91-4535-8bd9-4d25ff0bd534,
+        :eval-time "2022-05-18 21:20:44",
         :ns "demo.notebook.highcharts",
         :java "17.0.1",
         :clojure "1.10.3"}}
