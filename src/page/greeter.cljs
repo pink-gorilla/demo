@@ -11,24 +11,25 @@
 
 (add-page-site greeter-details-page :demo-greeter-details)
 
-(def prefix "yes: ")
+(def prefix "Hello, ")
 
 (defn greeter-page [route-data]
-  (let [state (r/atom {:in ""
+  (let [state (r/atom {:name ""
                        :msg "Type Something..."})
-        change-state (fn [s e]
-                       (swap! state
-                              (assoc s :in (:value e)
-                                     :msg (str prefix ", " (:value e)))))]
-    (fn []
+        change-state (fn [e & args]
+                       (let [t (.-target e)
+                             v (.-value t)]
+                       (.log js/console e args)
+                       (swap! state assoc :name v)))]
+    (fn [route-data]
       [:div.rows
        [:input {:class "border border-blue-300"
                 :type "text"
-                :on-change #(change-state % "Hello")
-                :value (:in @state)}]
-       [:a {:href (str "/system/greeter-details/" (:in @state))}
-        [:p.m-2.p-1.border.border-round (str "goto person: " (:in @state))]]
-       [:div.text-2xl (:msg @state)]])))
+                :on-change change-state
+                :value (:name @state)}]
+       [:a {:on-click #(rf/dispatch [:bidi/goto :demo-greeter-details :query-params {:name (:name @state)}])}
+        [:p.m-2.p-1.border.border-round (str "goto person: " (:name @state))]]
+       [:div.text-2xl (str "Hello, " (:name @state))]])))
 
 (add-page-site greeter-page :demo-greeter)
 

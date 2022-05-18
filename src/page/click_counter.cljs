@@ -8,7 +8,7 @@
     (fn [route-data]
       [:div "Clicked "
        [:button {:class "border m-2 p-3 border-pink-500 text-xl"
-                 :on-click (swap! state inc)}
+                 :on-click #(swap! state inc)}
         @state]
        " times"])))
 
