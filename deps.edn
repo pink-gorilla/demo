@@ -3,7 +3,7 @@
          "target/webly" ; in case we build ourselves.
          ]
  :deps {org.clojure/clojure    {:mvn/version "1.10.3"}
-        org.pinkgorilla/goldly-docs {:mvn/version "0.4.531"}}
+        org.pinkgorilla/goldly-docs {:mvn/version "0.4.543"}}
 
  :aliases
  {:outdated
@@ -15,21 +15,21 @@
    :main-opts ["-m" "cljfmt.main" "fix" "--indents" "cljfmt.edn"]}
 
   ; RUN SERVICES (keep running)
-  :docs-run
-  {:jvm-opts ["-Dmaven.wagon.rto=90000"]
+  :docs
+  {:extra-paths ["target/webly" ; to include the sci-bindings info
+                 "node_modules"
+                 "demo"]
    :exec-fn modular.system/start!
    :exec-args {:profile "jetty"
-               :config ["webly/config.edn" "goldly/config.edn" "goldly/docs-config.edn"
-                        "demo.edn"]
-               :services "goldly/docs-services.edn"}}
+               :services "goldly/services.edn"
+               :config  ["webly/config.edn" "goldly/config.edn" "goldly/docs-config.edn"
+                         "demo.edn"]}}
 
   ; BUILD BUNDLE (then exit)
-  :docs-build 
-  {:jvm-opts ["-Dmaven.wagon.rto=90000"]
-   :exec-fn goldly.app.build/goldly-build
-   :exec-args {:profile "compile2"
-               :config ["webly/config.edn" "goldly/config.edn" "goldly/docs-config.edn"
-                        "demo.edn"]}}
+  :build
+  {:exec-fn goldly.app.build/goldly-build
+   :exec-args {:profile "npm-install"}}
+
 
   ;; nb eval
 

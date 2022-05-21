@@ -1,4 +1,9 @@
-
+(ns page.time
+  (:require
+   [r]
+   [rf]
+   [service]
+   [lib.ui :refer [add-page-site]]))
 
 (defonce
   time-state (r/atom {:time "waiting for server time"}))
@@ -6,7 +11,6 @@
 (rf/reg-event-fx
  :demo/time
  (fn [{:keys [db]} [_ msg]]
-   (info "time msg received: " msg)
    (swap! time-state assoc :time msg)
    nil))
 

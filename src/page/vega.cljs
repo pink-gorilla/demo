@@ -1,3 +1,11 @@
+(ns page.vega
+  (:require
+   [r]
+   [rf]
+   [service]
+   [user :refer [vega vegalite]]
+   [lib.ui :refer [add-page-site]]))
+
 (def s
   {:$schema "https://vega.github.io/schema/vega-lite/v5.json",
    :data {:url "/r/demo/movies.json"},

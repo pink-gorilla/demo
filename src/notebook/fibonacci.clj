@@ -1,5 +1,4 @@
-
-
+(ns notebook.fibonacci)
 
 ; infinite seq
 (def fib-seq-seq

@@ -1,3 +1,10 @@
+(ns page.leaflet-iss
+  (:require
+   [r]
+   [service]
+   [user :refer [parse-float interval leaflet]]
+   [http :refer [get-json]]
+   [lib.ui :refer [add-page-site]]))
 
 ; ISS Location tracker - realtime
 
@@ -13,7 +20,6 @@
 
 (defn download []
      ;; http://open-notify.org/Open-Notify-API/ISS-Location-Now/
-  (info "downloading iss pos..")
   (get-json "http://api.open-notify.org/iss-now.json" issstate [:data]))
 
 (defn iss []

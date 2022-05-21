@@ -1,3 +1,12 @@
+(ns page.aggrid
+  (:require
+   [r]
+   [service]
+   [t]
+   [page]
+   [user :refer [aggrid]]
+   [lib.ui :refer [add-page-site link-dispatch]]))
+
 (def data
   (map (fn [i] {:idx i
                 :name "jon"
@@ -8,7 +17,7 @@
 (defn aggrid-page [{:keys [route-params query-params handler] :as route}]
   [:div.h-screen.w-screen
    [:div {:style {:position "absolute"}}
-    [link-href "/" "main"]]
+    [link-dispatch [:bidi/goto :user/main] "main"]]
    ;[:p "data" (pr-str data)]
    [aggrid {:data data
             :box :fl

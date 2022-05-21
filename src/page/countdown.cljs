@@ -1,3 +1,8 @@
+(ns page.countdown
+  (:require
+   [r]
+   [user :refer [timeout]]
+   [lib.ui :refer [add-page-site]]))
 
 (defn countdown-page [route-data]
   (let [state (r/atom 0)]
@@ -7,4 +12,4 @@
        "Seconds Elapsed: "
        @state])))
 
-(add-page countdown-page :demo-countdown)
+(add-page-site countdown-page :demo-countdown)

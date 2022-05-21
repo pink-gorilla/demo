@@ -1,3 +1,6 @@
+(ns page.main
+  (:require
+   [lib.ui :refer [add-page-site link-dispatch]]))
 
 ; main page 
 
@@ -7,7 +10,7 @@
    [:p "This website shows what you can do with goldly."]
 
    [:p "Users normally would not get developer tooling:"]
-   [link-href "/devtools/help" "goldly developer tools"]])
+   [link-dispatch [:bidi/goto :devtools] "goldly developer tools"]])
 
 ; (add-page main-page :user/main)
 

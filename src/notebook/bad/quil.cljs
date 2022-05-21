@@ -1,8 +1,3 @@
-
-
-
-
-
 (ns qil-demo
   (:require
    [reagent.core :as reagent :refer [atom]]
@@ -18,7 +13,14 @@
   (q/fill 0)
   (q/ellipse (rem (:t state) w) 46 55 55))
 
-(q/defsketch foo :setup setup :update update :draw draw :host "foo" :no-start true :middleware [m/fun-mode] :size [w h])
+(q/defsketch foo
+  :setup setup
+  :update update
+  :draw draw
+  :host "foo"
+  :no-start true
+  :middleware [m/fun-mode]
+  :size [w h])
 
 (defn hello-world []
   (reagent/create-class

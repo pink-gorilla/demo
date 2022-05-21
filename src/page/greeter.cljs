@@ -1,7 +1,9 @@
 
 (ns page.greeter
-  (:require 
-    [user :refer [add-page-site]]))
+  (:require
+   [r]
+   [rf]
+   [lib.ui :refer [add-page-site]]))
 
 (defn greeter-details-page [route-data]
   [:div
@@ -19,8 +21,8 @@
         change-state (fn [e & args]
                        (let [t (.-target e)
                              v (.-value t)]
-                       (.log js/console e args)
-                       (swap! state assoc :name v)))]
+                         (.log js/console e args)
+                         (swap! state assoc :name v)))]
     (fn [route-data]
       [:div.rows
        [:input {:class "border border-blue-300"

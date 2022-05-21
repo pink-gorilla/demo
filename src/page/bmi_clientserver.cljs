@@ -1,14 +1,21 @@
+(ns page.bmi-clientserver
+  (:require
+   [r]
+   [service]
+   [user :refer [evt-val]]
+   [page]
+   [lib.ui :refer [add-page-site link-dispatch]]))
+
 (def bmi-data (r/atom {:height 180 :weight 80}))
 
 (defn calc-bmi-server []
   (.log js/console "calculating: " @bmi-data)
-  (run-a bmi-data [:cookie] :bmi/calc @bmi-data))
+  (service/run-a bmi-data [:cookie] :bmi/calc @bmi-data))
 
 (defn slider [param value min max]
   [:input {:type "range" :value value :min min :max max
            :style {:width "100%"}
            :on-change (fn [e]
-                        (println "slider has changed!")
                         (swap! bmi-data assoc param (js/parseInt (.. e -target -value)))
                         (when (not= param :bmi)
                           (swap! bmi-data assoc :bmi nil)))}])
@@ -35,7 +42,7 @@
 
 (defn bmi-server-page  [{:keys [route-params query-params handler] :as route}]
   [:div
-   [link-href "/" "main"]
+   [link-dispatch [:bidi/goto :user/main] "main"]
    [:div
     [:p (str  "height: " (:height @bmi-data))]
     [slider :height (:height @bmi-data) 10 220] ; babies are perhaps only 10cm, adults can go up to 220.
@@ -44,4 +51,4 @@
    [:div.text-green-300 "bodymass index"]
    [bmi-component]])
 
-(add-page bmi-server-page :user/bmi-server)
+(add-page-site bmi-server-page :user/bmi-server)

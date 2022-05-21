@@ -1,4 +1,4 @@
-
+(ns lib.ui)
 
 ;; links
 
@@ -12,7 +12,6 @@
 (defn link-href [href text]
   [:a.bg-blue-600.cursor-pointer.hover:bg-red-700.m-1
    {:href href} text])
-
 
 ;; site layout
 
@@ -29,12 +28,12 @@
            ; {:text "feedback" :link "https://github.com/pink-gorilla/goldly/issues" :special? true}
             ]}])
 
-(defn add-page-site [page name]
+(defn add-page-site [fn-page name]
   (let [wrapped-page (fn [route]
                        [layout/header-main  ; .w-screen.h-screen
                         [site-header]
-                        [page route]])]
-    (add-page wrapped-page name)))
+                        [fn-page route]])]
+    (page/add wrapped-page name)))
 
 
 

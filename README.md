@@ -1,9 +1,8 @@
 # demo - goldly
 
-
 ## demo running goldly-docs
 
-First, clone this repo. Then run: `clojure -X:docs-run`
+First, clone this repo. Then run: `clojure -X:docs`
 After starting, open web-browser on port 8080.
 
 We demonstrate certain features of goldly:
@@ -13,7 +12,7 @@ We demonstrate certain features of goldly:
 - iss: international space stations current position
 
 
-## demo with custom dynamic cljs build (watch mode)
+## demo with custom dynamic cljs build
 
 You only need to build a custom cljs build:
 - if you want to use ui-components that are not included in goldly-docs.
@@ -23,19 +22,13 @@ You only need to build a custom cljs build:
 
 For this demo, it is not neccesary to build cljs. But lets do it for fun anyhow.
 
-The following commands will build a bundel, and recompile it in case a source file
-changes. Shadow-cljs calls this "watch".
-
+The following commands will build a js bundel:
 
 ``` 
-  clojure -X:docs-build :profile '"npm-install"'
-  clojure -X:docs-build :profile '"compile2"'
-  clojure -X:docs-run
+  clojure -X:docs:build :profile '"npm-install"'
+  clojure -X:docs:build :profile '"compile2"'
+  clojure -X:docs
 ```
-
-You can use *"watch"* which brings 10x developer tools.
-Or you can use *"watch2"* which does not. 10x developer tools make the bundel bigger,
-but could be helpful for debugging.
 
 
 ## Static Demo

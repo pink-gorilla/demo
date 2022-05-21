@@ -1,7 +1,7 @@
-
-
-
-
+(ns page.click-counter
+  (:require
+   [r]
+   [lib.ui :refer [add-page-site]]))
 
 (defn click-counter-page [route-data]
   (let [state (r/atom 42)]
@@ -12,4 +12,4 @@
         @state]
        " times"])))
 
-(add-page click-counter-page :demo-click-counter)
+(add-page-site click-counter-page :demo-click-counter)

@@ -1,3 +1,10 @@
+(ns page.bmi
+  (:require
+   [r]
+   [service]
+   [user :refer [evt-val]]
+   [lib.ui :refer [add-page-site]]))
+
 ; define the calculation function. Note that 
 ; 1. a change in the atom will trigger re-rendering
 ; 2. setting :bmi to nil will calculate bmi; otherwise the weight will be adjusted. 
@@ -18,7 +25,6 @@
   [:input {:type "range" :value value :min min :max max
            :style {:width "100%"}
            :on-change (fn [e]
-                        (println "slider has changed!")
                         (swap! bmi-state assoc param (evt-val e))
                         (when (not= param :bmi)
                           (swap! bmi-state assoc :bmi nil)))}])
