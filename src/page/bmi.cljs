@@ -1,7 +1,6 @@
 (ns page.bmi
   (:require
-   [r]
-   [service]
+   [reagent.core :as r]
    [user :refer [evt-val]]
    [lib.ui :refer [add-page-site]]))
 
@@ -58,5 +57,4 @@
    [:div.text-green-300 "bodymass index"]
    [bmi-ui]])
 
-;(add-page bmi-page :user/bmi)
 (add-page-site bmi-page :user/bmi)

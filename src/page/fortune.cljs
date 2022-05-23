@@ -1,7 +1,7 @@
 (ns page.fortune
   (:require
-   [r]
-   [service]
+   [reagent.core :as r]
+   [goldly.service :as service]
    [lib.ui :refer [add-page-site]]))
 
 (def cookie-state (r/atom nil))
@@ -23,8 +23,6 @@
 
 (defn fortune-page [{:keys [route-params query-params handler] :as route}]
   [:div
-   ;[link-href "/" "main"]
    [fortune]])
 
-;(add-page fortune-page :user/fortune)
 (add-page-site fortune-page :user/fortune)

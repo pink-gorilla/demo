@@ -1,12 +1,12 @@
-; saved on 2022-05-18 21:22:05
+; saved on 2022-05-23 11:21:38
 {:content [{:out "",
+            :id :cd561749-6232-4d4e-83ca-c40be56214c8,
             :code "(ns demo.notebook.aggrid-size)",
-            :id :15fc8f25-579b-4ca2-a4eb-cae163ec38b4,
             :ns "demo.notebook.aggrid-size",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
+            :id :d3c67d13-5057-413f-97d4-a1dab988d3a8,
             :code "^:R\n[:p/aggrid {:data [{:make \"Toyota\" :model \"Celica\" :price 35000}\n                   {:make \"Ford\" :model \"Mondeo\" :price 32000}\n                   {:make \"Porsche\" :model \"Boxter\" :price 72000}]}]",
-            :id :448f7337-dfd6-4939-83d7-149693fe86e2,
             :ns "demo.notebook.aggrid-size",
             :hiccup ^{:R true}
                     [:p/aggrid
@@ -20,15 +20,15 @@
                               :model "Boxter",
                               :price 72000}]}]}
            {:out "",
+            :id :0c4a8930-efaa-4537-a457-c6c9961f2bf6,
             :code "(def rates\n  [{:tenor \"1D\" :rate 1 :vol-factor 1 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"5D\" :rate 3 :vol-factor 1.5 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"1M\" :rate 6 :vol-factor 0.9444443333 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"6M\" :rate 4 :vol-factor 2.1234567890123456789 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"1Y\" :rate 5 :vol-factor 3 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"2Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"5Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"10Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"30Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"50Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"60Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"70Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"80Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}])",
-            :id :bb752163-7bfb-4022-a511-a82e0901f418,
             :ns "demo.notebook.aggrid-size",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.aggrid-size/rates"]}
            {:out "",
+            :id :10a8991f-18be-4bd7-9ec2-69681d79f8c7,
             :code "^:R\n[:p/aggrid {:data rates\n            :box :lg}]",
-            :id :86e02bb9-a474-43ae-af76-93da84d503e2,
             :ns "demo.notebook.aggrid-size",
             :hiccup ^{:R true}
                     [:p/aggrid
@@ -184,11 +184,11 @@
                               :report-metrics {:a 1}}],
                       :box :lg}]}
            {:out "",
-            :code "^:R\n['user/aggrid {:style {:width \"100%\"\n                       :height \"250px\"}\n               :data [{:make \"Toyota\" :model \"Celica\" :price 35000}\n                      {:make \"Ford\" :model \"Mondeo\" :price 32000}\n                      {:make \"Porsche\" :model \"Boxter\" :price 72000}]}]",
-            :id :9efc79e9-2c2b-43b9-86e4-c3ba8a613d31,
+            :id :fce3088f-d283-4a46-afa3-6953bf6abbb1,
+            :code "^:R\n['ui.aggrid/aggrid {:style {:width \"100%\"\n                            :height \"250px\"}\n                    :data [{:make \"Toyota\" :model \"Celica\" :price 35000}\n                           {:make \"Ford\" :model \"Mondeo\" :price 32000}\n                           {:make \"Porsche\" :model \"Boxter\" :price 72000}]}]",
             :ns "demo.notebook.aggrid-size",
             :hiccup ^{:R true}
-                    [user/aggrid
+                    [ui.aggrid/aggrid
                      {:style {:width "100%",
                               :height "250px"},
                       :data [{:make "Toyota",
@@ -200,8 +200,8 @@
                              {:make "Porsche",
                               :model "Boxter",
                               :price 72000}]}]}],
- :meta {:id :6dc6a4e8-2606-4ed4-9aa6-f99f17f6a84b,
-        :eval-time "2022-05-18 21:22:05",
+ :meta {:id :763dec05-39c7-4e9e-843e-836bedfb5c09,
+        :eval-time "2022-05-23 11:21:38",
         :ns "demo.notebook.aggrid-size",
-        :java "17.0.1",
+        :java "17.0.2",
         :clojure "1.10.3"}}

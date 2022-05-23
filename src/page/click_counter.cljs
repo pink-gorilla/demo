@@ -1,6 +1,6 @@
 (ns page.click-counter
   (:require
-   [r]
+   [reagent.core :as r]
    [lib.ui :refer [add-page-site]]))
 
 (defn click-counter-page [route-data]

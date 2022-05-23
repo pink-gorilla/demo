@@ -12,6 +12,5 @@
    [:p "Users normally would not get developer tooling:"]
    [link-dispatch [:bidi/goto :devtools] "goldly developer tools"]])
 
-; (add-page main-page :user/main)
 
 (add-page-site main-page :user/main)

@@ -1,8 +1,7 @@
 (ns page.time
   (:require
-   [r]
-   [rf]
-   [service]
+   [reagent.core :as r]
+   [re-frame.core :as rf]
    [lib.ui :refer [add-page-site]]))
 
 (defonce
@@ -24,7 +23,5 @@
   [:div
    [:div.text-green-300 "time ui"]
    [time-ui]])
-
-; (add-page time-page :user/time)
 
 (add-page-site time-page :user/time)

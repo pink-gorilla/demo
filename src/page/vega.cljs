@@ -1,9 +1,6 @@
 (ns page.vega
   (:require
-   [r]
-   [rf]
-   [service]
-   [user :refer [vega vegalite]]
+   [ui.vega :refer [vegalite]]
    [lib.ui :refer [add-page-site]]))
 
 (def s
@@ -56,11 +53,8 @@
 (defn vega-page [{:keys [route-params query-params handler] :as route}]
   [:div
    [:div.text-green-300 "vega..."]
-
    [vegalite {:box :sm
               :spec s}]
-   ;[:div "spec: " (pr-str {:spec s2})]
-   [:div "cor matrix: " (pr-str cor-matrix)]
    [vegalite {:box :sm
               :spec s2}]])
 

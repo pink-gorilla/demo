@@ -1,8 +1,8 @@
 
 (ns page.greeter
   (:require
-   [r]
-   [rf]
+   [reagent.core :as r]
+   [re-frame.core :as rf]
    [lib.ui :refer [add-page-site]]))
 
 (defn greeter-details-page [route-data]

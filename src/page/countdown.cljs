@@ -1,6 +1,6 @@
 (ns page.countdown
   (:require
-   [r]
+   [reagent.core :as r]
    [user :refer [timeout]]
    [lib.ui :refer [add-page-site]]))
 

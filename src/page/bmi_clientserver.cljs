@@ -1,9 +1,8 @@
 (ns page.bmi-clientserver
   (:require
-   [r]
-   [service]
+   [reagent.core :as r]
+   [goldly.service :as service]
    [user :refer [evt-val]]
-   [page]
    [lib.ui :refer [add-page-site link-dispatch]]))
 
 (def bmi-data (r/atom {:height 180 :weight 80}))

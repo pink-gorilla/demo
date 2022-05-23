@@ -1,40 +1,40 @@
-; saved on 2022-05-18 21:21:20
+; saved on 2022-05-23 11:21:46
 {:content [{:out "",
+            :id :bed5d73f-45c6-4fbf-a29b-81808975b1ea,
             :code "(ns demo.notebook.goldly-videos)",
-            :id :d96f3690-d0f0-4500-bfea-c2950ef88792,
             :ns "demo.notebook.goldly-videos",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
-            :code "(defn youtube [id]\n  ['user/video {:box :lg\n                :controls true\n                :url (format \"https://www.youtube.com/watch?v=%s\" id)}])",
-            :id :df8a3fd6-3989-483c-8e67-b36411f2bf45,
+            :id :8a71d68f-5634-42e9-a5ed-a2e062850460,
+            :code "(defn youtube [id]\n  ['ui.video/video {:box :lg\n                    :controls true\n                    :url (format \"https://www.youtube.com/watch?v=%s\" id)}])",
             :ns "demo.notebook.goldly-videos",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.goldly-videos/youtube"]}
            {:out "",
+            :id :99d05fae-aa1a-4dc5-8e20-50b667221cfd,
             :code "(defn show-video [[name id]]\n  [:div\n   [:h1.text-xl.text-blue-900 name]\n   (youtube id)])",
-            :id :97234008-0c45-4b62-b17a-76bfbe720e94,
             :ns "demo.notebook.goldly-videos",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.goldly-videos/show-video"]}
            {:out "",
-            :code "(defn video-list [name list]\n  ^:R  ; this is needed, soartefacts function can be used in the repl\n  [:div\n   [:h1.text-3xl.text-blue-900 name]\n   (into [:div]\n         (map show-video list))])",
-            :id :97bfa987-a87a-4a89-a5fe-dcb2cc9a0064,
+            :id :dd684ec9-d7cc-499a-acdc-3d488b1609b0,
+            :code "(defn video-list [name list]\n  ^:R\n  [:div\n   [:h1.text-3xl.text-blue-900 name]\n   (into [:div]\n         (map show-video list))])",
             :ns "demo.notebook.goldly-videos",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.goldly-videos/video-list"]}
            {:out "",
+            :id :2d1c5d98-8640-49ca-9eb2-2124bbb31336,
             :code "(def videos\n  {:sniffer-repl \"HxejHqw4jfI\"\n   :notebook \"8TwXaVTZ1G8\"\n   :clojisr \"BbjYkDmp3fg\"})",
-            :id :e39a7043-0fad-430c-8986-d29802848618,
             :ns "demo.notebook.goldly-videos",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.goldly-videos/videos"]}
            {:out "",
+            :id :908ac86d-52f8-4898-817c-c003595b983a,
             :code "^:R\n[:div.bg-blue-500 ; test how background is on different color\n [:h1 \"How to use goldly\"]\n (video-list \"unsorted videos\" videos)]",
-            :id :13651dd1-9296-4cb0-99ca-43af41f881c9,
             :ns "demo.notebook.goldly-videos",
             :hiccup ^{:R true}
                     [:div.bg-blue-500
@@ -45,24 +45,24 @@
  [:div
   [:div
    [:h1.text-xl.text-blue-900 :sniffer-repl]
-   [user/video
+   [ui.video/video
     {:box :lg,
      :controls true,
      :url "https://www.youtube.com/watch?v=HxejHqw4jfI"}]]
   [:div
    [:h1.text-xl.text-blue-900 :notebook]
-   [user/video
+   [ui.video/video
     {:box :lg,
      :controls true,
      :url "https://www.youtube.com/watch?v=8TwXaVTZ1G8"}]]
   [:div
    [:h1.text-xl.text-blue-900 :clojisr]
-   [user/video
+   [ui.video/video
     {:box :lg,
      :controls true,
      :url "https://www.youtube.com/watch?v=BbjYkDmp3fg"}]]]]]}],
- :meta {:id :62b4a94f-332b-426e-b387-466d917c8243,
-        :eval-time "2022-05-18 21:21:20",
+ :meta {:id :b73f0d3d-8509-4446-99a7-4b6df93a4a39,
+        :eval-time "2022-05-23 11:21:46",
         :ns "demo.notebook.goldly-videos",
-        :java "17.0.1",
+        :java "17.0.2",
         :clojure "1.10.3"}}

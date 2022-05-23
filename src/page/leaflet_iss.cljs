@@ -1,8 +1,8 @@
 (ns page.leaflet-iss
   (:require
-   [r]
-   [service]
-   [user :refer [parse-float interval leaflet]]
+   [reagent.core :as r]
+   [ui.leaflet :refer [leaflet]]
+   [user :refer [parse-float interval]]
    [http :refer [get-json]]
    [lib.ui :refer [add-page-site]]))
 
@@ -31,7 +31,7 @@
      nil)
    [:p "raw data: " (pr-str (:data @issstate))]
    (when-let [p (pos)]
-     [:<>
+     [:div.w-full.h-full
       [:p "location "  (pr-str p)]
       [leaflet {:box :fs ; :lg
                 :center p
@@ -44,5 +44,4 @@
   [:div
    [iss]])
 
-;(add-page iss-page :user/iss)
 (add-page-site iss-page :user/iss)
