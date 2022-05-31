@@ -1,64 +1,64 @@
-; saved on 2022-05-23 10:08:29
+; saved on 2022-06-01 01:29:12
 {:content [{:out "",
-            :id :14672994-062b-4c14-a340-ee6034e7a9c0,
+            :id :95219eb5-1fff-4e78-8c8d-6ddb8adc8836,
             :code "(ns demo.notebook.leaflet-london)",
             :ns "demo.notebook.leaflet-london",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
-            :id :b5c913df-a17c-46e4-9304-9b59f3367f6e,
+            :id :213adb43-d676-49ed-a225-8d6e21d91e3a,
             :code "(def polygon [[51.515, -0.09]\n              [51.52, -0.1]\n              [51.52, -0.12]])",
             :ns "demo.notebook.leaflet-london",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.leaflet-london/polygon"]}
            {:out "",
-            :id :c969e711-6ad4-41e6-88d5-5edcce5c5704,
+            :id :82970ab5-212c-4b5d-b1ce-4f0a41096cf1,
             :code "(def multiPolygon [[[51.51, -0.12]\n                    [51.51, -0.13]\n                    [51.53, -0.13]]\n                   [[51.51, -0.05]\n                    [51.51, -0.07]\n                    [51.53, -0.07]]])",
             :ns "demo.notebook.leaflet-london",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.leaflet-london/multiPolygon"]}
            {:out "",
-            :id :b5efc183-24c4-441b-ae92-a5635dc6858f,
+            :id :143091aa-9fec-4aea-b5d7-7257bbf987d0,
             :code "(def polyline [[51.505, -0.09]\n               [51.51, -0.1]\n               [51.51, -0.12]])",
             :ns "demo.notebook.leaflet-london",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.leaflet-london/polyline"]}
            {:out "",
-            :id :2fdf8c93-e0a0-4ec4-8037-171dc590d23e,
+            :id :d8bfdfe2-19f3-460f-bf23-bfbe0801d732,
             :code "(def multi-polyline [[[51.5, -0.1]\n                      [51.5, -0.12]\n                      [51.52, -0.12]]\n                     [[51.5, -0.05]\n                      [51.5, -0.06]\n                      [51.52, -0.06]]])",
             :ns "demo.notebook.leaflet-london",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.leaflet-london/multi-polyline"]}
            {:out "",
-            :id :9cb7699a-6be6-4fd3-ae6f-68b80b618fde,
+            :id :7ca665da-09ab-4af0-824d-947a0456efcb,
             :code "(def geojson\n  [{:type \"Feature\" :geometry {:type \"Polygon\" :coordinates [[[-0.1091766357421875,51.51071897849311],[-0.11012077331542969,51.514084206610455],[-0.1050567626953125,51.517235544032154],[-0.09758949279785156,51.520066220569944],[-0.09690284729003906,51.522736508860255],[-0.0953364372253418,51.522456135946825],[-0.09429574012756348,51.52055355986299],[-0.08364200592041016,51.51795658211353],[-0.08016586303710938,51.51598037643901],[-0.07544517517089844,51.51344322994464],[-0.07617473602294922,51.51018479243817],[-0.07630348205566406,51.50692612186487],[-0.08162498474121094,51.508234960183415],[-0.0899505615234375,51.508956140741624],[-0.09685993194580078,51.510398467611765]]]} :properties {:name \"City\"}}\n   {:type \"Feature\" :geometry {:type \"Polygon\" :coordinates [[[-0.1487445831298828,51.48587270045831],[-0.1389598846435547,51.48448304634681],[-0.13286590576171875,51.48533822311959],[-0.12359619140625,51.49212561988668],[-0.12067794799804688,51.50874245880332],[-0.11072158813476562,51.51029163015023],[-0.11057138442993164,51.51095936017433],[-0.11110782623291016,51.51381713409578],[-0.11460542678833008,51.51586019900402],[-0.11855363845825195,51.514872061405725],[-0.12267351150512695,51.51501894808078],[-0.12715816497802734,51.51278889029523],[-0.12908935546875,51.513416522387836],[-0.13033390045166016,51.51632755391457],[-0.13564467430114746,51.51935856792906],[-0.1433318853378296,51.52401151628708],[-0.14324873685836792,51.524695733301805],[-0.14415130019187927,51.524730778286745],[-0.14423780143260956,51.52402737021231],[-0.14510717242956161,51.52393600146223],[-0.15267133712768555,51.53748702947935],[-0.16351282596588135,51.53477422679169],[-0.17590731382369995,51.53978427653313],[-0.1793278008699417,51.53976884515872],[-0.1847223937511444,51.538098472208794],[-0.18835745751857758,51.53455941462763],[-0.1900184154510498,51.5346507620601],[-0.1965227723121643,51.52733404460455],[-0.19829437136650085,51.527840496109185],[-0.1978497952222824,51.5304431674846],[-0.20342107862234116,51.5325453448641],[-0.21393148228526115,51.531567476331844],[-0.21568715572357178,51.527973157104284],[-0.20684927701950073,51.52642291832361],[-0.20075663924217224,51.5224703215226],[-0.200284905731678,51.52112162900607],[-0.18899833783507347,51.510031734459055],[-0.18663816154003143,51.502412094159304],[-0.1597520336508751,51.50242524246215],[-0.1566515676677227,51.49027532356215]]]} :properties {:name \"Wesminster\"}}\n   {:type \"Feature\" :geometry {:type \"Polygon\" :coordinates [[[-0.07518768310546875,51.514084206610455],[-0.08248329162597656,51.51798328700846],[-0.07604598999023438,51.521882033642676],[-0.07767677307128906,51.52642124957741],[-0.07264092564582825,51.53049614546567],[-0.06571680307388306,51.53115356788194],[-0.06251156330108643,51.53460404558779],[-0.05962014198303223,51.53344279215503],[-0.05109071731567383,51.53603221320984],[-0.044846534729003906,51.53501781838798],[-0.03321647644042969,51.54387966173666],[-0.02162933349609375,51.54142414303853],[-0.017337799072265625,51.53063964456954],[-0.00858306884765625,51.52594064813257],[-0.004119873046875,51.51686166794058],[0.009098052978515625,51.50799456412721],[0,51.50788772102843],[-0.0038194656372070312,51.50591107850855],[-0.0076389312744140625,51.50286581276562],[-0.002918243408203125,51.488865657782796],[-0.00823974609375,51.48678129755648],[-0.014591217041015625,51.485552014806856],[-0.022230148315429688,51.487582985843055],[-0.02712249755859375,51.49196529933168],[-0.028066635131835938,51.49730901400833],[-0.027637481689453125,51.50564395807757],[-0.03948211669921875,51.51034504891231],[-0.048923492431640625,51.50810140697543],[-0.058536529541015625,51.502758957640296],[-0.075531005859375,51.50671243040582]]]} :properties {:name \"Tower Hamlets\"}}])",
             :ns "demo.notebook.leaflet-london",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.leaflet-london/geojson"]}
            {:out "",
-            :id :b79fd78c-e98a-4c00-924d-acd7fd478dc9,
+            :id :70ee4887-e600-4cab-8715-f9c332752349,
             :code "(def rectangle  [[51.49, -0.08]\n                 [51.5, -0.06]])",
             :ns "demo.notebook.leaflet-london",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.leaflet-london/rectangle"]}
            {:out "",
-            :id :b58c93c1-8891-4b09-8191-87a73d7d0c98,
+            :id :b087de65-ecdb-42da-aee8-3869ab3f6b2b,
             :code "(def center [51.505, -0.09])",
             :ns "demo.notebook.leaflet-london",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.leaflet-london/center"]}
            {:out "",
-            :id :4c8f2482-27de-4b43-ba95-fa89f3dbde87,
-            :code "^:R\n['user/leaflet\n {:box :lg\n  :center [51.49, -0.08]\n  :zoom 12\n  :features [{:type :rectangle :bounds rectangle}\n             {:type :circle :center center :fillColor \"blue\" :radius 200}\n             {:type :polygon :positions polygon :color \"purple\"}\n             {:type :polygon :positions multiPolygon :color \"purple\"}\n             {:type :line :positions polyline :color \"lime\"}\n             {:type :line :positions multi-polyline :color \"lime\"}\n             {:type :marker :position [51.505, -0.09]}\n             {:type :marker :position [51.51, -0.12] :popup \"wow\"}\n             {:type :circlemarker :center [51.52, -0.06] :fillColor \"blue\" :radius 200 :popup \"square the circle\"}\n             {:type :geojson :data geojson}]}]",
+            :id :a253bbb1-575b-4f8c-9fdf-677a4ab86521,
+            :code "^:R\n['ui.leaflet/leaflet\n {:box :lg\n  :center [51.49, -0.08]\n  :zoom 12\n  :features [{:type :rectangle :bounds rectangle}\n             {:type :circle :center center :fillColor \"blue\" :radius 200}\n             {:type :polygon :positions polygon :color \"purple\"}\n             {:type :polygon :positions multiPolygon :color \"purple\"}\n             {:type :line :positions polyline :color \"lime\"}\n             {:type :line :positions multi-polyline :color \"lime\"}\n             {:type :marker :position [51.505, -0.09]}\n             {:type :marker :position [51.51, -0.12] :popup \"wow\"}\n             {:type :circlemarker :center [51.52, -0.06] :fillColor \"blue\" :radius 200 :popup \"square the circle\"}\n             {:type :geojson :data geojson}]}]",
             :ns "demo.notebook.leaflet-london",
             :hiccup ^{:R true}
-                    [user/leaflet
+                    [ui.leaflet/leaflet
                      {:box :lg,
                       :center [51.49 -0.08],
                       :zoom 12,
@@ -285,8 +285,8 @@
                                                                     [-0.075531005859375
                                                                      51.50671243040582]]]},
                                           :properties {:name "Tower Hamlets"}}]}]}]}],
- :meta {:id :0466cc46-a2e4-431f-a0bb-e9d2ad26f6c2,
-        :eval-time "2022-05-23 10:08:29",
+ :meta {:id :33526be3-50c4-414c-9db1-9a644cfac529,
+        :eval-time "2022-06-01 01:29:12",
         :ns "demo.notebook.leaflet-london",
-        :java "17.0.1",
+        :java "17.0.3",
         :clojure "1.10.3"}}

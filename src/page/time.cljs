@@ -9,7 +9,7 @@
 
 (rf/reg-event-fx
  :demo/time
- (fn [{:keys [db]} [_ msg]]
+ (fn [_ [_ msg]]
    (swap! time-state assoc :time msg)
    nil))
 
@@ -19,7 +19,7 @@
    [:p.text-xl.text-blue-700 "time is pushed every 10 seconds."]
    [:div (pr-str (:time @time-state))]])
 
-(defn time-page [{:keys [route-params query-params handler] :as route}]
+(defn time-page [_route-data]
   [:div
    [:div.text-green-300 "time ui"]
    [time-ui]])

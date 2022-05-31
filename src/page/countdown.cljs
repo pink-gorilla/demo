@@ -4,9 +4,9 @@
    [user :refer [timeout]]
    [lib.ui :refer [add-page-site]]))
 
-(defn countdown-page [route-data]
+(defn countdown-page [_route-data]
   (let [state (r/atom 0)]
-    (fn [route-data]
+    (fn [_route-data]
       (timeout #(swap! state inc) 1000)
       [:div
        "Seconds Elapsed: "

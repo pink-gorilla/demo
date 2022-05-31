@@ -1,18 +1,18 @@
-; saved on 2022-06-01 01:13:35
+; saved on 2022-06-01 01:29:10
 {:content [{:out "",
-            :id :996be2f7-c1e5-40ca-90c8-0ff52662832d,
+            :id :fd5c33ea-6a65-49fe-8a63-4a1c2a03d5ef,
             :code "(ns demo.notebook.aggrid-pagination)",
             :ns "demo.notebook.aggrid-pagination",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
-            :id :c0d4bf03-eea7-4bb6-adf9-85de026e739f,
+            :id :a29369cd-f80a-47bc-9e30-fc2eec144e3a,
             :code "(def rates\n  [{:tenor \"1D\" :rate 1 :vol-factor 1 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"5D\" :rate 3 :vol-factor 1.5 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"1M\" :rate 6 :vol-factor 0.9444443333 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"6M\" :rate 4 :vol-factor 2.1234567890123456789 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"1Y\" :rate 5 :vol-factor 3 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"2Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"5Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"10Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"30Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"50Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"60Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"70Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"80Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}\n   {:tenor \"90Y\" :rate 2 :vol-factor 2 :s \"asdköfj adkfj alkdsfj löasfj ölkdjaf löksdfj löa f\" :metrics {:a 1} :report-metrics {:a 1}}])",
             :ns "demo.notebook.aggrid-pagination",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.aggrid-pagination/rates"]}
            {:out "",
-            :id :87307eb9-09cb-4fcd-bad1-f2831b67fbd2,
+            :id :b52f3e27-59e4-4081-a8f2-0bff6f8daae3,
             :code "^:R\n['ui.aggrid/aggrid {:data rates\n                    :box :lg\n                    :pagination true\n                    :paginationAutoPageSize true}]",
             :ns "demo.notebook.aggrid-pagination",
             :hiccup ^{:R true}
@@ -170,8 +170,8 @@
                       :box :lg,
                       :pagination true,
                       :paginationAutoPageSize true}]}],
- :meta {:id :e60efccd-126a-46e0-96fe-0cc9e4d9fee1,
-        :eval-time "2022-06-01 01:13:35",
+ :meta {:id :bb5cb805-ba97-433b-aa98-f50e1a5695fe,
+        :eval-time "2022-06-01 01:29:10",
         :ns "demo.notebook.aggrid-pagination",
         :java "17.0.3",
         :clojure "1.10.3"}}

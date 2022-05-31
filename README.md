@@ -11,6 +11,7 @@ We demonstrate certain features of goldly:
 - time: demonstrates to push data from clojure
 - iss: international space stations current position
 
+To re-evaluate all notebooks run: `clojure -X:nbeval`
 
 ## demo with custom dynamic cljs build
 
@@ -29,18 +30,3 @@ The following commands will build a js bundel:
   clojure -X:docs:build :profile '"compile2"'
   clojure -X:docs
 ```
-
-
-## Static Demo
-
-A simple demo is on [Github Pages](https://pink-gorilla.github.io/demo-goldly/).
-
-There are no server services running in the static demo. 
-So the time pusher and the fortune cookies will not work.
-
-
-## demo  - build static website
-
- `./script/build_static.sh`
-
-

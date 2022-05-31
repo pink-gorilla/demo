@@ -12,7 +12,7 @@
                 :text "jg kj jkhj jh gk g"})
        (range 500)))
 
-(defn aggrid-page [{:keys [route-params query-params handler] :as route}]
+(defn aggrid-page [_route-data]
   [:div.h-screen.w-screen
    [:div {:style {:position "absolute"}}
     [link-dispatch [:bidi/goto :user/main] "main"]]

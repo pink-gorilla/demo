@@ -1,15 +1,15 @@
-; saved on 2022-05-17 07:49:58
+; saved on 2022-06-01 01:29:12
 {:content [{:out "",
+            :id :6f434963-329a-4e68-b1bf-2021437aff87,
             :code "(ns demo.notebook.vegalite-multiline)",
-            :id :d19528fa-0b92-472b-be83-11da7e63aa10,
             :ns "demo.notebook.vegalite-multiline",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
-            :code "^:R\n['user/vegalite\n {:width 1400\n  :height 600\n  :spec {:description \"Stock prices of 5 Tech Companies over Time.\"\n         :data {:url \"/r/data/stocks.csv\"}\n         :transform [;{:filter \"datum.symbol==='GOOG'\"},\n                     {:filter {:field \"date\", :timeUnit \"year\", :range [2007, 2010]}}]\n         :mark \"line\"\n         :selection   {:brush {:type \"interval\"}} ; :encodings [\"x\"]\n         :encoding  {;:row {:field \"symbol\" :type \"nominal\"}\n    ;:x {:field \"date\", :type \"temporal\"   :scale {:domain {:selection \"brush\"}}}\n                     :x {:field \"date\" :type \"temporal\"\n                         :axis {:tickCount 8\n                                :labelAlign \"left\"\n                                :labelExpr \"[timeFormat(datum.value, '%b'), timeFormat(datum.value, '%m') == '01' ? timeFormat(datum.value, '%Y') : '']\"\n                                :labelOffset 4\n                                :labelPadding -24\n                                :tickSize 30\n                                :gridDash {:condition {:test {:field \"value\" :timeUnit \"month\", :equal 1}, :value []}\n                                           :value [2,2]}\n                                :tickDash {:condition {:test {:field \"value\", :timeUnit \"month\", :equal 1}, :value []}\n                                           :value [2,2]}}}\n                     :y {:field \"price\", :type \"quantitative\"}\n                     :color {:field \"symbol\", :type \"nominal\"}}}}]",
-            :id :789981ac-528a-4c31-b3be-935afca923a9,
+            :id :33ac8b87-fff9-4abb-be7d-e7dc1ac8f4b3,
+            :code "^:R\n['ui.vega/vegalite\n {:width 1400\n  :height 600\n  :spec {:description \"Stock prices of 5 Tech Companies over Time.\"\n         :data {:url \"/r/data/stocks.csv\"}\n         :transform [;{:filter \"datum.symbol==='GOOG'\"},\n                     {:filter {:field \"date\", :timeUnit \"year\", :range [2007, 2010]}}]\n         :mark \"line\"\n         :selection   {:brush {:type \"interval\"}} ; :encodings [\"x\"]\n         :encoding  {;:row {:field \"symbol\" :type \"nominal\"}\n    ;:x {:field \"date\", :type \"temporal\"   :scale {:domain {:selection \"brush\"}}}\n                     :x {:field \"date\" :type \"temporal\"\n                         :axis {:tickCount 8\n                                :labelAlign \"left\"\n                                :labelExpr \"[timeFormat(datum.value, '%b'), timeFormat(datum.value, '%m') == '01' ? timeFormat(datum.value, '%Y') : '']\"\n                                :labelOffset 4\n                                :labelPadding -24\n                                :tickSize 30\n                                :gridDash {:condition {:test {:field \"value\" :timeUnit \"month\", :equal 1}, :value []}\n                                           :value [2,2]}\n                                :tickDash {:condition {:test {:field \"value\", :timeUnit \"month\", :equal 1}, :value []}\n                                           :value [2,2]}}}\n                     :y {:field \"price\", :type \"quantitative\"}\n                     :color {:field \"symbol\", :type \"nominal\"}}}}]",
             :ns "demo.notebook.vegalite-multiline",
             :hiccup ^{:R true}
-                    [user/vegalite
+                    [ui.vega/vegalite
                      {:width 1400,
                       :height 600,
                       :spec {:description "Stock prices of 5 Tech Companies over Time.",
@@ -44,8 +44,8 @@
                                             :type "quantitative"},
                                         :color {:field "symbol",
                                                 :type "nominal"}}}}]}],
- :meta {:id :4e6575b1-54fd-4285-8fc3-c09bb3201e32,
-        :eval-time "2022-05-17 07:49:58",
+ :meta {:id :8dab9fff-6a6e-4ac8-8a40-bc05671bee37,
+        :eval-time "2022-06-01 01:29:12",
         :ns "demo.notebook.vegalite-multiline",
-        :java "17.0.1",
+        :java "17.0.3",
         :clojure "1.10.3"}}

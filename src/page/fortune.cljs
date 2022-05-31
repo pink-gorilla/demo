@@ -21,7 +21,7 @@
    [:p.bg-yellow-500.italic.text-xl.text-blue-700
     (or (:cookie @cookie-state) "no cookie received!")]])
 
-(defn fortune-page [{:keys [route-params query-params handler] :as route}]
+(defn fortune-page [_route-data]
   [:div
    [fortune]])
 

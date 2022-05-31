@@ -50,7 +50,7 @@
                       :type "quantitative"}}
    :config {:view {:stroke "transparent"}}})
 
-(defn vega-page [{:keys [route-params query-params handler] :as route}]
+(defn vega-page [_route-data]
   [:div
    [:div.text-green-300 "vega..."]
    [vegalite {:box :sm

@@ -1,14 +1,19 @@
-; saved on 2022-05-18 07:29:41
+; saved on 2022-06-01 01:29:10
 {:content [{:out "",
+            :id :21fc8f92-14be-46ed-8c0b-9887f99cade3,
+            :code "(ns notebook.fibonacci)",
+            :ns "notebook.fibonacci",
+            :hiccup [:div.p-2.clj-nil [:p "nil"]]}
+           {:out "",
+            :id :8d4c5233-1d36-48f3-9ccd-71cfd2a656c6,
             :code "; infinite seq\n\n(def fib-seq-seq\n  ((fn fib [a b]\n     (lazy-seq (cons a (fib b (+ a b)))))\n   0 1))",
-            :id :efc73534-5072-486a-8467-7a28c943b522,
             :ns "notebook.fibonacci",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'notebook.fibonacci/fib-seq-seq"]}
            {:out "",
+            :id :f403dd3a-1740-434f-a47d-57aab6206849,
             :code "(take 20 fib-seq-seq)",
-            :id :80bdf32d-5900-4210-907d-e345853e15aa,
             :ns "notebook.fibonacci",
             :hiccup [:span
                      {:class "clj-lazy-seq"}
@@ -60,8 +65,8 @@
                        {:style {:color "blue"}}
                        "4181"]]
                      [:span.font-bold.teal-700.ml-1 ")"]]}],
- :meta {:id :0b0de638-b756-4f4d-9e77-a3d2d66c2c19,
-        :eval-time "2022-05-18 07:29:41",
+ :meta {:id :2ef98c33-4f9f-42cf-a1c4-0c3b6870bb15,
+        :eval-time "2022-06-01 01:29:10",
         :ns "notebook.fibonacci",
-        :java "17.0.1",
+        :java "17.0.3",
         :clojure "1.10.3"}}

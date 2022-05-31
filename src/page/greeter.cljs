@@ -15,7 +15,7 @@
 
 (def prefix "Hello, ")
 
-(defn greeter-page [route-data]
+(defn greeter-page [_route-data]
   (let [state (r/atom {:name ""
                        :msg "Type Something..."})
         change-state (fn [e & args]
@@ -23,7 +23,7 @@
                              v (.-value t)]
                          (.log js/console e args)
                          (swap! state assoc :name v)))]
-    (fn [route-data]
+    (fn [_route-data]
       [:div.rows
        [:input {:class "border border-blue-300"
                 :type "text"

@@ -39,7 +39,7 @@
       [:span {:style {:color color}} diagnose]
       [slider :bmi bmi 10 50]]]))
 
-(defn bmi-server-page  [{:keys [route-params query-params handler] :as route}]
+(defn bmi-server-page  [_route-data]
   [:div
    [link-dispatch [:bidi/goto :user/main] "main"]
    [:div

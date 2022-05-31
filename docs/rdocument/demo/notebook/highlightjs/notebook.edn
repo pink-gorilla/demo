@@ -1,11 +1,11 @@
-; saved on 2022-05-23 10:08:59
+; saved on 2022-06-01 01:29:12
 {:content [{:out "",
-            :id :2c0da267-0743-41ba-9c47-7326c49916d8,
+            :id :8c24f5f9-8dc9-4a15-936a-17fa3b520b22,
             :code "(ns demo.notebook.highlightjs)",
             :ns "demo.notebook.highlightjs",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
-            :id :7e4621cf-e1a0-49fa-8936-b6dbf7dca493,
+            :id :e57f8609-5b65-4a56-ae2f-37a91f972f28,
             :code "^:R\n[:div.bg-blue-500 ; test how background is on different color\n [:p \"this snippet demonstrates to use highlight.js\"]\n ['ui.highlightjs/highlightjs \"(+ 8 8)\\n(def add [a b] \\n   (+ a b))\\n(add)\"]\n [:p \"live goes on!\"]]",
             :ns "demo.notebook.highlightjs",
             :hiccup ^{:R true}
@@ -15,8 +15,8 @@
                      [ui.highlightjs/highlightjs
                       "(+ 8 8)\n(def add [a b] \n   (+ a b))\n(add)"]
                      [:p "live goes on!"]]}],
- :meta {:id :900bc256-8e5c-454b-9408-2528f0fd8865,
-        :eval-time "2022-05-23 10:08:59",
+ :meta {:id :93199aab-ad76-4e7f-87cf-4085fd3879f4,
+        :eval-time "2022-06-01 01:29:12",
         :ns "demo.notebook.highlightjs",
-        :java "17.0.1",
+        :java "17.0.3",
         :clojure "1.10.3"}}

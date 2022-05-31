@@ -1,15 +1,15 @@
-; saved on 2022-05-17 07:49:32
+; saved on 2022-06-01 01:29:12
 {:content [{:out "",
+            :id :dbf6a8af-6c3a-487e-8176-757a43eb987b,
             :code "(ns demo.notebook.vegalite-arrow)",
-            :id :323c8ffc-1df0-425b-9ef3-3f80b4d55ca4,
             :ns "demo.notebook.vegalite-arrow",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
-            :code "^:R\n['user/vegalite\n {:width 800\n  :height 600\n  :spec {:data {:url \"/r/data/chicago-crimes-2018.arrow\"\n                ;:url \"https://raw.githubusercontent.com/RandomFractals/ChicagoCrimes/master/data/2018/chicago-crimes-2018.arrow\"\n                :format {:type \"arrow\"}}\n         :mark \"bar\"\n         :encoding {:y {:field \"PrimaryType\"\n                        :type \"ordinal\"\n                        :sort {:encoding \"x\"}\n                        :axis {:title \"Crime Type\"}}\n                    :x {:aggregate \"count\"\n                        :field \"*\"\n                        :type \"quantitative\"\n                        :axis {:title \"# of Records\"}}}}}]",
-            :id :bc4df930-08dc-489a-be6e-070dda401ba0,
+            :id :beba919a-54af-40c3-961d-1d7bfc1f574e,
+            :code "^:R\n['ui.vega/vegalite\n {:width 800\n  :height 600\n  :spec {:data {:url \"/r/data/chicago-crimes-2018.arrow\"\n                ;:url \"https://raw.githubusercontent.com/RandomFractals/ChicagoCrimes/master/data/2018/chicago-crimes-2018.arrow\"\n                :format {:type \"arrow\"}}\n         :mark \"bar\"\n         :encoding {:y {:field \"PrimaryType\"\n                        :type \"ordinal\"\n                        :sort {:encoding \"x\"}\n                        :axis {:title \"Crime Type\"}}\n                    :x {:aggregate \"count\"\n                        :field \"*\"\n                        :type \"quantitative\"\n                        :axis {:title \"# of Records\"}}}}}]",
             :ns "demo.notebook.vegalite-arrow",
             :hiccup ^{:R true}
-                    [user/vegalite
+                    [ui.vega/vegalite
                      {:width 800,
                       :height 600,
                       :spec {:data {:url "/r/data/chicago-crimes-2018.arrow",
@@ -23,8 +23,8 @@
                                             :field "*",
                                             :type "quantitative",
                                             :axis {:title "# of Records"}}}}}]}],
- :meta {:id :5bcf56db-8e59-4cf5-9f4b-7f06f5f1206a,
-        :eval-time "2022-05-17 07:49:32",
+ :meta {:id :7517df36-7827-4b7c-b7ac-ac985b0ebf49,
+        :eval-time "2022-06-01 01:29:12",
         :ns "demo.notebook.vegalite-arrow",
-        :java "17.0.1",
+        :java "17.0.3",
         :clojure "1.10.3"}}

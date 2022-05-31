@@ -15,18 +15,13 @@
                :services "goldly/services.edn"
                :config  ["webly/config.edn" "goldly/config.edn" "goldly/docs-config.edn"
                          "demo.edn"]}}
-
-  ; BUILD BUNDLE (then exit)
-  :build
+  
+  :build ; BUILD BUNDLE (then exit)
   {:exec-fn goldly.app.build/goldly-build
    :exec-args {:profile "npm-install"}}
 
-
-  ;; nb eval
-
-  :nbeval {:exec-fn reval.task/nbeval
+  :nbeval ; eval namespaces and create notebook edn files
+  {:exec-fn reval.task/nbeval
            :exec-args {:config "demo.edn"}}
-
-
 ;           
   }}

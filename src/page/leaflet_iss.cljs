@@ -40,7 +40,7 @@
                             :position p
                             :popup "the international space station is here!"}]}]])])
 
-(defn iss-page [{:keys [route-params query-params handler] :as route}]
+(defn iss-page [_route-data]
   [:div
    [iss]])
 

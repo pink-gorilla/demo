@@ -1,39 +1,39 @@
-; saved on 2022-05-23 11:21:46
+; saved on 2022-06-01 01:29:10
 {:content [{:out "",
-            :id :bed5d73f-45c6-4fbf-a29b-81808975b1ea,
+            :id :9d089207-7a71-44bb-9334-e01ffa9fc30c,
             :code "(ns demo.notebook.goldly-videos)",
             :ns "demo.notebook.goldly-videos",
             :hiccup [:div.p-2.clj-nil [:p "nil"]]}
            {:out "",
-            :id :8a71d68f-5634-42e9-a5ed-a2e062850460,
+            :id :b79119e7-32c9-4c13-a833-8b7ad5e9c685,
             :code "(defn youtube [id]\n  ['ui.video/video {:box :lg\n                    :controls true\n                    :url (format \"https://www.youtube.com/watch?v=%s\" id)}])",
             :ns "demo.notebook.goldly-videos",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.goldly-videos/youtube"]}
            {:out "",
-            :id :99d05fae-aa1a-4dc5-8e20-50b667221cfd,
+            :id :d70c7501-f6c8-4fbc-b949-bd5735e97d73,
             :code "(defn show-video [[name id]]\n  [:div\n   [:h1.text-xl.text-blue-900 name]\n   (youtube id)])",
             :ns "demo.notebook.goldly-videos",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.goldly-videos/show-video"]}
            {:out "",
-            :id :dd684ec9-d7cc-499a-acdc-3d488b1609b0,
+            :id :99e71147-978e-4dba-834b-a0f1b20c6234,
             :code "(defn video-list [name list]\n  ^:R\n  [:div\n   [:h1.text-3xl.text-blue-900 name]\n   (into [:div]\n         (map show-video list))])",
             :ns "demo.notebook.goldly-videos",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.goldly-videos/video-list"]}
            {:out "",
-            :id :2d1c5d98-8640-49ca-9eb2-2124bbb31336,
+            :id :716aef63-9ce6-48c7-939e-1122416a9e4d,
             :code "(def videos\n  {:sniffer-repl \"HxejHqw4jfI\"\n   :notebook \"8TwXaVTZ1G8\"\n   :clojisr \"BbjYkDmp3fg\"})",
             :ns "demo.notebook.goldly-videos",
             :hiccup [:span
                      {:style {:color "deeppink"}}
                      "#'demo.notebook.goldly-videos/videos"]}
            {:out "",
-            :id :908ac86d-52f8-4898-817c-c003595b983a,
+            :id :d2646985-b6ec-4c90-b680-485aa155bef9,
             :code "^:R\n[:div.bg-blue-500 ; test how background is on different color\n [:h1 \"How to use goldly\"]\n (video-list \"unsorted videos\" videos)]",
             :ns "demo.notebook.goldly-videos",
             :hiccup ^{:R true}
@@ -61,8 +61,8 @@
     {:box :lg,
      :controls true,
      :url "https://www.youtube.com/watch?v=BbjYkDmp3fg"}]]]]]}],
- :meta {:id :b73f0d3d-8509-4446-99a7-4b6df93a4a39,
-        :eval-time "2022-05-23 11:21:46",
+ :meta {:id :286e8af5-db66-450b-a6c5-7e310fd9e980,
+        :eval-time "2022-06-01 01:29:10",
         :ns "demo.notebook.goldly-videos",
-        :java "17.0.2",
+        :java "17.0.3",
         :clojure "1.10.3"}}
