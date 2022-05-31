@@ -6,16 +6,7 @@
         org.pinkgorilla/goldly-docs {:mvn/version "0.4.552"}}
 
  :aliases
- {:outdated
-  {:extra-deps {com.github.liquidz/antq {:mvn/version "RELEASE"}}
-   :main-opts ["-m"
-               "antq.core"]}
-  :cljfmt-fix
-  {:extra-deps {cljfmt/cljfmt {:mvn/version "0.8.0"}}
-   :main-opts ["-m" "cljfmt.main" "fix" "--indents" "cljfmt.edn"]}
-
-  ; RUN SERVICES (keep running)
-  :docs
+ {:docs ; RUN SERVICES (keep running)
   {:extra-paths ["target/webly" ; to include the sci-bindings info
                  "node_modules"
                  "demo"]

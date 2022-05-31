@@ -1,5 +1,6 @@
 (ns fortune-cookie
-  (:require [goldly.service.core :as s]))
+  (:require
+   [goldly.service.core :as s]))
 
 (def db
   ["The early bird gets the worm, but the second mouse gets the cheese."

@@ -9,16 +9,9 @@
   (go-loop []
     (<! (async/timeout 5000)) ; 5 seconds
     (let [snow (now-str)]
-      (info "sending time: " snow)
+      (debug "sending time: " snow)
       (send-all! [:demo/time {:time snow}]))
     (recur)))
 
 (start-time-pusher!)
 
-(comment
-
-  (require '[goldly.cljs.discover])
-  (goldly.cljs.discover/generate-cljs-autoload)
-
-; 
-  )
