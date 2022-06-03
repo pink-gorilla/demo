@@ -2,7 +2,7 @@
   (:require
    [reagent.core :as r]
    [ui.leaflet :refer [leaflet]]
-   [user :refer [parse-float interval]]
+   [goldly.js :refer [parse-float interval]]
    [http :refer [get-json]]
    [lib.ui :refer [add-page-site]]))
 

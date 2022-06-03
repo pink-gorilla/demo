@@ -1,7 +1,7 @@
 (ns page.bmi
   (:require
    [reagent.core :as r]
-   [user :refer [evt-val]]
+   [goldly.js :refer [evt-val]]
    [lib.ui :refer [add-page-site]]))
 
 ; define the calculation function. Note that 
@@ -52,7 +52,7 @@
 ; (swap! bmi-data assoc :height 150)
 ;(swap! bmi-data assoc :height 180)
 
-(defn bmi-page :user/bmi [{:keys [route-params query-params handler] :as route}]
+(defn bmi-page :user/bmi [{:keys [_route-params _query-params _handler] :as _route}]
   [:div
    [:div.text-green-300 "bodymass index"]
    [bmi-ui]])

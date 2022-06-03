@@ -1,7 +1,7 @@
 (ns page.countdown
   (:require
    [reagent.core :as r]
-   [user :refer [timeout]]
+   [goldly.js :refer [timeout]]
    [lib.ui :refer [add-page-site]]))
 
 (defn countdown-page [_route-data]
