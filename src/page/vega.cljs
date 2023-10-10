@@ -1,7 +1,7 @@
 (ns page.vega
   (:require
    [ui.vega :refer [vegalite]]
-   [lib.ui :refer [add-page-site]]))
+   [lib.ui :refer [wrap-page-site]]))
 
 (def s
   {:$schema "https://vega.github.io/schema/vega-lite/v5.json",
@@ -58,4 +58,4 @@
    [vegalite {:box :sm
               :spec s2}]])
 
-(add-page-site vega-page :user/vega)
+(def vega-page-wrapped (wrap-page-site vega-page))

@@ -2,8 +2,8 @@
          "resources" ; json resources
          "target/webly" ; in case we build ourselves.
          ]
- :deps {org.clojure/clojure    {:mvn/version "1.10.3"}
-        org.pinkgorilla/goldly-docs {:mvn/version "0.4.556"}}
+ :deps {org.clojure/clojure    {:mvn/version "1.11.1"}
+        org.pinkgorilla/goldly-docs {:mvn/version "0.4.627"}}
 
  :aliases
  {:docs ; RUN SERVICES (keep running)

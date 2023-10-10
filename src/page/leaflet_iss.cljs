@@ -4,7 +4,7 @@
    [ui.leaflet :refer [leaflet]]
    [goldly.js :refer [parse-float interval]]
    [http :refer [get-json]]
-   [lib.ui :refer [add-page-site]]))
+   [lib.ui :refer [wrap-page-site]]))
 
 ; ISS Location tracker - realtime
 
@@ -44,4 +44,6 @@
   [:div
    [iss]])
 
-(add-page-site iss-page :user/iss)
+(def iss-page-wrapped (wrap-page-site iss-page))
+
+

@@ -1,0 +1,15 @@
+{:name "demo"
+ ;runtime
+ :clj-services {:name "demo-services"
+                :permission nil
+                :symbols [fortune-cookie/get-cookie]}
+
+ :cljs-routes {"" page.main/main-page-wrapped
+               "demo" {"" page.main/main-page-wrapped
+                       "/fortune" page.fortune/fortune-page-wrapped
+                       "/time" page.time/time-page-wrapped
+                       "/bmi"  page.bmi/bmi-page-wrapped
+                       "/bmiserver" page.bmi-clientserver/bmi-server-page-wrapped
+                       "/iss" page.leaflet-iss/iss-page-wrapped
+                       "/vega" page.vega/vega-page-wrapped
+                       "/aggrid" page.aggrid/aggrid-page-wrapped}}}

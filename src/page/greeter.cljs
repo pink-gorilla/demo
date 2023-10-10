@@ -3,7 +3,7 @@
   (:require
    [reagent.core :as r]
    [re-frame.core :as rf]
-   [lib.ui :refer [add-page-site]]))
+   [lib.ui :refer [wrap-page-site]]))
 
 (defn greeter-details-page [route-data]
   [:div
@@ -11,7 +11,8 @@
    [:p "Access this component only via greeter."]
    [:p.bg-blue-300.mg-3 "the best dad in the world is: " (pr-str route-data)]])
 
-(add-page-site greeter-details-page :demo-greeter-details)
+(def greeter-details-page-wrapped (wrap-page-site greeter-details-page))
+
 
 (def prefix "Hello, ")
 
@@ -33,7 +34,8 @@
         [:p.m-2.p-1.border.border-round (str "goto person: " (:name @state))]]
        [:div.text-2xl (str "Hello, " (:name @state))]])))
 
-(add-page-site greeter-page :demo-greeter)
+
+(def greeter-page-wrapped (wrap-page-site greeter-page))
 
 
 

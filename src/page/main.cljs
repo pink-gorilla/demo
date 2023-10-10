@@ -1,6 +1,6 @@
 (ns page.main
   (:require
-   [lib.ui :refer [add-page-site link-dispatch]]))
+   [lib.ui :refer [wrap-page-site link-dispatch]]))
 
 ; main page 
 
@@ -10,6 +10,6 @@
    [:p "This website shows what you can do with goldly."]
 
    [:p "Users normally would not get developer tooling:"]
-   [link-dispatch [:bidi/goto :devtools] "goldly developer tools"]])
+   [link-dispatch [:bidi/goto 'goldly.devtools.page.help/devtools-page] "goldly developer tools"]])
 
-(add-page-site main-page :user/main)
+(def main-page-wrapped (wrap-page-site main-page))

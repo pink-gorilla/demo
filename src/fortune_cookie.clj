@@ -1,6 +1,4 @@
-(ns fortune-cookie
-  (:require
-   [goldly.service.core :as s]))
+(ns fortune-cookie)
 
 (def db
   ["The early bird gets the worm, but the second mouse gets the cheese."
@@ -52,4 +50,3 @@
          index (rand-int size)]
      (get-cookie index))))
 
-(s/add {:cookie/get get-cookie})

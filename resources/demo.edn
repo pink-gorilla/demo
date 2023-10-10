@@ -1,19 +1,10 @@
-{:ns-clj [fortune-cookie
-          time]
+{:ns-clj [time]
 
- :goldly {:autoload-cljs-dir ["lib"
-                              "page"]
-          :watch-cljs-dir ["src/lib"
+ :goldly {:watch-cljs-dir ["src/lib"
                            "src/page"]
-          :routes {:app {; user
-                         "" :user/main
-                         "fortune" :user/fortune
-                         "time" :user/time
-                         "bmi" :user/bmi
-                         "bmiserver" :user/bmi-server
-                         "iss" :user/iss
-                         "vega" :user/vega
-                         "aggrid" :user/aggrid}}}
+          :routes {:app {"" page.main/main-page-wrapped} 
+                   :api {}}}
+ 
 
  :reval {:rdocument  {:storage-root "docs/rdocument/"
                       :url-root "/api/rdocument/file/"}

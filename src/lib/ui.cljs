@@ -24,21 +24,20 @@
   [site/header-menu
    {:brand "DemoGoldly"
     :brand-link "/"
-    :items [{:text "fortune-cookie" :dispatch [:bidi/goto :user/fortune :query-params {}]}
-            {:text "bodymass-indicator"  :dispatch [:bidi/goto :user/bmi]}
-            {:text "time"  :dispatch [:bidi/goto :user/time]}
-            {:text "space-station"  :dispatch  [:bidi/goto :user/iss]}
-            {:text "jon-grid"  :dispatch [:bidi/goto  :user/aggrid]}
-            {:text "vega"  :dispatch [:bidi/goto :user/vega]}
+    :items [{:text "fortune-cookie" :dispatch [:bidi/goto 'page.fortune/fortune-page-wrapped :query-params {}]}
+            {:text "bodymass-indicator"  :dispatch [:bidi/goto 'page.bmi/bmi-page-wrapped]}
+            {:text "time"  :dispatch [:bidi/goto 'page.time/time-page-wrapped]}
+            {:text "space-station"  :dispatch  [:bidi/goto 'page.leaflet-iss/iss-page-wrapped]}
+            {:text "jon-grid"  :dispatch [:bidi/goto 'page.aggrid/aggrid-page-wrapped]}
+            {:text "vega"  :dispatch [:bidi/goto 'page.vega/vega-page-wrapped]}
            ; {:text "feedback" :link "https://github.com/pink-gorilla/goldly/issues" :special? true}
             ]}])
 
-(defn add-page-site [fn-page name]
-  (let [wrapped-page (fn [route]
-                       [layout/header-main  ; .w-screen.h-screen
-                        [site-header]
-                        [fn-page route]])]
-    (page/add wrapped-page name)))
+(defn wrap-page-site [fn-page]
+  (fn [route]
+    [layout/header-main  ; .w-screen.h-screen
+      [site-header]
+      [fn-page route]]))
 
 
 

@@ -1,8 +1,8 @@
 (ns page.fortune
   (:require
    [reagent.core :as r]
-   [goldly.service :as service]
-   [lib.ui :refer [add-page-site]]))
+   [goldly.service.core :as service]
+   [lib.ui :refer [wrap-page-site]]))
 
 (def cookie-state (r/atom nil))
 
@@ -14,10 +14,10 @@
 
    [:button {:class "border m-2 p-3 border-pink-500"
              :on-click (fn [& _]
-                         (service/run-a cookie-state [:cookie] :cookie/get 3))} "get a specific cookie"]
+                         (service/run-a cookie-state [:cookie] 'fortune-cookie/get-cookie 3))} "get a specific cookie"]
    [:button {:class "border m-2 p-3 border-blue-300 bg-red-100"
              :on-click (fn [& _]
-                         (service/run-a cookie-state [:cookie] :cookie/get))} "get a random cookie"]
+                         (service/run-a cookie-state [:cookie] 'fortune-cookie/get-cookie))} "get a random cookie"]
    [:p.bg-yellow-500.italic.text-xl.text-blue-700
     (or (:cookie @cookie-state) "no cookie received!")]])
 
@@ -25,4 +25,5 @@
   [:div
    [fortune]])
 
-(add-page-site fortune-page :user/fortune)
+(def fortune-page-wrapped (wrap-page-site fortune-page))
+

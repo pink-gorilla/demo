@@ -1,9 +1,9 @@
 (ns page.bmi-clientserver
   (:require
    [reagent.core :as r]
-   [goldly.service :as service]
+   [goldly.service.core :as service]
    [goldly.js :refer [evt-val]]
-   [lib.ui :refer [add-page-site link-dispatch]]))
+   [lib.ui :refer [wrap-page-site link-dispatch]]))
 
 (def bmi-data (r/atom {:height 180 :weight 80}))
 
@@ -41,7 +41,7 @@
 
 (defn bmi-server-page  [_route-data]
   [:div
-   [link-dispatch [:bidi/goto :user/main] "main"]
+   [link-dispatch [:bidi/goto 'page.main/main-page-wrapped] "main"]
    [:div
     [:p (str  "height: " (:height @bmi-data))]
     [slider :height (:height @bmi-data) 10 220] ; babies are perhaps only 10cm, adults can go up to 220.
@@ -50,4 +50,4 @@
    [:div.text-green-300 "bodymass index"]
    [bmi-component]])
 
-(add-page-site bmi-server-page :user/bmi-server)
+(def bmi-server-page-wrapped (wrap-page-site bmi-server-page))

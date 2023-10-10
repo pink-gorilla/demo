@@ -1,7 +1,7 @@
 (ns page.click-counter
   (:require
    [reagent.core :as r]
-   [lib.ui :refer [add-page-site]]))
+   [lib.ui :refer [wrap-page-site]]))
 
 (defn click-counter-page [_route-data]
   (let [state (r/atom 42)]
@@ -12,4 +12,5 @@
         @state]
        " times"])))
 
-(add-page-site click-counter-page :demo-click-counter)
+(def click-counter-page-wrapped (wrap-page-site click-counter-page))
+

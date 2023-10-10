@@ -2,7 +2,7 @@
   (:require
    [reagent.core :as r]
    [goldly.js :refer [evt-val]]
-   [lib.ui :refer [add-page-site]]))
+   [lib.ui :refer [wrap-page-site]]))
 
 ; define the calculation function. Note that 
 ; 1. a change in the atom will trigger re-rendering
@@ -52,9 +52,9 @@
 ; (swap! bmi-data assoc :height 150)
 ;(swap! bmi-data assoc :height 180)
 
-(defn bmi-page :user/bmi [{:keys [_route-params _query-params _handler] :as _route}]
+(defn bmi-page [{:keys [_route-params _query-params _handler] :as _route}]
   [:div
    [:div.text-green-300 "bodymass index"]
    [bmi-ui]])
 
-(add-page-site bmi-page :user/bmi)
+(def bmi-page-wrapped (wrap-page-site bmi-page))

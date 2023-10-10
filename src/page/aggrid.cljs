@@ -3,7 +3,7 @@
    [tick.core]
    [ui.aggrid :refer [aggrid]]
    [goldly.page]
-   [lib.ui :refer [add-page-site link-dispatch]]))
+   [lib.ui :refer [wrap-page-site link-dispatch]]))
 
 (def data
   (map (fn [i] {:idx i
@@ -22,4 +22,6 @@
             :pagination true
             :paginationAutoPageSize true}]])
 
-(add-page-site aggrid-page :user/aggrid)
+(def aggrid-page-wrapped (wrap-page-site aggrid-page))
+
+

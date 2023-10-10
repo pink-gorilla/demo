@@ -2,7 +2,7 @@
   (:require
    [reagent.core :as r]
    [re-frame.core :as rf]
-   [lib.ui :refer [add-page-site]]))
+   [lib.ui :refer [wrap-page-site]]))
 
 (defonce
   time-state (r/atom {:time "waiting for server time"}))
@@ -24,4 +24,5 @@
    [:div.text-green-300 "time ui"]
    [time-ui]])
 
-(add-page-site time-page :user/time)
+(def time-page-wrapped (wrap-page-site time-page))
+

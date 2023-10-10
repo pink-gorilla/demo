@@ -2,7 +2,7 @@
   (:require
    [reagent.core :as r]
    [goldly.js :refer [timeout]]
-   [lib.ui :refer [add-page-site]]))
+   [lib.ui :refer [wrap-page-site]]))
 
 (defn countdown-page [_route-data]
   (let [state (r/atom 0)]
@@ -12,4 +12,4 @@
        "Seconds Elapsed: "
        @state])))
 
-(add-page-site countdown-page :demo-countdown)
+(def countdown-page-wrapped (wrap-page-site countdown-page))
