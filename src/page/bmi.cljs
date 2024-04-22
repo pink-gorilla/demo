@@ -1,7 +1,6 @@
 (ns page.bmi
   (:require
    [reagent.core :as r]
-   [goldly.js :refer [evt-val]]
    [lib.ui :refer [wrap-page-site]]))
 
 ; define the calculation function. Note that 
@@ -24,7 +23,7 @@
   [:input {:type "range" :value value :min min :max max
            :style {:width "100%"}
            :on-change (fn [e]
-                        (swap! bmi-state assoc param (evt-val e))
+                        (swap! bmi-state assoc param (.. e -target -value))
                         (when (not= param :bmi)
                           (swap! bmi-state assoc :bmi nil)))}])
 

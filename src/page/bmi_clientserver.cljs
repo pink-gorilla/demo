@@ -2,7 +2,6 @@
   (:require
    [reagent.core :as r]
    [goldly.service.core :as service]
-   [goldly.js :refer [evt-val]]
    [lib.ui :refer [wrap-page-site link-dispatch]]))
 
 (def bmi-data (r/atom {:height 180 :weight 80}))

@@ -2,7 +2,6 @@
   (:require
    [tick.core]
    [ui.aggrid :refer [aggrid]]
-   [goldly.page]
    [lib.ui :refer [wrap-page-site link-dispatch]]))
 
 (def data
@@ -14,8 +13,6 @@
 
 (defn aggrid-page [_route-data]
   [:div.h-screen.w-screen
-   [:div {:style {:position "absolute"}}
-    [link-dispatch [:bidi/goto :user/main] "main"]]
    ;[:p "data" (pr-str data)]
    [aggrid {:data data
             :box :fl

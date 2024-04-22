@@ -1,9 +1,8 @@
 (ns lib.ui
   (:require
    [re-frame.core :as rf]
-   [layout]
-   [site]
-   [goldly.page :as page]))
+   [ui.site.template]
+   [ui.site.layout]))
 
 ;; links
 
@@ -21,8 +20,8 @@
 ;; site layout
 
 (defn site-header []
-  [site/header-menu
-   {:brand "DemoGoldly"
+  [ui.site.template/header-menu
+   {:brand "Demo"
     :brand-link "/"
     :items [{:text "fortune-cookie" :dispatch [:bidi/goto 'page.fortune/fortune-page-wrapped :query-params {}]}
             {:text "bodymass-indicator"  :dispatch [:bidi/goto 'page.bmi/bmi-page-wrapped]}
@@ -35,9 +34,9 @@
 
 (defn wrap-page-site [fn-page]
   (fn [route]
-    [layout/header-main  ; .w-screen.h-screen
-      [site-header]
-      [fn-page route]]))
+    [ui.site.layout/header-main  ; .w-screen.h-screen
+     [site-header]
+     [fn-page route]]))
 
 
 

@@ -1,4 +1,5 @@
 {:name "demo"
+ :lazy true
  ;runtime
  :clj-services {:name "demo-services"
                 :permission nil

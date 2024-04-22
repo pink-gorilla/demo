@@ -1,0 +1,6 @@
+{
+
+ :reval {:rdocument  {:storage-root "target/webly/public/rdocument/"
+                      :url-root "/api/rdocument/file/"}
+         :collections {:my-notebooks [:clj "notebook/"]
+                       :demo [:clj "demo/notebook/"]}}}
