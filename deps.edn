@@ -4,11 +4,11 @@
          ]
  :deps {org.clojure/clojure    {:mvn/version "1.11.1"}
         org.pinkgorilla/timbre {:mvn/version "0.0.6"}
-        org.pinkgorilla/goldly-docs {:mvn/version "0.7.21"}}
+        org.pinkgorilla/goldly-docs {:mvn/version "0.7.22"}}
 
  :aliases
  {:webly {:extra-deps {org.pinkgorilla/ui-repl {:mvn/version "0.1.104"}}
-          :extra-paths ["src" "resources" 
+          :extra-paths ["src" "resources"
                         "target/webly" ; to include the sci-bindings info
                         "node_modules"]
           :exec-fn webly.app.app/webly-build
@@ -26,7 +26,9 @@
         :exec-args {:profile "jetty"
                     :services "demo-services.edn"}}
 
-   :nbeval {:exec-fn modular.system/start!
+  :static-sci {:exec-fn goldly.build/static-build-copy-sci-code}
+
+  :nbeval {:exec-fn modular.system/start!
            :exec-args {:run reval.task/eval-all-collections
                        :config  ["demo-config.edn"]
                        :services "task-services.edn"}}

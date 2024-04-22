@@ -13,4 +13,19 @@
                        "/bmiserver" page.bmi-clientserver/bmi-server-page-wrapped
                        "/iss" page.leaflet-iss/iss-page-wrapped
                        "/vega" page.vega/vega-page-wrapped
-                       "/aggrid" page.aggrid/aggrid-page-wrapped}}}
+                       "/aggrid" page.aggrid/aggrid-page-wrapped}}
+ 
+ :sci-cljs-ns [lib.ui
+               page.aggrid
+               page.bmi-clientserver
+               page.bmi
+               page.click-counter
+               page.countdown
+               page.fortune
+               page.greeter
+               page.leaflet-iss
+               page.main
+               page.time
+               page.vega]
+ 
+ }

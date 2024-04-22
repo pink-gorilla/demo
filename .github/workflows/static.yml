@@ -51,6 +51,7 @@ jobs:
         if: success()
         run: |
           clojure -X:webly:static
+          clojure -X:static-sci
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
