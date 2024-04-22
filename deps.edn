@@ -4,7 +4,7 @@
          ]
  :deps {org.clojure/clojure    {:mvn/version "1.11.1"}
         org.pinkgorilla/timbre {:mvn/version "0.0.6"}
-        org.pinkgorilla/goldly-docs {:mvn/version "0.7.20"}}
+        org.pinkgorilla/goldly-docs {:mvn/version "0.7.21"}}
 
  :aliases
  {:webly {:extra-deps {org.pinkgorilla/ui-repl {:mvn/version "0.1.104"}}
