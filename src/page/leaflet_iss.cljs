@@ -17,9 +17,17 @@
     (when-let [lat (get-in @issstate [:data :iss_position :latitude])]
       [(js/parseFloat lat) (js/parseFloat lng)])))
 
+
+;(def url  "http://api.open-notify.org/iss-now.json")
+
+; we use google translate as an ssh proxy. 
+; this is needed because demo when served on github pages runs on https, and the iss-now api is only on http.
+
+(def url "https://api-open--notify-org.translate.goog/iss-now.json?_x_tr_sch=http&_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=es-419")
+
 (defn download []
-     ;; http://open-notify.org/Open-Notify-API/ISS-Location-Now/
-  (get-json "http://api.open-notify.org/iss-now.json" issstate [:data]))
+  ;; http://open-notify.org/Open-Notify-API/ISS-Location-Now/
+  (get-json url issstate [:data]))
 
 (defn iss []
   (when (:first @issstate)
